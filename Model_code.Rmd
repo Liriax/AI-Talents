@@ -1,0 +1,122 @@
+---
+title: "Tech Skillytics"
+author: "T(AI)lents"
+date: "20/12/2020"
+output:
+  pdf_document:
+    dev: png
+  keep_tex: yes
+  word_document: default
+header-includes:
+- \usepackage{dcolumn}
+- \usepackage{booktabs}
+- \usepackage{sectsty} \sectionfont{\centering}
+- \usepackage{indentfirst}
+- \usepackage{setspace}\onehalfspacing
+fontsize: 11pt
+
+
+---
+
+
+```{r setup, include=FALSE, message=FALSE}
+
+knitr::opts_chunk$set(echo = T, cache = TRUE)
+options(scipen = 99999) # Do not wish to have scientific  notations.
+
+
+
+```
+
+
+```{r, warning = F, message = F}
+# loading the required packages:
+require(tidyverse)
+require(parsnip)
+require(yardstick)
+require(rsample)
+require(doParallel)
+require(recipes)
+require(ggridges)
+require(ggplot2)
+require(patchwork)
+require(xgboost)
+require(tidymodels)
+require(FactoMineR)
+require(tibble)
+require(tm)
+require(tidytext)
+require(sentimentr)
+require(SentimentAnalysis)
+require(lexicon)
+require(tokenizers)
+require(wordcloud)
+require(docstring)
+
+### IMPORTANT! ###
+# Set the number of cores you will use for parallel calculation.
+# Do not exceed the recommended amount. 
+
+CORES <- 8
+cl <- parallel::makeCluster(CORES)
+```
+
+
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+
+
+### 1. Getting the data to run in R and tidyverse
+
+```{r}
+# Loading in the data, binding them together----
+
+DF <- read.csv("linkedin.csv")
+  
+  
+```
+
+
+### 2. Prepossesing and getting the data ready for modelling. 
+
+
+\pagebreak
+
+**3.2 Prepossessing the data** 
+
+Now we can preposses the data. In the case of our corpus, we: 
+
+- Removed datapoints with no title, and bodies with less than 30 words.
+
+- Removed uppercase letters.
+
+- Removed any character that isn't alphabetical
+
+- Removed any words that were shorter than 2 letters and larger than 21 letters
+
+- Removed stopwords (words that are frequent but carry no meaning). 
+
+
+```{r}
+
+# Now we do some prepossessing of the data
+
+
+
+```
+
+\pagebreak
+
+**3.3 Tokenizing the data and creating bigrams**
+
+```{r}
+
+
+```
+
