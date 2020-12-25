@@ -1,0 +1,1914 @@
+,required_skills,job_title
+9,"java, oss",software engineer
+18,"c , c++, linux, unix",software engineer
+27,pci,java developer
+35,computer vision,software engineer
+65,"access, analysis, analytical, analytical",java developer
+78,"contract corp, to, corp, contract w2, full time",java developer
+81,"big data, java",data scientist
+82,"tad pgs, reliable",software engineer
+86,analytical,java developer
+95,"apache, business requirements, css, development, hadoop, html, http, java, javascript, jquery, linux, management, os x, scrum, security, solr, supervision, windows, windows 7",java developer
+99,"h, cass",java developer
+121,".net, ada, adobe, ajax, architecture, asp, asp.net, business intelligence, cms, content management, css, development, dhtml, html, java, javascript, jquery, management, mysql, mysql, oracle, php, sql, sql server",software engineer
+124,contract w2,java developer
+131,".net, access, analysis, application, applications, architecture, automated, business requirements, data analysis, database, development, erp, foundation, it, java, management, multi, threaded, oracle, peoplesoft, pl, sql, project management, scripts, security, sql, supply chain, supply chain management, systems, telecom, web, windows",java developer
+141,"angularjs, nodejs",java developer
+145,"tad pgs, reliable",data scientist
+147,"algorithms, analysis, apache, case, css, data analysis, development, hadoop, html, http, java, management, matlab, nosql, python, sql, use case",data scientist
+168,"css, database, hadoop, html, http, nosql",data scientist
+183,"agile, development, http, java, scrum, sdlc",java developer
+187,"agile, api, architecture, business requirements, data warehouse, development, genetic, hadoop, java, management, nosql",data scientist
+188,"analysis, development, git, hadoop, http, linux, nosql, unix, version control",software engineer
+197,"it, information technology, java, ooad, java ee, soap, rest",java developer
+209,"crm, development, excel, html, http, lifecycle, sap, supply chain",data scientist
+212,"cisco, forth, genetic, help desk, lan, management, routers, switches, wan",data scientist
+216,"python, spark, apache spark, cass, ra, scala, hadoop , python, spark, apache spark, cass, ra, scala, hadoop",software engineer
+218,core java,java developer
+222,"java , roid",java developer
+227,"linux, linux kernel, c++, python , linux, linux kernel, c++, python",software engineer
+230,"java, spring framework, mssql, mysql, javascript, linux, git , github, php, java, spring framework, mssql, mysql, javascript, linux, git , github, php, junit",software engineer
+238,"core java, struts, hibernate",java developer
+254,"medical devices, threaded",software engineer
+263,restful web services,java developer
+267,"php, java, aws, relational databases, map reduce, java, aws, relational databases, map reduce",software engineer
+278,"php, mysql, php, mysql, oop",software engineer
+282,"java, javascript, aws, amazon web services, angular.js, scala",java developer
+294,"pre, pre",software engineer
+300,"analysis, architecture, business intelligence, data analysis, database, development, genetic, management, oracle, sas, sql, sql server, teradata, unix",software engineer
+302,"ios, objective, c, rest apis",software engineer
+303,"java, j2ee, jee, jsp, servlets, spring mvc, html, css, angular js, jquery, json , hibernate, jsf, sql, pl, sql",java developer
+314,"c#, sql, javascript, agile, sql, javascript, agile",software engineer
+326,"c#, asp.net mvc, javascript, ms, sql, e, web services, c#, asp.net mvc, javascript, ms, sql, e, web services, cms",software engineer
+339,java,java developer
+340,"javascript, python, ruby on rails, aws , javascript, python, ruby on rails, aws",software engineer
+346,"asp.net, c++, c#, netsuite, sql, microsoft visual studio, linux , asp.net, c++, c#, netsuite, sql, microsoft visual studio, linux",software engineer
+358,"sql, python, r, java , power bi, tableau, aws , database design, nosql",software engineer
+381,"vb, .net , c#, sql server, architect, agile, wpf",software engineer
+388,"java, j2ee, angular js, javascript, ajax, hibernate, sql , pl, sql",java developer
+394,"c, c++, ooad, uml, soa",software engineer
+405,"security, tcp, ip",data scientist
+408,"full, stack, aws, java, javascript, apis",software engineer
+411,"hibernate, soap",java developer
+413,"c, c++, rtos",software engineer
+416,"python, javascript, web development, data, p, as, flask, cloud, aws, redshift, s3, ec2",software engineer
+420,"jira, sql",java developer
+421,analytical,software engineer
+422,"agile, broadb, development, ethernet, genetic, http, linux, management, protocols, video",software engineer
+424,"java, web development",java developer
+426,"autocad, broadb, erp, genetic, http, management, outlook, pc, project management, sap, supervision, ups, video",data scientist
+431,"cognos, sql",data scientist
+433,"java, xml, j2ee",java developer
+437,"javascript, sql, mongodb, angular, angularjs, node.js, rest, api development, restful, api, web, full stack, backend, java, j2ee",java developer
+438,"javascript, php, ruby",software engineer
+453,"statistical analysis, mathematics, python, linux, bash, hadoop, computer science",data scientist
+463,"java, rest , web services, jquery",java developer
+466,"sas, python",data scientist
+467,"java, j2ee, websphere, pl, sql",software engineer
+473,"java, j2ee, hibernate, css, javascript",java developer
+476,"java, struts, hibernate, webservices, soap, sql, oracle",java developer
+488,"analysis, development, erp, excel, http, lawson, lifecycle, management, oracle, peoplesoft, powerpoint, sap, scripts",data scientist
+501,"javascript, html, css, jquery",software engineer
+502,"java, web services",java developer
+503,"c, c++, java, uml, rtos, soa",software engineer
+507,"c++, ui",software engineer
+540,"c#, c++, wcf, java",software engineer
+553,"big data, bi, business intelligence, computer science, hadoop, impala, spark, python, sql, cloud",software engineer
+561,"agile, analysis, api, architecture, development, dom, git, http, java, javascript, mongodb, source code, specification, sql, uml, version control, xml",software engineer
+572,"agile, algorithms, roid, api, development, git, ide, java, jenkins, library, mongodb, source code, subversion, windows",software engineer
+579,"java , javascript",software engineer
+582,"c++, visual studio, sql, unix",software engineer
+598,".net, dot net, c#, wpf, java , sql, ci, cd, continuous integration, automation",software engineer
+612,"java, jee, cass, ra, hive",software engineer
+630,"hadoop, spark, scala, java, rest, unix, aws",software engineer
+656,"agile, algorithms, roid, api, development, git, ios, jenkins, library, oop, source code, subversion, windows",software engineer
+669,"user interface design, opengl, opengl, c++, 3, windows, algorithm",software engineer
+670,"java, javascript, backbone, angular, knockout, rest, maven, junit, bi, etl, big data, mongodb",software engineer
+674,"full time, full time",software engineer
+677,"linux, unix",software engineer
+681,"ruby, mvc, saas, tdd, git, javascript, rails, ruby on rails",software engineer
+684,"xml, xslt, jdbc, junit, jquery, javascript, ajax, hibernate",java developer
+690,core java,java developer
+694,"c++, c#, development, device drivers, hardware, linux, management, mechanical, middleware, object oriented design, project management, windows",software engineer
+703,"c#, net, entity framework, linq, sql server, tsql, rdbms",software engineer
+722,"hibernate, web, performance, scalability, agile",software engineer
+726,"angularjs, reactjs, backbonejs, java, python, git, full stack",software engineer
+730,"odi, data integration, bi",data scientist
+756,"java, j2ee, jsp, servlets, xml, xslt, scrum, agile, soa, apis",java developer
+760,"java, api",java developer
+764,"c, c++, qt, linux",software engineer
+778,"agile, analysis, development, dom, java, javascript, oop, source code, version control, xml",software engineer
+788,"development, salesforce, sql, sql server",software engineer
+801,"hadoop, hive, sqoop, pig, impala, spark",software engineer
+812,"java, linux, tomcat, restful apis, jsf, mvc",java developer
+833,"asp.net, silverlight, c#, visual studio, ajax",software engineer
+836,"health care, agile",data scientist
+864,"java, rabbitmq, gui, hibernate, sql, tomcat, rest, agile",java developer
+866,"web services, agile",software engineer
+872,"java, j2ee",software engineer
+895,sql,data scientist
+901,"java, spring framework, api",java developer
+922,hardware,software engineer
+941,"c#, mvc",software engineer
+953,sql server,software engineer
+962,"continuous integration, test automation",software engineer
+972,"architecture, microservices, aws",software engineer
+974,"test automation, python, c++, java",software engineer
+975,"etl, pl, sql",software engineer
+1003,"development, hadoop, laptop, networks, python, release, sas, sql",data scientist
+1009,"algorithms, analytical, analytical",java developer
+1033,"apache, applications, development, java, management, materials, metrics, project management, quality, software, system, systems, web",java developer
+1039,"data architect, olap, data warehouse, sql",data scientist
+1054,"java, architect, tdd, core, microservices, hibernate, jenkins, jboss, scala, groovy, mongo db, cloud foundry, openshift",java developer
+1058,"analysis, analytical, application, applications, c#, clearcase, database, development, disaster recovery, http, java, javascript, lifecycle, oracle, security, software, sql, system, systems, test, unix, user interface, web, windows",java developer
+1069,"java , hadoop",java developer
+1081,"java, j2ee, node.js",java developer
+1087,"ada, analysis, architecture, clearcase, development, fortran, hardware, linux, release, security, simulation, system architecture, unix, vmware",software engineer
+1100,".net, asp, asp.net, c#, development, lifecycle",software engineer
+1104,"agile, analysis, application servers, architecture, db2, development, encryption, foundation, git, html, http, ide, j2ee, java, javascript, jsp, linux, management, middleware, nosql, object oriented design, oracle, protocols, soap, sql, svn, tivoli, unix, version control, wsdl, xml",software engineer
+1110,"c++, c#, linux, tcp, ip, udp",software engineer
+1131,"java , j2ee, spring mvc, hibernate, sql, soap, rest",java developer
+1148,"hibernate, java, oracle, sql, jee",software engineer
+1162,"database, db2, j2ee, java, management, oracle, security, sybase, xml",software engineer
+1163,"apache, architecture, database, db2, development, hardware, html, http, ide, j2ee, java, javascript, jdbc, jsp, linux, mysql, mysql, object oriented design, oracle, protocols, soap, sql, svn, sybase, uml, unix, version control, wireless, xml",software engineer
+1189,"java, jms, aws, oracle, angularjs, javascript",java developer
+1204,"agile, angularjs, database, development, ejb, hardware, j2ee, java, javascript, jquery, jsp, management, oracle, project management, quality assurance, sql, sql server, unix, websphere",java developer
+1219,"sso, saml, php, symfony, sql, mysql, bootstrap, java, script, jquery, java, oracle, python, git, perl",software engineer
+1248,"core java, servlets, jdbc, ejb, html, dhtml, css, javascript, ajax, xml, struts, hibernate, ajax, sql server",java developer
+1254,"sql, xml, css, javascript, tsql, xslt, c, c++, visual basic",data scientist
+1278,"ado.net, c#, html, javascript , xml",software engineer
+1281,"esri, gis, perl, python, visio, data management",data scientist
+1282,"architecture, c++, database, development, j2ee, java, ood, oracle, protocol, sdlc, security, soap, sql, tcp, ip, windows, xml",software engineer
+1290,"api development, soa, java, j2ee, web services, object oriented design",java developer
+1310,"algorithm, analysis, analytical",software engineer
+1326,"j2ee, web services, jquery, javascript, html, angular.js, spring mvc",software engineer
+1348,"algorithms, analysis, development, fortran, hardware, security, simulation",software engineer
+1366,"java, sql, nosql, websphere, python, cloud, sql, sdlc",software engineer
+1414,"java , devops",java developer
+1415,"c++, development, linux, management, protocols, python, scripts, sql, unix, version control, vmware",software engineer
+1421,".net, c#, asp.net mvc, web services, sql server",software engineer
+1424,"java, scala, python, spark, cass, ra, elasticsearch, rdbms, sql",software engineer
+1434,"java, sql, agile",java developer
+1441,"restful, java, websphere, jboss, oracle, javascript, html5, css, integration",software engineer
+1459,"java, core java, risk",java developer
+1462,"algorithms, architecture, development, java, linux, unix, ups",software engineer
+1463,"agile, algorithms, analysis, architecture, management, sales, unix",software engineer
+1473,"java, j2ee, pl, mq, perl, weblogic",java developer
+1475,".net, c#, rdbms, nosql, windows",software engineer
+1487,"analysis, automated, development, java, matlab, perl, python, validation",data scientist
+1507,"capital market, mq, deploy, administration, support",software engineer
+1512,"core java, core, java, svn, bamboo, jms, mq",java developer
+1521,"c++, linux",software engineer
+1537,"agile, algorithms, analysis, angularjs, architecture, css, html, java, javascript, jquery, management, perl, python, sales, scrum, soap, unix",software engineer
+1538,"agile, spark, flume, hadoop, mapreduce",software engineer
+1555,"java, j2ee, mvc, mongodb, cass, mariadb",java developer
+1573,"c++, unix, algorithms, analytics",software engineer
+1580,"agile, ajax, automated, development, ecommerce, java, javascript, linux, management, oracle, pl, sql, qa, sql, unix",software engineer
+1591,"algorithm, analysis, development, e, commerce, java, javascript, linux, management, nosql",software engineer
+1594,"jee, collections",java developer
+1618,"sql, ruby on rails, python, angularjs",java developer
+1629,"java, sql, agile, sybase, db2, .net",java developer
+1654,"core java, jee",software engineer
+1659,"core java, j2ee",java developer
+1666,"ios, swift",software engineer
+1682,python,software engineer
+1723,"java, big data",software engineer
+1731,"algorithm, algorithms, development, management",data scientist
+1742,"xml, json, html, css, jquery, ajax, soap",software engineer
+1771,"c#, 4, jquery",software engineer
+1786,"javascript, node.js, mongodb, postgresql, angular.js, html5, css3, java",software engineer
+1787,"java, oracle soa",java developer
+1789,data warehouse,data scientist
+1797,"javascript, ui, html5, linux",java developer
+1798,"c++, c#, java, debug, ood, windows, embedded, pc, rtos, linux",software engineer
+1800,"h, jdbc",java developer
+1830,"core java, soa, web services, rest",java developer
+1840,"sql server, visual basic, sdlc, ab initio",software engineer
+1849,"javascript, ui, angularjs, html, ui, ux",java developer
+1868,"j2ee, rest, api, angular.js, javascript, html5",java developer
+1874,"core java, xml, jms, hibernate, oracle , sybase",java developer
+1877,"linux, python, soa, aws, rest",software engineer
+1901,maintece,data scientist
+1902,"java, sql",software engineer
+1907,"java, core java, jms, agile",java developer
+1909,"j2ee, hibernate, spa",java developer
+1916,"weblogic, j2ee, oracle , sql",java developer
+1917,"scala, aws, restful, java",software engineer
+1921,"j2ee, spring , hibernate , core java",java developer
+1923,"java development, web services",java developer
+1928,tcp,software engineer
+1945,"java, sql, capital markets",java developer
+1952,data,data scientist
+1971,java,java developer
+1974,"hibernate, jsf, jsp, servlets, sql, plsql",java developer
+1976,"e, fixed income, mq",java developer
+1982,"ssis, ssrs, tsql, stored procedures, etl, data warehouse, agile",data scientist
+2002,"c++, c#, c, debug, embedded, pc, rtos, linux",software engineer
+2004,"jira, continuous integration, agile development, mysql, unix, design patterns, jenkins, grunt, git, github",software engineer
+2009,"java, spring mvc, angularjs",java developer
+2016,"java, rest, aws",software engineer
+2045,"j2ee, web services",java developer
+2046,design,java developer
+2054,"fixed income, core java, data structures, collections, oop, framework, xml, xsd, capital markets",java developer
+2055,"spring boot, hibernate, jdbc, jms",java developer
+2057,"java, ficial services",java developer
+2064,devops,software engineer
+2076,"java , python",java developer
+2104,"java, oracle, bpm, javascript",java developer
+2123,"java, nodejs",java developer
+2145,"java, angular js, javascript, jquery, html, css",java developer
+2149,"java, spring framework, rest web services, node",java developer
+2155,"java, big data, hadoop",software engineer
+2167,"lead, restful, json, xml, j2ee",java developer
+2169,"go, python",software engineer
+2176,web,software engineer
+2188,"java, trading systems",java developer
+2189,"python, r, matlab, vba, spark, hadoop, mysql, ms excel, vba, ms sql",data scientist
+2194,"bigdata, hive",data scientist
+2198,"java, software development",java developer
+2208,"data science, statistics, r, perl, python",data scientist
+2221,"javascript, web services",java developer
+2244,"php, css, javascript, html",software engineer
+2246,"react, angular js, bootstrap, agile development, mysql, unix, design patterns, html, css, javascript, php",software engineer
+2269,"core java, design patterns",java developer
+2270,"java, capital markets",java developer
+2277,"java, j2ee",java developer
+2290,"dynatrace, sql, java, jsp, servlets, jee, hibernate",java developer
+2291,"big data, nosql, java, python, scala",software engineer
+2305,"java, rest api, hadoop, spark, hive, pig",java developer
+2307,"ccie, wan, tcp, ip, eigrp, bgp, ospf, 4g",data scientist
+2319,"java, j2ee, oracle, maven, agile",java developer
+2323,"c#, .net",software engineer
+2324,"java, j2ee, javascript, full stack",java developer
+2331,"java, hibernate, maven, rest, ajax, oracle, db2, postgresql, ms sql, mysql, xml, jpa, tomcat, oracle, json",java developer
+2339,"java, j2ee, hibernate",java developer
+2343,"java, web",java developer
+2352,"data, data quality",data scientist
+2401,"web applications, node, react",software engineer
+2402,"java, j2ee, core java, rest, sql",java developer
+2427,"oracle, sql, hive, hadoop, r, python, statistical analysis",data scientist
+2449,"java, javascript, http, tcp, ip, web api, rest, visual studio, tfs, uft",java developer
+2461,"core java, hibernate, jsf, jms, mq",java developer
+2488,"data quality, sql",data scientist
+2572,"java, extjs, html5, ajax, spring mvc",java developer
+2587,"j2ee , servlet, web services, xml, xslt",java developer
+2638,"api, c++, development, python, software",software engineer
+2644,"c#, python, javascript, core, data, kubernetes, ansible, chef, puppet, go, c , c++, agile , tdd, azure, cloud foundry",software engineer
+2668,"architecture, automated, case, development, j2ee, java, nosql, php, soap, uml, video",software engineer
+2676,"c, c++, python, cloud security, cloud architecture, golang, security, cyber security, security, big data",software engineer
+2688,design,software engineer
+2691,"web services, database",software engineer
+2692,"css, json, ajax, servlet, jsp, tomcat, apache, linux, java, javascript, python, perl",java developer
+2718,"agile, algorithms, architecture, development, e, commerce, java, management, object oriented design, security, supervision",java developer
+2724,"java, mongodb",java developer
+2728,"agile, java, mysql, mysql, nosql, ruby, sql",software engineer
+2753,c++,java developer
+2756,java,software engineer
+2766,"data, azure",data scientist
+2797,"algorithm, analysis, c++, development, java, management, release, ruby, security",software engineer
+2809,"architecture, automated, business intelligence, case, data warehouse, javascript, nosql, php, soap, uml",software engineer
+2823,"java, angularjs, css, javascript",software engineer
+2825,"analysis, automotive, development, embedded, embedded software, matlab, protocols, security, simulation, validation",software engineer
+2834,"java, j2ee, ood, hibernate, eclipse, jquery, angular, html, apache",java developer
+2835,"agile, algorithms, analytical",software engineer
+2842,"algorithms, analysis, automated, data analysis, development, management, metrics, sql, supply chain",data scientist
+2845,"java, javascript, angularjs",java developer
+2855,"algorithm, analysis, development, e, commerce, java, javascript, jquery, management, perl, qa, release, security",software engineer
+2859,"rest, java, maven, hibernate, splunk, jenkins",java developer
+2864,"analysis, case, development, embedded, embedded software, hardware, linux, test plan, video, windows",software engineer
+2886,"java, c++, cloud, linux, unix",software engineer
+2893,"ruby, javascript, python, angular",software engineer
+2896,"client, cloud, os, account management, technical, business acumen, based",software engineer
+2911,"java, ruby, python, c++, c#, chef, puppet, java, ruby, python, c++, c#, chef, puppet, ansible",software engineer
+2914,"data structures, algorithms, distributed systems, java, c#, scala, jvm, cass, ra, dynamodb",software engineer
+2915,"java, javascript, html, css",java developer
+2930,"rest api, object, java",java developer
+2940,"e, commerce, ecommerce, java, j2ee, websphere, atg, hybris, portal, telecom, rest, b2b, b2c",java developer
+2941,"api, automated, development, diagnostic, java, javascript, libraries, management, perl, python, ruby, scripts, supervision",software engineer
+2951,"scala, python, java, backend, hadoop, mobile",software engineer
+2955,"ux, ui, angular.js, javascript, node.js, html, css, data, sql, olap, aws",software engineer
+2959,"unix, tcp, ip",software engineer
+2960,"c#, azure",software engineer
+2969,"sas, sap, r, hadoop, spark, python, sas, sap, r, hadoop, spark, python",data scientist
+2971,"animation, architecture, data collection, http, ios, lifecycle, specification",software engineer
+2983,"c#, java",software engineer
+2988,"java , e, hybris",java developer
+3000,"hadoop, hive, impala",software engineer
+3010,tx,software engineer
+3012,"c#, .net, dba",software engineer
+3013,javascript,software engineer
+3018,algorithms,data scientist
+3019,"java, linux, distributed systems",software engineer
+3029,"javascript, java, web development, saas, mysql, nosql",java developer
+3032,"c, c++, computer vision, rtos",software engineer
+3039,"javascript, full stack, node.js, java, c#, c++",software engineer
+3051,"c, c++, graphics, vr, virtual reality, ios, roid",software engineer
+3059,"c# , .net , asp.net mvc",software engineer
+3063,"roid, data collection, http, java, lifecycle, specification",software engineer
+3068,"c++, c#, user interface, python , c++, c#, user interface, python",software engineer
+3075,"js, css",java developer
+3098,c#,software engineer
+3112,"development, java",java developer
+3123,"java, web services, api",software engineer
+3129,"php, javascript, sql, python, c#, gui, php, javascript, sql, python, c#, gui, microcontrollers",software engineer
+3132,"c, c++, java, c#, sql, nosql, video, audio, services",software engineer
+3147,"java, rest services",software engineer
+3148,"java, ecommerce, html5, javascript, css, ajax",java developer
+3149,"python, ruby, javascript, django, node.js, html, css, aws, mysql, postgresql",software engineer
+3150,"html, css, javascript, c, c++, c#, .net, asp.net, asp.net mvc, linq, html, css, html, css, javascript, c, c++, c#, .net, asp.net, asp.net mvc, linq, html, css, mvvm",software engineer
+3160,"ios, roid, management",software engineer
+3163,"data, analytics, aws, ec2, emr, lambda, redshift, java, scala, python, sql, oop, distributed systems, algorithms, statistics, sdlc",software engineer
+3165,hadoop,java developer
+3176,"perl, linux, lamp, mysql, css, javascript, perl, linux, lamp, mysql, css, javascript, php",software engineer
+3177,"java, html5, css, angular",java developer
+3186,"servicenow, data visualization, angular, node, javascript, html, css, java, .net, aws, big data, services, database, data analysis",software engineer
+3193,"c++, javascript, jquery, angular, c#, c++, javascript, jquery, angular, c#, mvc",software engineer
+3198,"big data, aws, hadoop, hive, map reduce, real, time, spark, storm, java, python, kafka, data analytics, iot",software engineer
+3216,"c++, ood",software engineer
+3218,"java, roid",software engineer
+3222,"java, j2ee, hibernate, rest, e, commerce",java developer
+3230,"java, j2ee, rest, json, cloud, agile",java developer
+3243,"saas, java, hadoop, linux",software engineer
+3251,"powershell, object oriented design, restful, web service, windows server",software engineer
+3253,"configuration management, database, development, http, linux, management, mysql, mysql, postgresql, python, sql, tcp, ip",software engineer
+3257,core java,java developer
+3280,"java, go, spark, kubernetes, redis",software engineer
+3292,"php, javascript, html",software engineer
+3296,"javascript, html5, css3, angular, web, ui",software engineer
+3307,"java, hadoop, mongo",software engineer
+3310,"java, perl, shell",java developer
+3323,microsoft sql,data scientist
+3329,"java, oop, unix, linux, maven, ood",java developer
+3332,"agile, sql, c#, java, python",software engineer
+3336,"javascript, html5, css3, angular",software engineer
+3340,"multi, design patterns",java developer
+3344,"java, javascript, sql server, oracle",java developer
+3357,".net, c#, mvc, asp.net, lambda, sql server, html5, css3, client, jquery",software engineer
+3360,"java, linux, python, mysql, git",software engineer
+3361,"architecture, development, http, system architecture",software engineer
+3366,java,software engineer
+3370,"c#, sql, javascript, jquery, python, git , c#, sql, javascript, jquery, python, git",software engineer
+3384,"java, angularjs, javascript, jquery, css, html, mysql",software engineer
+3386,"java, agile, scrum, tdd",java developer
+3389,"c#, python, tfs, jira",software engineer
+3391,"node.js, angular, node.js",java developer
+3397,"sql, etl, data analysis",data scientist
+3401,"c, c++, c#, visual studio",software engineer
+3409,"java, restful web services, azure",java developer
+3430,"agile, angularjs, c#, database, development, edi, http, java, microstrategy, mobile development, mongodb, qa, security, supply chain",java developer
+3464,"java, html5, javascript, css",software engineer
+3466,jms,java developer
+3484,stored procedures,data scientist
+3496,"java ee, ejb, jsf",java developer
+3509,"r, python, spss, sas",data scientist
+3590,"cisco, development, excel, hardware, oracle, powerpoint, sun, technician, unix, windows",data scientist
+3601,"core java, weblogic, j2ee, oracle, sql",java developer
+3623,".net, agile, analysis, asp, asp.net, c#, change management, development, java, lifecycle, management, project management, scrum, sql, sql server, telecom, vb, windows, xml",software engineer
+3636,"soap, servlets, json, xml",software engineer
+3643,"java, j2ee, ui",java developer
+3683,"java, j2ee, jsp, jsf, struts, junit, jpa, orm, sql, dhtml, ajax, html, servlets, xml, xsl, css, hibernate, linux, web services, jdbc",java developer
+3712,r,data scientist
+3780,"agile, apache, development, foundation, hadoop, java, management, python, release, ruby, solr",software engineer
+3786,".net, asp, asp.net, c#, crystal reports, css, development, javascript, oracle, sql, sql server, vb, windows, xml",software engineer
+3800,"java, angular js, web services, agile, j2ee, rest, spring , spring boot",java developer
+3802,"agile, development, javascript, lifecycle, management, ood, project management, ruby",software engineer
+3805,"java, hibernate, rest",java developer
+3807,"java, j2ee, struts, hibernate",java developer
+3828,"java, bigdata, scala, spark",data scientist
+3834,javascript,java developer
+3845,roid,software engineer
+3851,"java, linux, eclipse, sql",java developer
+3875,".net, analysis, architecture, asp, asp.net, c#, css, database, development, html, javascript, jquery, release, sql, sql server, visual basic",software engineer
+3879,"java, oop, sql, linux",java developer
+3882,"java, j2ee, oracle 12c",java developer
+3885,"java, java script, html5",java developer
+3886,"architecture, development, iterative, iterative development, java, management, qa",java developer
+3893,"java, html, css, scrum, agile, c#, nosql, git , java, html, css, scrum, agile, c#, nosql, git",software engineer
+3898,"spark, hadoop, python, mongodb, spark, hadoop, python, mongodb, sql",data scientist
+3906,"qt, matlab, 2d, 3d, c++, python",software engineer
+3912,"hadoop, nosql, xml",java developer
+3922,"algorithms, apache, cgi, css, database, development, git, html, http, ide, java, javascript, jenkins, libraries, linux, mongodb, mysql, mysql, nosql, oracle, security, soap, tdd, telecom, telecommunications, unix, xml",java developer
+3946,"javascript , j2ee",java developer
+3957,"java, javascript, j2ee, sql, java, javascript, j2ee, sql, apache",java developer
+3960,"agile, apache, development, foundation, hadoop, java, solr",software engineer
+3961,"java, angularjs, ui",java developer
+3992,hibernate,java developer
+4000,"java, restful, tdd",java developer
+4007,"cloud, agile, java, jvm, restful, sdlc, high availability, dr, replication, c#, c++, scala, go, clojure, apache, node.js, hbase, kafka, solr, aws, azure, heroku",software engineer
+4012,"degree, excel",data scientist
+4048,"java, agile, agile methodology, full stack",java developer
+4049,"java, oracle, unix, linux",java developer
+4056,"java, javascript",java developer
+4061,"roid, automotive, development, e, commerce, iterative, iterative development, java, oop",software engineer
+4062,"java, cloud, angular, degree",java developer
+4066,"java, c#, php, javascript, node, angular, react",software engineer
+4067,"agile, software development",software engineer
+4078,"java, j2ee, web services",java developer
+4084,".net, analysis, architecture, asp, database, development, hardware, http, isp, java, management, mysql, mysql, oracle, quality assurance, salesforce, siebel, sql, supervision, unix, validation, webmethods, windows",software engineer
+4111,"akka, kafka, storm, hadoop, sql, nosql",software engineer
+4114,".net, agile, asp, asp.net, automotive, css, development, e, commerce, html, http, iterative, iterative development, javascript, jquery, management, scrum, sql, sql server",software engineer
+4128,"java, c++, oracle, linux, websphere, jboss",java developer
+4142,"hive, pig, mysql, postgres, hadoop, mapreduce, spark, python, java, scala",data scientist
+4145,"java, hibernate, linux, jenkins, git",java developer
+4147,"degree, java, jsp, spring mvc",java developer
+4178,"ruby, javascript",software engineer
+4185,"power bi, azure, data warehouse, architect, microsoft, ssas, .net",data scientist
+4193,"java, angularjs, aws, google cloud",java developer
+4195,"java, nosql, hadoop, algorithms, akka",software engineer
+4218,"java , j2ee, restful services, mobile",java developer
+4222,"java, j2ee",java developer
+4227,"asp.net mvc, c#, javascript, web services, wcf",software engineer
+4245,"php, magento, apache, git",software engineer
+4247,restful services,java developer
+4256,"java, integration, system, performance",java developer
+4276,"angular, typescript, amazon web services, javascript",software engineer
+4325,"java, sql",java developer
+4328,"ejb, jsf, hibernate",java developer
+4330,"java, hadoop, cloud",java developer
+4331,"c++, windows, linux, c",software engineer
+4339,"core java, j2ee, soap, soa",java developer
+4340,"java, asp.net",software engineer
+4347,"java, aws, devops, ec2, cloud",software engineer
+4351,"sql, hive, python, r, tableau, excel, big data",data scientist
+4354,"java, spring mvc, web services, javascript",java developer
+4357,"java, microservices, aws, google cloud, apache, junit",java developer
+4361,"java, javascript, sql",java developer
+4362,"java, spring mvc, rest, javascript",java developer
+4364,"analysis, application servers, automotive, browsers, development, diagnostic, hardware, http, java, jenkins, linux, networks, security, tcp, ip, unix",software engineer
+4374,"java, development",java developer
+4378,a,data scientist
+4379,"javascript, mongo, angular, node, css3, html5",software engineer
+4381,"tableau, sql, design, development, application, software",data scientist
+4387,"java, perl, script, unix",java developer
+4402,"java, j2ee, html, css, jsp, struts, jsf, uml, ooad, multi, development, linux, web services",java developer
+4404,"software development, dev ops, devops, cloud, ruby, hadoop, java, c#",software engineer
+4424,"c, c++, real, mobile",software engineer
+4428,"java, j2ee, uml, struts, agile",java developer
+4431,"rails, ruby",software engineer
+4448,"sql, oracle, mysql, mongo db, unix, bash, perl, tcp, ip, snmp",software engineer
+4452,"java, angular js",java developer
+4461,"sql, xml, orm",java developer
+4462,"python, java, django, tomcat, apache",software engineer
+4469,"java, hibernate, web services",java developer
+4503,"h, hibernate",java developer
+4504,"data warehouse, etl, java, postgresql",data scientist
+4515,"linux, unix, junit",java developer
+4517,"java, full stack",java developer
+4536,"java, hibernate",java developer
+4561,"java, rest, apis, integration",java developer
+4573,"communication, microsoft, c#, asp.net, wcf, mvc, vb, web, javascript, css, html, ajax, ms sql server, tsql, sql, agile, saas",software engineer
+4596,"eclipse, java, jpa, json, hibernate, jdbc, svn, jboss, oracle",java developer
+4602,"java, javascript, html, css, jsp, struts, jsf, uml, ooad, web services",java developer
+4623,"agile, ajax, angularjs, bash, database, development, ejb, hardware, http, java, javascript, jquery, linux, management, mathematical, mysql, mysql, nosql, oracle, perl, python, scrum, security, unix, windows, wireless",software engineer
+4630,"architecture, development, http, java, physics, ruby, security",software engineer
+4641,"java, .net, j2ee, web services",java developer
+4642,"java, management",java developer
+4646,"agile, ajax, angularjs, application servers, css, database, development, html, java, javascript, jquery, libraries, management, object oriented design, oracle, scrum, soap, sql, ups, user interface, websphere",java developer
+4652,"analysis, analytical, analytical",data scientist
+4663,"agile, analysis, architecture, business requirements, cms, development, ejb, iterative, iterative development, j2ee, java, scrum, security, soap, sql, system architecture, uml, xml",java developer
+4670,".net, analysis, angularjs, asp, asp.net, c#, css, database, development, html, javascript, jquery, mobile application development, object oriented design, oop, xml",software engineer
+4672,"java, sql, oracle, sdlc",java developer
+4676,"agile, c#, development, http, security, unix, windows",software engineer
+4694,"analysis, roid, architecture, cryptography, development, encryption, http, ios, java, linux, mobile development, protocol, protocols, security, vmware, vpn, windows",software engineer
+4731,"agile, analysis, data analysis, database, development, http, lifecycle, management, oracle, qa, scrum, sql, statistical analysis, subversion",data scientist
+4741,"agile, analysis, development, hardware, http, ide, java, javascript, linux, mathematical, security",software engineer
+4746,"clearcase, database, development, git, j2ee, java, jenkins, lifecycle, middleware, oracle, shell script, sql, sql server, sybase, unix, xml",java developer
+4756,"struts, core java, spring mvc, hibernate , jsf, jsp",java developer
+4757,"agile, algorithm, algorithms, analysis, apache, development, fortran, git, java, jenkins, libraries, linux, management, mathematical, perl, physics, postgresql, protocols, python, scientific, scripts, shell script, soap, statistical analysis, svn, unix, validation, version control, web server, xml",data scientist
+4783,"java, j2ee, backend, oop, webservices",java developer
+4797,"c#, .net, java, javascript, xml",software engineer
+4802,"agile, analysis, api, architecture, assembly, c++, configuration management, development, embedded, embedded systems, firmware, hardware, http, java, linux, management, multi, threaded, protocols, python, risk management, source code, ux, windows, wireless",software engineer
+4810,"c++, opengl",software engineer
+4816,".net, asp, asp.net, c#, development, foundation, hardware, javascript, management, project management, sql, sql server, tcp, ip, version control, windows, xml",software engineer
+4826,ruby on rails,software engineer
+4829,"analysis, api, architecture, assembly, c++, development, embedded, embedded systems, firmware, hardware, http, java, linux, multi, threaded, protocols, python, source code, ux, windows, wireless",software engineer
+4838,"agile, ajax, angularjs, bash, database, development, ejb, hardware, http, java, javascript, jquery, linux, mathematical, mysql, mysql, nosql, oracle, perl, python, scrum, security, unix, windows, wireless",software engineer
+4858,"architecture, bash, ccna, hardware, it, linux, management, micro, network, performance, perl, protocol, protocols, python, quality, software, switches, system, systems, technician, unix",data scientist
+4859,"agile, j2ee, java, javascript, oracle, sql",java developer
+4871,"agile, architecture, development, java, mysql, mysql, sql",java developer
+4872,"analysis, architecture, development, hardware, j2ee, java, jenkins, jsp, middleware, oracle, plsql, soap, sql, wsdl, xml, xslt",java developer
+4874,"agile, ajax, c++, development, hardware, http, j2ee, java, javascript, linux, perl, security, soap, sql, windows, wireless, xml",software engineer
+4876,"agile, automated, configuration management, development, git, http, j2ee, java, javascript, management, oracle, sql, subversion",software engineer
+4882,"ajax, analysis, css, data analysis, development, dhtml, http, j2ee, java, javascript, linux, management, perl, security, solaris, sybase, unix, windows, xml, xslt",data scientist
+4891,"j2ee, junit, websphere, angular js, node js, reactjs",java developer
+4897,".net, agile, analytical",software engineer
+4910,"rmf, clearance",software engineer
+4937,"rest, services",java developer
+4951,"spring framework, struts, webservices, rest",java developer
+4954,"windows , oracle , active directory , windows , oracle , active directory",data scientist
+4969,"core java, hibernate, servlets, struts, jsp, jdbc, web services",java developer
+4999,"data science, big data, python, java, r, statistics, sql, hadoop",data scientist
+5000,".net, sql server, agile",software engineer
+5006,"tools, ansible",software engineer
+5011,development,software engineer
+5020,"dynatrace, splunk, nagios, restful web services",java developer
+5022,"java, web services, html, javascript, jquery",java developer
+5039,"java, javascript, j2ee, ejb, xml, web services, soa, rest , html, hibernate, struts",java developer
+5052,"mysql, javascript, ajax, html, css , xml",software engineer
+5054,"java, j2ee, orm, hibernate, jpa, junit",java developer
+5058,"automated, cisco, ios, linux, networks, perl, python, routers",software engineer
+5060,"java, javascript, j2ee, rest apis, jpa, jdbc, oracle, t, sql, hibernate, scrum",java developer
+5078,"ajax, angularjs, cisco, content management, css, development, git, javascript, libraries, management, micro, scrum, source code, ux, video",software engineer
+5094,"java, web",software engineer
+5114,"soap, jms, maven, jenkins",java developer
+5119,"big data, hbase, scala, cass, ra, java",data scientist
+5123,"ms excel, vba, ms excel",java developer
+5133,"secret clearance, sql, oracle, javascript",java developer
+5141,"java, j2ee, jee, hibernate, jdbc, web services, restful apis, core java",java developer
+5146,"linux, qnx, software design",software engineer
+5160,"core java, j2ee, spring boot, json, jax, linux, maven, groovy, git, sql, oracle, junit, tomcat, websphere",java developer
+5180,backbone,java developer
+5193,"html, css, javascript, java, hibernate",java developer
+5211,"bachelors degree, java, j2ee, hibernate, struts, webservices",java developer
+5216,"etl, data steward, ecc",data scientist
+5217,"agile, algorithms, c++, cisco, development, ethernet, excel, firewall, hardware, python, security, vpn",software engineer
+5239,"agile, javascript, oracle",java developer
+5242,"algorithms, e, commerce, j2ee, java, javascript, jquery, mongodb, mysql, mysql, ood, oop",software engineer
+5245,"c#, development, hadoop, java, oracle, sql",java developer
+5256,"network security, authentication, cryptography",data scientist
+5260,"analysis, database, development, hudson, java, jenkins, linux, ood, oracle, subversion, unix",java developer
+5262,"analysis, automated, business requirements, c#, database, genetic, libraries, management, security, sql, sql server",software engineer
+5280,"agile, architecture, automated, development, encryption, j2ee, java, libraries, linux, object oriented design, oracle, security, unix",java developer
+5287,"sas, sql, sas, sql, spss",data scientist
+5297,"analysis, api, development, python, release, scrum, security",software engineer
+5334,"core java, ficial, algorithm",java developer
+5335,"algorithms, e, commerce, j2ee, java, javascript, jquery, lifecycle, mongodb, mysql, mysql, ood, oop",software engineer
+5346,"algorithms, e, commerce, j2ee, java, javascript, jquery, mongodb, mysql, mysql, ood, oop, sales",software engineer
+5357,java,data scientist
+5372,"sdlc, agile",software engineer
+5387,"java, j2ee, jdbc, jsp, jsf, ajax, json, javascript , java, j2ee, jdbc, jsp, jsf, ajax, json, javascript",java developer
+5392,"analysis, architecture, development, java, javascript, lifecycle, management, materials, middleware, peoplesoft, sdlc, sql, test plan, video, xml",software engineer
+5393,"algorithms, development, e, commerce, j2ee, java, javascript, jquery, mongodb, mysql, mysql, ood, oop",software engineer
+5401,"oracle, mysql, postgresql, nosql, soa, microservices, agile, oracle, mysql, postgresql, nosql, soa, microservices, agile, scrum",software engineer
+5409,"software development, net, c#, sql server, asp.net mvc, wcf, uml",software engineer
+5416,"analysis, angularjs, architecture, automated, css, database, development, genetic, hardware, html, java, javascript, jquery, management, pl, sql, quality assurance, scientific, security, sql",software engineer
+5423,"java, java ee, servlets, jsp, jsf, jdbc, jms, junit, maven, hibernate, subversion, soap, xml, pl, sql, spring framework",java developer
+5424,".net, asp.net, mvc",software engineer
+5429,"agile, analysis, architecture, automated, css, database, data collection, development, genetic, git, html, java, pl, sql, scientific, scrum, sdlc, soap, sql, svn",software engineer
+5440,"java, web services, apache, javascript, css, html, web services, apache, javascript, css, html, sql server",java developer
+5441,"apache, git, j2ee, java, jdbc, libraries, linux, oracle, sql, svn, tibco, uml, windows",java developer
+5444,"analysis, bash, database, development, git, j2ee, java, jdbc, jenkins, linux, oracle, sql, svn, unix, windows",java developer
+5452,"java, sql, mysql, git, linux , java, sql, mysql, git, linux",java developer
+5472,"agile, apache, c#, development, hadoop, hudson, iterative, iterative development, java, jenkins, libraries, nosql, oracle, python, sql, sql server, tdd",software engineer
+5481,".net, asp, asp.net, c#, development, sql, sql server",software engineer
+5498,"algorithms, architecture, mysql, mysql, ruby, sql",software engineer
+5514,"c#, c++, python, .net, opengl, wcf, mvc, mvvm, html, javascript, linux, windows, c++, python, .net, opengl, wcf, mvc, mvvm, html, javascript, linux, windows, data",software engineer
+5515,".net, asp, asp.net, css, database, development, genetic, html, javascript, management, sql",software engineer
+5528,"java, ejb, html",java developer
+5530,"agile, analytical",software engineer
+5544,"agile, apache, automated, development, j2ee, java, jdbc, metrics, sql, tibco",java developer
+5549,"agile, analysis, angularjs, architecture, automated, css, database, data collection, development, genetic, html, java, javascript, jquery, pl, sql, scientific, scripts, soap, sql",software engineer
+5551,"analysis, roid, automated, css, development, genetic, html, java, javascript, jquery, management, mobile application development, pc, scripts, soap, user interface",software engineer
+5552,ood,software engineer
+5558,"analysis, architecture, database, db2, development, ejb, j2ee, java, jsp, management, oracle, shell script, sql, sybase, uml, unix, xml",java developer
+5559,"analysis, db2, genetic, html, java, javascript, linux, management, security, sql, unix, xml, xsl",software engineer
+5561,"business requirements, database, development, genetic, iso, management, qa, sei, sql, sql server, xml",software engineer
+5565,"sql, ms sql server, java , hadoop, restful web services, j2ee, hibernate",data scientist
+5573,".net, agile, architecture, development, e, commerce, mongodb, scrum, sql, sql server, xml",software engineer
+5604,"python, c, c++, security, apache spark, kafka, elasticsearch, python, c, c++, security, apache spark, kafka, elasticsearch, mongodb",data scientist
+5605,"java, j2ee",java developer
+5608,"c#, .net, azure, angularjs, scalability, .net, azure, angularjs, scalability",software engineer
+5611,".net, sql, wpf, c# , .net, sql, wpf, c#",software engineer
+5637,"distributed systems, sql, nosql, sql, nosql",software engineer
+5643,"jvm, clojure, aws, ci",software engineer
+5650,"javascript, r, javascript, r",data scientist
+5653,"java, scala, sql, nosql, algorithms, python, cass, ra, hadoop, rest , java, scala, sql, nosql, algorithms, python, cass, ra, hadoop, rest",software engineer
+5655,"agile, analysis, angularjs, automated, css, development, html, javascript, jquery, scientific, scripts, sql",software engineer
+5678,"object oriented design, ruby, c++, java, c#, mysql, nosql, mongodb, cass, ra, ruby, c++, java, c#, mysql, nosql, mongodb, cass, ra, linux",software engineer
+5688,"java, j2ee, hibernate, mysql, html5, javascript, css3, web , java, j2ee, hibernate, mysql, html5, javascript, css3, web",java developer
+5689,"node.js, angular, c, c++, linux, postgresql, embedded systems, aws, gcp, node.js, angular, c, c++, linux, postgresql, embedded systems, aws, gcp, etc.",software engineer
+5691,"javascript, reactjs, bootstrap, linux , javascript, reactjs, bootstrap, linux",software engineer
+5703,"angular.js, jquery, javascript, karma, restful apis, css3, ajax, aws, python , angular.js, jquery, javascript, karma, restful apis, css3, ajax, aws, python",software engineer
+5704,"clojure, java, c++, relational databases, sql, clojure, java, c++, relational databases, sql, mongodb",software engineer
+5712,"windows, c#, c, c++, oop, ood, kernel, c#, c, c++, oop, ood, kernel",software engineer
+5723,"java, c++, java, c++, oop",software engineer
+5732,"python, golang, golang, open source",software engineer
+5737,"java, xml, j2ee, java, xml, j2ee, rdbms",java developer
+5757,"agile, architecture, automated, development, encryption, j2ee, java, libraries, linux, object oriented design, oracle, quality assurance, security, unix",java developer
+5828,"agile, angularjs, api, development, java, javascript",software engineer
+5830,"analysis, architecture, cissp, linux, management, mcse, security, supervision, unix, ups",data scientist
+5838,"analysis, automated, business intelligence, business objects, change management, database, development, edi, help desk, informatica, lifecycle, management, qa, release, shell script, sql, sql server, tivoli, windows",data scientist
+5857,"contract independent, contract w2",java developer
+5860,".net, agile, architecture, asp, asp.net, automated, development, javascript, jquery, scrum, sql, supply chain, vb",software engineer
+5866,"automated, development, java, test plan",software engineer
+5882,"design, mathematics, computer science, information technology",data scientist
+5883,"api, embedded, git, linux, mongodb, nosql, oop, sql, sql server, svn",software engineer
+5884,"agile, architecture, development, python",data scientist
+5920,"data management, data goverce, data architecture, data quality, data analysis, agile, leadership",data scientist
+5928,"cass, mariadb",java developer
+5942,"core java, j2ee, struts, jquery, sql server, oracle, jboss",java developer
+5955,"java, xml",java developer
+5963,"c#, vb.net, mvc",software engineer
+5971,"java, h",java developer
+5984,"java, j2ee, mysql",java developer
+5988,"java, jsp, jquery, spring mvc, web services, pl, sql, jms, jquery",java developer
+6023,"etl, sql, python",java developer
+6030,software development,software engineer
+6031,business intelligence,software engineer
+6035,java,java developer
+6038,"html , css , jquery , ajax , json , javascript , spring , windows , linux",java developer
+6056,"java, soa, hibernate",java developer
+6059,python,data scientist
+6065,"configuration, design",data scientist
+6073,"cass, ra, microsoft, ibm, oracle",data scientist
+6077,"core, java, computer science, data structures",java developer
+6087,"java, sql, perl, python",java developer
+6089,"java, j2ee, html5, css3, ui, ux",java developer
+6101,"database, sql, perl, unix, linux, etl, data warehouse",data scientist
+6124,"java, j2ee, mvc, rest, maven, jenkins",java developer
+6129,"php, css",software engineer
+6158,"system architecture, algorithms, c++",software engineer
+6163,big data,data scientist
+6166,"c, c++, sql",data scientist
+6167,java,software engineer
+6170,"java , j2ee, rest web services, security , saml",java developer
+6171,"java , spring , sql , json , integration",java developer
+6182,"java, ficial, angular js",java developer
+6192,core java,java developer
+6208,sql,data scientist
+6217,"restful, web services, angular.js, html, css, jsp",java developer
+6261,"java, j2ee, websphere",java developer
+6266,"java, jee, oracle, html, agile, support, hibernate, struts, servlets, sql",java developer
+6306,"big data, etl, informatica, unix, architect, business intelligence, sql, oracle, mysql, erwin",data scientist
+6315,"oracle, sql, microsoft ssas, java, j2ee, git, mvc framework, eclipse",software engineer
+6322,"core java, hibernate, soap, rest, jax, ws, mq, perl, sybase",java developer
+6324,"java, j2ee, restful",java developer
+6325,"java, linux, jsp, servlets",java developer
+6345,"web application, j2ee, rest api, mysql, angular, node js",java developer
+6360,pharmaceutical,data scientist
+6398,"apache, tomcat, software development",java developer
+6415,"cmdb, python, data visualization, qlikview, tableau",data scientist
+6424,"java, j2ee, restful, tomcat, jboss, spring mvc",software engineer
+6426,"java, distributed systems, agile, risk",java developer
+6427,"javascript , java , c++ , c , css , html5",software engineer
+6446,"java , j2ee, sql",java developer
+6480,node.js,software engineer
+6498,"aws, java",java developer
+6547,".net, c#",software engineer
+6553,"sas, r, spss, python, matlab, javascript, teradata, oracle, hadoop, mapreduce, spark, storm, yarn, kafka, sqoop, hive, scala, c#",data scientist
+6556,"elastic search, solr, java",software engineer
+6592,contract w2,software engineer
+6604,"java, mysql, sql server, soap , rest",java developer
+6624,"analytical, architecture, automated, development, it, java, javascript, jsp, oracle, quality, software, sql, sql server, test",software engineer
+6633,"java, j2ee",software engineer
+6636,contract w2,java developer
+6665,"analysis, architecture, database, development, j2ee, java, network, python, software, sql, web",java developer
+6669,core java,java developer
+6673,"application, applications, configuration management, development, linux, management, python, release, software, systems, unix, web",software engineer
+6676,contract w2,data scientist
+6704,"spring , software design",software engineer
+6726,"sql, etl",data scientist
+6729,"business requirements, technician",data scientist
+6736,"application, applications, basic, development, engineers, java, javascript, management, performance, php, quality, sdlc, security, software, system, web",software engineer
+6742,"api development, ui development",java developer
+6762,".net, roid, asp, asp.net, database, development, ios, javascript, libraries, mobile development, oracle, rational",software engineer
+6779,"maven, eclipse, git, sql, angular js, jquery, azure, aws, mysql, hadoop, oracle, java, jvm",java developer
+6802,"c++, embedded, java",software engineer
+6809,"agile, development, git, hadoop, j2ee, java, linux, protocol, protocols, python, security",software engineer
+6815,"java, j2ee, front end, web services, xml, http, wsdl, ajax, json, jquery",java developer
+6825,"core java, java, hibernate, rest web services",java developer
+6828,algorithms,data scientist
+6832,"business requirements, data warehouse, development, hadoop, http, sql",software engineer
+6835,"roid, css, development, encryption, java, javascript, security",software engineer
+6843,".net, c#, java, asp.net, wcf, web api",software engineer
+6845,"development, http",software engineer
+6850,"algorithms, foundation, http",software engineer
+6853,"analysis, development, http, java, python, sql",data scientist
+6857,"java, portal, api",java developer
+6859,design,software engineer
+6861,"apache, development, foundation, hadoop, http, java, nosql",software engineer
+6866,"analysis, apache, architecture, bash, change management, configuration management, database, http, java, linux, management, metrics, mysql, mysql, nosql, perl, php, postgresql, python, release, security, sql, system architecture, ups",software engineer
+6872,"algorithms, analysis, architecture, c++, c , c++, http, python",software engineer
+6873,"roid, http, ios, lifecycle, oop, protocol, tcp, ip",software engineer
+6877,"api, architecture, database, http, lifecycle, sms, ups",software engineer
+6883,"architecture, business requirements, development, http, java, linux, nosql, protocol, protocols, python, tcp, ip",software engineer
+6890,"roid, css, http, java, javascript",software engineer
+6893,"http, jquery, mysql, mysql, python",software engineer
+6901,"business requirements, development, http",software engineer
+6912,"java, restful, sql, unix, xml, kafka",software engineer
+6915,"customer service, development, foundation, http, metrics, python, salesforce",data scientist
+6916,"analysis, architecture, database, foundation, http, python, sql",software engineer
+6917,"http, java, jenkins",software engineer
+6918,"roid, automated, development, http, ios, libraries",software engineer
+6924,"qa, python, c++",software engineer
+6949,"algorithms, apache, architecture, data collection, development, hadoop, http, java, python",software engineer
+6951,"roid, development, foundation, http, ios, mobile development",software engineer
+6953,"relational database, nosql, mongodb, hbase, hive, splunk, hadoop, storm, big data, powershell, python, bash, pig, configuration, ansible, git, svn, aws, devops, c#, .net",data scientist
+6965,"development, http, jenkins, perl, release",software engineer
+6973,"statistics, python",data scientist
+6975,"browsers, css, development, encryption, html, javascript, libraries, security",software engineer
+6981,"development, http, security",software engineer
+6996,"java development, application support, production support, dynatrace, splunk",java developer
+7020,"rest, aws",java developer
+7037,"tad pgs, reliable",java developer
+7038,"angular js, jquery, javascript",software engineer
+7039,"core java, big data, spark, agile",java developer
+7047,"scm, linux, maven, agile",software engineer
+7101,"java, c++, perl, sql, unix, linux",software engineer
+7105,"struts, javascript, css, pl, sql, .net, c#, etc.",java developer
+7123,"java, xml",software engineer
+7145,"hibernate, jpa, eclipse, scrum",java developer
+7149,"r, pl, sql, sql",data scientist
+7151,"php, html, css",software engineer
+7166,"java, cass, ra, cloud, aws",java developer
+7172,"java, ruby on rails, django, nosql, sql",software engineer
+7175,"core java, xml",software engineer
+7183,"core java, webservices, oracle, pl, sql",java developer
+7188,"asp.net, c#, xml, application development",software engineer
+7190,"java, j2ee, sql, oracle",java developer
+7194,"python, r, matlab, spark, java, c++, python, r, matlab, spark, java, c++",data scientist
+7211,"javascript, css3, angular, css3, angular",software engineer
+7218,"tcp, ip, sdn, rest, kernel, tcp, ip, sdn, rest, kernel, ospf",software engineer
+7229,"cloud, kubernetes, api, web services, aws, openstack, python",software engineer
+7230,"j2ee, agile, aws",java developer
+7231,"java, j2ee, struts, esb, design patterns, uml, oop, oracle, tibco, web services, agile",java developer
+7241,"java, j2ee, oracle, sql, maven, sso",java developer
+7246,ra,software engineer
+7261,"java, ui design",java developer
+7267,"aws, amazon, mongodb, cass, mariadb",java developer
+7269,"windows, sql, server, tfs, .net",software engineer
+7270,"j2ee, jsp, html, xml, xsl, css, sql, pl, sql, unix",java developer
+7271,"analysis, r, python, matlab, java, c, c++, c#, scala",data scientist
+7280,"java, hibernate, mvc, healthcare, webservices, postgresql, unix, linux, jsp, ejb, 2",java developer
+7296,"java, tomcat, eclipse, js, html, css, angular, oracle, pl, sql, c, unix",java developer
+7307,"java, j2ee, analytics, jboss, linux",java developer
+7320,"java, oracle, fice, payments, rest, soap, xml, json, kafka, jms",java developer
+7334,"jsp, angularjs, json, jms, json, rest, xml, soap, rest, jsf, angularjs, javascript",java developer
+7353,"java, chef, puppet, nosql",java developer
+7360,"java , j2ee, jsp, soap, xml, json , oracle pl, sql",java developer
+7363,"java, c, c++ , apis",software engineer
+7371,"c++, algorithms",software engineer
+7378,"big data, hadoop, java, j2ee, scala",data scientist
+7383,java,software engineer
+7385,"python, ada, embedded, c, c++, ethernet",software engineer
+7388,c++,software engineer
+7395,"java, ms access, ruby",java developer
+7402,"middleware, agile, ci, cd, micro services",java developer
+7414,"java, j2ee, design, fullstack, backend",java developer
+7450,"javascript, restful, jquery",software engineer
+7460,"rest, jsf, angularjs, javascript, css, ajax, jsf, angularjs, jquery, css, javascript, json",java developer
+7470,"java, rest, webservices, sql, javascript, html",java developer
+7473,"java, ui, maven, javascript, jquery, spring mvc, hibernate, tomcat",java developer
+7478,sql,data scientist
+7482,data collection,software engineer
+7491,"java, c, sql, oracle, j2ee, sap, unix",software engineer
+7495,"c#, asp.net, sql",software engineer
+7496,"roid, ios, mobile",software engineer
+7502,"jms, restful services, linux",java developer
+7508,"java, saas, soa, oop, unix",software engineer
+7528,"rest, web, node.js, web services, css3, ajax, javascript, html5, xml , rdbms, orm, web services",software engineer
+7530,"openstack, linux, agile , soa, spring framework, java, python , linux",software engineer
+7545,"core java, java, .net, c#, asp.net, j2ee, oracle, sql, sql queries, stored procedures, pl, sql, unix",java developer
+7559,"c++, unix, linux, java, javascript, snmp",software engineer
+7561,"java, struts, xml, html, css, javascript, jquery, ajax, angular, backbone",java developer
+7565,"java, j2ee, subversion, maven, spring mvc, linux, soap, jms, rest",java developer
+7616,"java, spring boot",java developer
+7625,"java , python , javascript , maven, jenkins, git",java developer
+7627,"java, j2ee, struts",java developer
+7650,"apache tomcat, websphere",java developer
+7659,"core java, j2ee, aws, nosql, microservices, mongodb",java developer
+7661,"j2ee, jsp, struts, jboss, mvc, hibernate, html, css, ajax, xml, web service, jdbc",java developer
+7676,"java, javascript, jee, hibernate",java developer
+7677,"software development, c, c++, unix, linux, ruby, python, network security, firewalls, application",software engineer
+7680,"java, agile, javascript, angular js",java developer
+7703,"sql, html5",java developer
+7704,"extjs, web services, api, ficial services, asset management, algorithms",java developer
+7722,"java, unix, oo, agile",java developer
+7727,"java , rest , microservices",java developer
+7733,"java, soap , mvc, jdbc, json, hibernate",java developer
+7735,"java, oracle, sql , xml",java developer
+7805,"rdbms, git, unix, python, continuous delivery",software engineer
+7834,code,software engineer
+7844,"sql queries, stored procedures, triggers, migration, requirements",data scientist
+7854,"spring mvc, software development",java developer
+7871,"java , javascript , linux",software engineer
+7884,"groovy, web services, api, ficial services, backend development",java developer
+7892,"c, c++, sql, python",software engineer
+7897,"java development, cass, ra, nosql, j2ee, hibernate, algorithm, restful api",java developer
+7898,dos,software engineer
+7912,"java, j2ee, struts, jquery",java developer
+7920,"html5, css3, jquery, backbonejs",java developer
+7924,sql,java developer
+7934,"java, tibco, mq, tomcat, weblogic, jboss",java developer
+7949,"java, j2ee, jms, unix, linux, sql, restful web services, microservices",java developer
+7954,"c#, javascript, html, css, asp.net, silverlight",software engineer
+7962,"c++, linux , hadoop",software engineer
+7964,"etl, datastage, pl, sql, unix, teradata, dba",data scientist
+7967,"java, j2ee, spring mvc",java developer
+7969,"java, j2ee, struts, esb",java developer
+7988,"java, jira, sql, nosql, rest, json, xml, confluence, bamboo, bitbucket, git",java developer
+7993,"linux, stig",software engineer
+8002,"java, j2ee, aws, amazon web services, elastic search, ec2, web services, struts, hibernate, angular js, jquery, oracle sql, pl, sql",java developer
+8004,"automation, java, rest web services",java developer
+8006,"j2ee, hibernate, jpa, orm, sql",java developer
+8008,computer science,data scientist
+8027,"agile, roid, ansi, development, genetic, java, management, networks, security, wireless",software engineer
+8031,"software, it, information technology, java",java developer
+8054,"hibernate, javascript, rest",java developer
+8062,"java, c#, media",software engineer
+8086,hmi,software engineer
+8131,"data science, analytics",software engineer
+8133,"agile, architecture, c++, development, matlab",software engineer
+8136,"servlet, struts, jpa, sybase, spring mvc",java developer
+8138,"java, j2ee, pm, ecommerce, sql, angularjs",java developer
+8139,"agile, c#, .net, sql server, mysql, react, angularjs, devops, vmware, javascript",software engineer
+8140,"analysis, c++, development, library, matlab",software engineer
+8143,"c++, development, matlab",software engineer
+8145,"agile, bash, cisco, configuration management, development, java, javascript, jenkins, linux, management, python, ruby, security, unix, video",software engineer
+8147,"agile, css, development, javascript",software engineer
+8176,"analysis, analytical",software engineer
+8182,"java, python",software engineer
+8195,"hadoop, hive, pig",data scientist
+8205,"hadoop, unix, linux, java",data scientist
+8221,"java, solr, elastic search, micro services, sql, hibernate, angular js, css, jdbc, karma",java developer
+8222,"sql, oracle, unix, linux, ftp, https, jira, php, python",data scientist
+8233,"java, css, web services, rest api, hibernate, maven, html, java script, java ee, jms, xml, xsl, webservices",java developer
+8240,"java, unix, perl, shell, sql",java developer
+8245,"ccar, analytical, analysis",java developer
+8292,"java, hibernate, apache tomcat",java developer
+8305,"java development, java, j2ee",java developer
+8316,"api, digital, agile",software engineer
+8319,"java, ruby on rails, javascript, css3, html5, jenkins, cloud foundry, openstack, selenium",software engineer
+8333,rest,java developer
+8342,".net, agile, analysis, angularjs, architecture, asp, asp.net, content management, css, development, html, javascript, jquery, lifecycle, management, multi, threaded, scrum, sql, sql server, windows",software engineer
+8362,"java, j2ee, sql, rest api",java developer
+8397,"java, fice",java developer
+8409,"j2ee, java, hibernate, soap, rest, jms, jax, j2ee, java, hibernate, soap, rest, jms, jax",java developer
+8420,"agile, architecture, automated, cisco, development, java, linux, networks, protocols, python, scrum, sdlc, security, tcp, ip, video, vmware",software engineer
+8425,"oop, java, j2ee, spring mvc, rest, api, jax, amqp, data structures, oop, java, j2ee, spring mvc, rest, api, jax, amqp, data structures, algorithms",java developer
+8439,"ficial, aml, javascript, node.js, aml, javascript, node.js",software engineer
+8444,"j2ee, ejb, jms, mq, struts",java developer
+8450,"c, dsp, pre, perl, linux, on",software engineer
+8453,"development, game, hardware, software",software engineer
+8455,"mongo db, java",java developer
+8462,"scala, akka, kafka, cass, ra, jenkins",software engineer
+8463,"analysis, bluetooth, case, development, embedded, ethernet, graphics, hardware, linux, management, test plan, unix, video, windows",software engineer
+8474,"jdbc, jsp, spring mvc, sql",java developer
+8486,"asp, c#",software engineer
+8504,"nodejs, html5, css3, jquery, bootstrap, angular.js, oauth, rest, json, xml",java developer
+8506,"java, php, javascript, full, stack",software engineer
+8523,"j2ee, hibernate , web services",java developer
+8542,"java, api, rest, testng, junit, selenium, http, automation, qa, test",software engineer
+8558,"java , j2ee, automation",java developer
+8596,"c#, big data",software engineer
+8598,"java, c#, .net, linux, z, j2ee, agile, software",software engineer
+8600,"big data, hadoop",data scientist
+8615,performance management,data scientist
+8618,"c#, oop, objective",software engineer
+8620,java ee,java developer
+8635,"java, hibernate, rest, soap, javascript, mvc, webservices, soa",java developer
+8640,"amazon web services, azure, google cloud, java, scala, python, ruby, javascript, nosql, test automation, continuous integration",software engineer
+8650,"c#, php, node",software engineer
+8651,"java, asp.net, c#.net, production support",java developer
+8664,"java, full, stack, web application, soa, apache tomcat, soap, test cases, jax, jax, ws, rest, junit, mysql, html, css, json",java developer
+8675,"java, j2ee, ejb, hibernate, sql, oracle",java developer
+8679,"javascript, node.js, mongodb, hibernate, cass, ra, apache spark, kafka, agile, microservices, java, java",software engineer
+8703,"java, development, trading systems, javascript",java developer
+8704,"c#, asp.net, mvc",software engineer
+8708,"java, elastic search",java developer
+8711,"c, c++, java",software engineer
+8717,"jquery, java, web services, db2, junit, sql, maven",java developer
+8730,"javascript, restful api",software engineer
+8732,"javascript, react",software engineer
+8742,"core java, soa, mongo db, restful, web services, j2ee, git",java developer
+8749,"java, j2ee , spring framework",java developer
+8750,"java, j2ee , web services",java developer
+8753,"java, j2ee, hibernate",software engineer
+8766,"analytics, cloud, java, microservices, distributed systems",software engineer
+8780,"c, c++",software engineer
+8781,"java, j2ee, javascript, jdbc, jsp",java developer
+8788,"ssas, ssrs",software engineer
+8791,"java script, j2ee, angular js, webservices, restful api, soap, struts",java developer
+8797,"degree, java, linux, restful",java developer
+8808,"core java, struts, unix, perl, javascript",java developer
+8815,sql,software engineer
+8825,"hadoop, java, kafka",java developer
+8833,"xml, core java, linux, unix, python , shell",java developer
+8838,"java, python, hadoop",software engineer
+8861,"degree, java, maven, jquery, web services",java developer
+8862,"core java, j2ee , jsp, servlet, javascript, css",java developer
+8868,"linux , security , j2ee , web services",software engineer
+8871,"java , hibernate , mysql",java developer
+8889,"java, j2ee, jsp, jboss, struts, git",java developer
+8893,"hadoop, scala, kafka, cass, ra",software engineer
+8900,"sql, jdbc, web services, struts, unix, linux",java developer
+8907,"java, mongodb, restful web services, apis",java developer
+8914,"java, j2ee, json, hibernate",software engineer
+8926,"mdm, pl, sql, unix, data visualization",data scientist
+8929,microsoft sql server,data scientist
+8933,"java, lean",java developer
+8957,"java, c#, python, visual basic, framework, angularjs, bootstrap, agile",software engineer
+8963,"java, sql",java developer
+8968,db2,java developer
+8980,"java, junit, oracle, mysql",software engineer
+8982,"perl, mysql, php, json",software engineer
+8989,"java, j2ee, junit, tomcat, struts, product, compliance",java developer
+9013,"java, sql, angular",java developer
+9014,restful,java developer
+9018,"java, spring mvc",java developer
+9019,"java, agile, rest",java developer
+9027,"core java, hibernate, design patterns",java developer
+9032,"c# , sql",software engineer
+9034,"excel, sql",data scientist
+9058,"2, core java, web services, jboss",java developer
+9060,sso,java developer
+9063,"cloud, aws, python",software engineer
+9066,"java, j2ee, soa, web service, jpa, hibernate, sql queries, rsa",java developer
+9073,"architecture, qa, deployment, orm, hibernate",java developer
+9077,"angularjs, jquery, json, javascript, jboss, websphere, ejb, servlet, jsp",java developer
+9085,"java, web applications, javascript, css, html",software engineer
+9092,"db2, oracle, nosql",software engineer
+9110,"java, nosql, rest api, distributed systems, microservices",software engineer
+9111,"java, database",java developer
+9120,"java, lead",software engineer
+9121,"java, jboss, restful, soa, agile, apis",java developer
+9124,"java, c++, c#, sql",software engineer
+9126,"javascript, html5, design",java developer
+9139,"struts, ejb, web service, svn, sdlc, javascript, node.js, angular",java developer
+9164,"html5, javascript, css3, jquery, bootstrap, angular.js, hybris, dem",java developer
+9166,"degree, nosql",software engineer
+9167,".net, c#, mvc, nodejs, angularjs, bootstrap",software engineer
+9169,"facets, scrum, kanban, healthcare, devops, dev ops, ap",software engineer
+9175,"java, hibernate, struts, jdbc",java developer
+9181,embedded software,software engineer
+9202,"sql server, postgresql, ruby, css, javascript",software engineer
+9205,"java, sql, hibernate, eclipse, javascript",java developer
+9207,core java,java developer
+9208,"java, micro services, swift, angularjs, mq, javascript, analytics, cloud, security",java developer
+9247,.net,software engineer
+9260,"java, react, node, jenkins, hudson",java developer
+9263,"front, end, back, end, javascript, angular.js, rest",java developer
+9273,"java, sql, apache tomcat",java developer
+9279,".net, c#, wpf, c++",software engineer
+9280,"agile, architecture, c#, database, development, http, j2ee, java, jsp, management, mongodb, nosql, oracle, qa, sql, sql server, windows",software engineer
+9281,sql,java developer
+9283,"java, nosql, restful api",software engineer
+9291,"java, github",java developer
+9297,"core java, collections",java developer
+9300,"html5, css, javascript, jquery, bootstrap, rest, json, angular, mvc, soa, oop, php, laravel, architecture, scrum, sdlc, linux, subversion, github, mysql, replication, high availability, aws, apache, https, nginx",software engineer
+9302,"data analytics, sas, sql",data scientist
+9314,"apache tomcat, oracle, css, javascript, etc",java developer
+9319,"java, j2ee, soap, angular",java developer
+9326,"java, angularjs, agile, javascript, restful, data architecture",software engineer
+9333,"java , hadoop , scala, spark, kafka, sql",java developer
+9336,"data warehouse, etl, big data, hadoop, hbase, hive, impala",data scientist
+9354,java,java developer
+9369,"javascript, html, css, ms sql server",software engineer
+9372,"c, c++, unix",software engineer
+9389,"html5, css3, javascript, jquery, entity framework, rest, sql database, asp.net",software engineer
+9392,"c#.net, asp.net, mvc, wcf, sql, javascript, html, css, xhtml, vb.net",software engineer
+9398,"java, hadoop, spark, nosql",software engineer
+9422,".net, c#, uml, software development",software engineer
+9444,"agile, javascript, angularjs, databases, java, j2ee",java developer
+9456,"postgres, javascript , bash, shell, python, perl, ruby, java, clojure, go",software engineer
+9459,"matlab, c, c++, c#",software engineer
+9469,"core java, oracle, struts, jdbc, jsp, javascript, java, j2ee, windows, algorithm",java developer
+9475,"linux, soap, j2ee, rest, stig, 2, ldap, ssl, kerberos, java, python, perl",software engineer
+9483,"java, j2ee, test, qa, quality assurance",software engineer
+9496,"java, big data, hadoop, angular js, python",software engineer
+9501,"java, junit",java developer
+9516,"c++, c#, object oriented design, sql, xml, uml",software engineer
+9517,"iot, java, scala, aws , cloud, javascript, api",java developer
+9518,"javascript , sql",java developer
+9525,"software development, javascript, ui",software engineer
+9528,"java, rest api, computer science",java developer
+9539,"apex, salesforce, software",software engineer
+9541,"ip, encryption, switches, routers",software engineer
+9549,"mysql, aws, java, design patterns, algorithms",java developer
+9555,"crm, erp, c#",software engineer
+9559,"bpm, javascript, .net",java developer
+9564,sql database,software engineer
+9573,"java, j2ee, ooad, sql, design patterns, hibernate, perl, unix, angularjs, node.js",java developer
+9574,"vmware esx, cisco",data scientist
+9578,"java, c++, linux",java developer
+9587,"java, java ee, servlets, jsp, jsf, jdbc, jms, junit, maven, hibernate, xml, xsd, pl, sql, spring framework",java developer
+9598,"java, big data, hadoop , jms",java developer
+9599,"java, weblogic, git, api",java developer
+9601,"java, api",java developer
+9614,"core java, spring framework, hibernate",java developer
+9624,"java, j2ee, javascript, microservices",java developer
+9638,"html, web services, computer science",software engineer
+9646,"c++, tcp, kernel",software engineer
+9659,"java, open source, ci, cd, devops",software engineer
+9663,"javascript, html, css, angular",software engineer
+9667,"data architecture, mdm, goverce, oracle pl, oracle sql, odi, etl, dba, oracle",data scientist
+9691,"javascript, nodejs, angularjs, mongodb, sql, c#",software engineer
+9692,"java, api, rest",java developer
+9695,"angularjs, java, javascript",java developer
+9746,"qa, software, automation",software engineer
+9754,"java, j2ee, servlets, hibernate, restful services",java developer
+9813,"java, java script, front end development, sdlc, agile",software engineer
+9824,"aws, java, hbase, scala, hive, map reduce, linux, unix",software engineer
+9826,".net , java , asp.net",java developer
+9831,"java, c++, c++, distributed systems",software engineer
+9833,"development , maven, java",software engineer
+9839,sql,software engineer
+9847,"etl, informatica, unix, aix, oracle, data warehouse, sql",data scientist
+9857,"sybase, crystal reports, sql",data scientist
+9861,"java, servlets, spring , javascript",java developer
+9897,"sql, r, python, sas, statistics, microsoft office, degree",data scientist
+9905,"selenium, java, automation, sas",data scientist
+9908,"javascript, web services, api, sql, html, css, angular, integration, web services, api, sql",software engineer
+9915,"hadoop, agile, rdbms, hibernate, git, java, big data",software engineer
+9916,"java, degree, ooad",java developer
+9922,"spark, scala",data scientist
+9924,"web development, javascript, html , css",software engineer
+9927,"java, hibernate, unix, linux, apache, tomcat, agile, aws, postgres, angular.js, etl, groovy",java developer
+9932,"java, j2ee, agile, hadoop, hbase, cass, ra, hibernate, junit, testng, spark, big data",software engineer
+9940,"javascript, angular.js, node.js, mysql, javascript, angular.js, node.js, mysql",software engineer
+9948,algorithms,data scientist
+9960,"java, j2ee, webservices",java developer
+9969,"t, sql, iis, web services",software engineer
+9974,"nosql, xml, json, java, restful",software engineer
+9987,"java, ruby, linux",software engineer
+9988,"software development, java, agile, healthcare, full",software engineer
+10009,"c# , .net , sql",software engineer
+10014,"c++, linux, exchange",software engineer
+10034,"api development, webservices, soap, rest",java developer
+10039,"c#, .net, javascript, agile, waterfall",software engineer
+10078,pmi,software engineer
+10082,"c#, optimization, tdd",software engineer
+10103,"java , hadoop, sql , oracle",java developer
+10128,"oracle, java, core java, web services, soap , rest",software engineer
+10143,"java, oracle, unix",java developer
+10144,"html5, javascript, ajax, angularjs, backbone.js, react.js, java, spring framework, jquery, linux, eclipse, maven, tomcat, mysql",software engineer
+10147,java,java developer
+10152,"java, struts, hibernate, mvc",java developer
+10153,"xml, jms, jax, ws",software engineer
+10190,"data science, python, r, sas, matlab, mssql, oracle, mysql, nosql, cass, ra, mongodb, splunk, solr, hadoop, s3",data scientist
+10195,".net, sql, c#",software engineer
+10200,"java, j2ee, sdlc, jsp, web services, eclipse, maven, git, jboss, tomcat",java developer
+10202,"core java, hibernate, web services, angularjs, jquery",java developer
+10203,"soa, hibernate, weblogic, rdbms",java developer
+10204,"apache, tomcat",java developer
+10206,"perl, matlab, fortran, linux, unix, windows",software engineer
+10212,"java, j2ee, sql, servlet, jsp, hibernate, mvc, ejb, oracle, struts, ide",java developer
+10219,hibernate,java developer
+10226,"php, ruby, devops, mysql, oracle, git, jenkins",software engineer
+10228,"python, ci, cd, hadoop, vertica, tableau, cass, ra, hdfs, kafka, aws",data scientist
+10235,"java, distributed systems, web services, ajax, jsf, hibernate, servlets, insurance",software engineer
+10248,"html5, css3, javascript, jquery, windows server, iis, .net, visual studio, c# , api, soap, sap, oracle, avaya, nortel, cisco, crm, erp, cloud, aws, microsoft azure",software engineer
+10257,"scala, java, clojure, elasticsearch, rabbitmq, storm, backbone.js, javascript, react, html5, css, oo, backend, fullstack",software engineer
+10259,"java, c#, ruby, python",software engineer
+10262,"javascript, java, c#, python , ruby",software engineer
+10264,"php, java, design patterns, linux",java developer
+10269,"java, j2ee",java developer
+10270,"c++, c#",java developer
+10287,"java, secret clearance",software engineer
+10302,"bi, authentication, authorization, audit, hbase, hortonworks, healthcare",data scientist
+10305,"java, hibernate, junit, angularjs, aws",java developer
+10324,"multi, asp.net, c#, web services, ms sql, jquery",software engineer
+10326,"jax, ws, jax",java developer
+10327,"javascript, hadoop, scala, aws, python",software engineer
+10340,"azure, google cloud platform, distributed systems, data storage, security, java, javascript, node.js, saas, enterprise",software engineer
+10347,"r, numpy, p, as, matlab, solr, elasticsearch",data scientist
+10359,"scala, clojure",data scientist
+10388,"java, restful web services, python, etl, git, mongo, sql",java developer
+10394,"agile, analysis, architecture, c++, development, javascript, linux, management, nosql, python, sql, unix",software engineer
+10402,"algorithms, java",software engineer
+10426,"java, linux, unix, oracle, sql, agile methodology",java developer
+10432,"java, restful web services",software engineer
+10436,"ssis, sql",data scientist
+10445,"java, j2ee, angular.js",java developer
+10455,"java, unix, linux, mysql",java developer
+10457,"restful, java, soap",java developer
+10513,"verification, real, s, device drivers",software engineer
+10517,"selenium, linux, xml, javascript",software engineer
+10534,"ethernet, user interface design",software engineer
+10539,"java , cass, ecommerce",software engineer
+10548,"core java, framework, mvc, struts",java developer
+10552,"fda, iso, software, qa, vb, c++, c#, gui, documentation, tfs",software engineer
+10565,"sql, forms, reports, java, framework, jsp, unix",software engineer
+10569,"malware, security, c++, ruby, python",software engineer
+10571,"bi, microstrategy, cognos",data scientist
+10577,"java, html, css, xml, sql, hibernate, junit, maven, hudson, oracle database, angular js, agile",java developer
+10585,"qa, c#, c++, linux, windows",software engineer
+10587,php,software engineer
+10588,"ios, iphone, objective, c",software engineer
+10589,"embedded, c++",software engineer
+10604,"python, r, matlab, r, perl, ruby, scala",data scientist
+10605,"full, stack",java developer
+10611,"sas, java, c++, c#, vb.net, python, perl, sql",data scientist
+10621,"java, oracle, sql, css",java developer
+10648,"java, oracle",java developer
+10668,"open source, microservices",software engineer
+10685,"node.js, redis, mysql",software engineer
+10692,"ooad, wcf, web api, mvc, asp.net, c#, web forms, jquery, angular.js, soa",software engineer
+10708,"javascript, html, css",software engineer
+10713,"html5, css3",software engineer
+10722,"javascript, python, c++, algorithms, ood, ooa, rest, linux, unix",software engineer
+10751,"server, xml",java developer
+10756,"python, java, coldfusion, mssql, postgresql, aws, ec2, s3, agile, ood, html5, css3, jquery, maven",software engineer
+10766,"c++, scrum, agile, object oriented design",software engineer
+10777,"java development, html, c#, .net",java developer
+10816,"java, restful services",java developer
+10825,"c, c++, windows, wpf",software engineer
+10828,"java, j2ee, rest, soap",java developer
+10857,"data integration, sql, excel, project management",data scientist
+10880,"java, full stack, angular, groovy",java developer
+10881,objective,software engineer
+10884,"windows 7, windows server 2008",software engineer
+10910,"java, linux",java developer
+10921,"java, j2ee , aws, json, java script, xml, rest, api, sql",java developer
+10922,"java, hibernate",java developer
+10936,"spring mvc, jpa, rest, soa, jpa",java developer
+10938,"core java, j2ee, hibernate, oracle, unix",java developer
+10943,c++,software engineer
+10950,ipv6,software engineer
+10952,"websphere, java, jdbc, sql",java developer
+10955,microstrategy,software engineer
+10972,"java, j2ee, sql, git",java developer
+11009,"sprint, soap, rest, j2ee, ssl, tls, ldap",software engineer
+11014,"jsp, struts, jdbc, web services, soap, uml, xml, rdbms, pl, sql",java developer
+11021,"java, solr, data storage",software engineer
+11024,"core java, linux",java developer
+11027,".net, ajax, architecture, asp, asp.net, css, customer service, dba, development, html, javascript, jquery, management, metrics, sdlc, sql, sql server, tdd, windows, xml",software engineer
+11053,"cloud, java, j2ee",software engineer
+11055,"java , scala",software engineer
+11062,"java, j2ee, togaf, web, oracle, db2, xml, sql, hibernate, web services, soa, eclipse, insurance, jsp, html, css, junit, struts, ajax",java developer
+11089,"c++, data structures, algorithms, object, unix, linux",software engineer
+11124,"mobile, xamarin, .net",software engineer
+11131,webapi,software engineer
+11138,"hibernate, unix, linux, agile, sql",java developer
+11140,"java, unix, sybase, ooa, ood, real, time, capital markets",java developer
+11142,"java, storm, kafka, cass, ra, jms, websphere, weblogic, jboss, jenkins, hudson, maven, github, svn, clearcase",software engineer
+11148,"sas, r, python, pig, hive, hadoop",data scientist
+11155,"c# , sql server",software engineer
+11162,"linux, python, tcp, ip, mysql, nosql, hadoop, open source",software engineer
+11166,security,software engineer
+11173,"j2ee, java, oracle, javascript",software engineer
+11176,citrix,data scientist
+11188,"eclipse, rsa, java, sql, javascript",java developer
+11192,"linux, sql, mysql, php",software engineer
+11193,"java, j2ee, hibernate, sql, database",java developer
+11195,"ui, java, c++",software engineer
+11196,"java, struts, maven, javascript, jboss, hibernate",java developer
+11216,"java, j2ee, hibernate, sql, development, maven, css, html, xml, time management",java developer
+11237,"data analytics, sas, sql, vba, c#, selenium, sdlc",data scientist
+11254,"qa, java, software, cloud, python, shell",software engineer
+11282,"java, j2ee, unix",software engineer
+11283,"java, javascript, agile, tdd, maven, design patterns, jquery, jira, confluence, rest services, 12c",java developer
+11290,"j2ee, unix, linux, pl, sql, data structures, design patterns, javascript, jsp, html, ajax, css, http",java developer
+11305,"visual studio, c#, asp.net, sql server, javascript, html, web applications",software engineer
+11311,"sql, rdbms",software engineer
+11318,"java, javascript, j2ee, linux, html",java developer
+11323,"j2ee, spring boot, java , jms, orm, sql server",java developer
+11330,"linux, sql, mysql, php",software engineer
+11337,sas,data scientist
+11369,"core java, linux",java developer
+11383,"data management, analysis, statistical analysis, dashboards, design, delivery",data scientist
+11411,"c++, qt, unity",software engineer
+11415,"python, c++, aws",software engineer
+11420,"java, c++, c#, javascript, angular, hl7",software engineer
+11434,"aws , cloud",java developer
+11456,"c++, c, api, 3d, game, architect",software engineer
+11469,"j2ee, support",software engineer
+11490,"security, hadoop, spark",data scientist
+11494,java,software engineer
+11503,"java , sql , etl",software engineer
+11507,"java, python, nosql, json, rest api",software engineer
+11519,"java, agile, restful web services, backend, full stack",software engineer
+11522,ra,java developer
+11523,"data structures, algorithms",java developer
+11525,roid,software engineer
+11528,"java, mongodb, cass, ra, hbase",software engineer
+11535,"windows, gui",software engineer
+11549,"javascript, java, management",software engineer
+11557,h,software engineer
+11558,"java, jsp, j2ee, servlets, mvc framework, elastic search, html, uml, xml, https, css, ajax, java script, json, jdbc, struts, roid development, xml, soap ui, toad, dynatrace",java developer
+11576,"algorithm, data structures, rest, soa, oracle , node.js, rest web services, maven, shell",java developer
+11586,"spa, big data, open source, javascript",software engineer
+11605,"java, mysql",java developer
+11610,"java, j2ee, mvc, restful apis, json, apache tomcat, database design, oracle db",java developer
+11613,"python, analytics, r, algorithm",data scientist
+11614,"data collection, s, routers, dhcp",data scientist
+11616,"data, quality, hadoop, hive, bigdata, qlikview, tableau, cass, ra",software engineer
+11635,"j2ee, javascript, jsp, html, jdbc, pl, sql",java developer
+11657,"c, c++",software engineer
+11663,"software, java, svn, subversion, jenkins, h, s, on",software engineer
+11664,"javascript, jquery, agile, scrum",software engineer
+11705,"java , restful web services",java developer
+11709,"java, nosql, rest api, cass, ra, dynamodb",java developer
+11718,"java, linux",software engineer
+11727,"mysql, postgresql, centos, red hat",software engineer
+11734,"java, hibernate, backbonejs, bootstrap",software engineer
+11748,"soa, rest, data structures, javascript, jquery, angular js, nodejs, bootstrap",software engineer
+11749,"java, j2ee, sql, jdbc, hibernate, tomcat, jboss",software engineer
+11757,"java, full stack, ejb, jdbc, sql, javascript, jquery, jsp, servlets, jms, mq",java developer
+11767,windows,data scientist
+11781,"python, django, sql, distributed systems",software engineer
+11784,"c++, graphics, data structures, algorithms",software engineer
+11802,"numpy, p, as",data scientist
+11818,"hadoop, kafka, flume, tableau",data scientist
+11822,"teradata, oracle, linux, informatica, postgres, pentaho",data scientist
+11876,"javascript, react, angular, backbone, css, less, ui, front, end, lead, security, web, grunt",software engineer
+11877,"map reduce, hadoop, hbase, cass, kafka, rabbitmq",data scientist
+11880,"java, j2ee, hibernate, struts",java developer
+11892,"java, j2ee, xml, web services, junit, sql , oracle",java developer
+11894,"coldfusion, j2ee, html, .net",software engineer
+11896,"analytics, asset management, c#, .net, sql",software engineer
+11899,"asp.net, mvc, restful web services",software engineer
+11901,python,java developer
+11925,"html, css, bootstrap, jenkins, agile, scrum",software engineer
+11977,"java, design patterns, rest, soap",java developer
+11979,"core java, rest api, nosql, data structures, algorithms, vmware",java developer
+11993,"embedded, linux, security, openstack, nfv, firmware",software engineer
+12000,"j2ee, hibernate, kafka, rabbitmq, bootstrap, backbone",software engineer
+12001,"ruby, angular, javascript, angular",software engineer
+12007,"oracle pl, sql",java developer
+12017,"core java, hibernate, soap",java developer
+12018,"java, healthcare",java developer
+12043,h,data scientist
+12076,software development,software engineer
+12087,"elasticsearch, java, spring boot, sql, maven",software engineer
+12088,security,java developer
+12111,"python, django, javascript, http, mobile, java",software engineer
+12112,"scala, saas",software engineer
+12117,"computer vision, video, c, c++, java, php, python",software engineer
+12120,"c++, python , javascript",software engineer
+12134,design,data scientist
+12143,"core java, kafka, storm",java developer
+12152,"java, j2ee, hibernate, soap ui",java developer
+12154,oracle ebs,data scientist
+12182,"css, javascript, sql",software engineer
+12194,"core java, backend, jvm, nosql, algorithm, data structures",java developer
+12202,"python, vertica, hadoop, sql, etl",data scientist
+12217,"c, c++, java, python, kubernetes, hadoop, big data, micro, service",software engineer
+12221,"angular, bootstrap, html5, restful web services, oracle, mysql",software engineer
+12222,"ruby on rails, java, node.js, python, php, angular.js",software engineer
+12261,"sdk, graphics",software engineer
+12263,"saas, javascript, angularjs, rest, sql, java, html5, css3, framework, ci, cloud, azure, aws, hadoop, design, implement, test, tools, selenium, rest, jasmine, soapui",software engineer
+12265,"ansible, chef, puppet, python, java",software engineer
+12298,core,data scientist
+12305,"linux, ubuntu, python, mysql, oracle, web servers, apache, iis",software engineer
+12308,"core java, spring framework",java developer
+12326,"retail, java , j2ee, open source",java developer
+12332,"java, python, ruby on rails",java developer
+12339,"java, aws",java developer
+12365,"java, restful, web services",java developer
+12375,"oracle, pl, sql, unix, windows",data scientist
+12379,"node.js, javascript",software engineer
+12382,"java, go, golang, python, go, golang, go, golang, micro services",software engineer
+12386,c,software engineer
+12412,"application, software, engineers, sql, business intelligence, business objects, cognos, oracle, sas, unix, teradata",software engineer
+12441,"physics, python, sql",data scientist
+12442,"nlp, sql, python, java, sas, automotive",data scientist
+12443,"it, management, systems, security, sql, python, visual basic, business intelligence",data scientist
+12444,"sas, sql, python",data scientist
+12445,"sas, sql, python, java",data scientist
+12446,"r, r, python, biology",data scientist
+12447,"artificial intelligence, sas, python, outlook, excel, powerpoint, sql, engineers, risk management, data architecture, database, access",data scientist
+12448,it,data scientist
+12449,"management, engineers, risk management, data architecture, database, access",data scientist
+12450,"python, statistics, data science",data scientist
+12451,"statistical analysis, algorithm, analysis, systems, business intelligence, security, it",data scientist
+12452,"security, development",data scientist
+12453,"algorithms, roadmaps, supply chain management, distribution",data scientist
+12454,"sql, api, python, web",data scientist
+12455,"it, software, engineers, python, sql",data scientist
+12456,"python, sas, pl, sql, asp, .net, sql, database",data scientist
+12457,"it, nlp, artificial intelligence, python, java, software, engineers",data scientist
+12458,"sql, python, java, analytical, defense systems, it, access",data scientist
+12459,"management, network, ibm, sas",data scientist
+12460,"security, artificial intelligence, systems",data scientist
+12461,"java, python, sql, oracle, systems",data scientist
+12462,"physics, python, java, web",data scientist
+12463,"python, aerospace, physics, software, development, web",data scientist
+12464,"pyspark, r, matlab, statistics, tableau, vertica, python, data visualization, data analysis, relational databases",data scientist
+12465,"data science, python, sql, qlikview, cloud, aws, azure",data scientist
+12466,"data science, healthcare",data scientist
+12467,"hadoop, spark, hive, python, r, sql, hive, spark, hadoop, spark, hive, python, r, sql, hive, spark",data scientist
+12468,"bi, sql, excel, big data, data visualization, h",data scientist
+12469,"data science, a, python, sql, data, leadership",data scientist
+12470,"sap, ml, data science, analytics, bi, bw, tableau",data scientist
+12471,"nlp, python, sql, data science",data scientist
+12472,"apache hadoop, cass, ra, data science, python, scala, sql",data scientist
+12473,"r, simulation, hadoop, hive, spark, mysql, nlp, sas, python, matlab, sql, pig, statistics",data scientist
+12474,"python, libraries, sql, data architecture",data scientist
+12475,"data science, python, sql, data analytics",data scientist
+12476,"data science, sql, r, python, communication",data scientist
+12478,"management, python",data scientist
+12479,"python, sql, cto, analysis, software, development, sdlc, artificial intelligence, web",data scientist
+12480,"python, r, aws",data scientist
+12481,"development, python, sql",data scientist
+12482,"tableau, power bi, python, sql, excel",data scientist
+12483,"cio, python, sql",data scientist
+12484,python,data scientist
+12486,"it, performance, security, system, knowledge management, python, java, matlab, sql, management",data scientist
+12487,"web, interface, physics, python",data scientist
+12488,"python, sql",data scientist
+12489,"security, python, java, sql, microsoft excel, powerpoint",data scientist
+12490,"degree, sas, r, ecommerce",data scientist
+12552,"big data, hadoop, spark, computer science, aws, api, microservices",data scientist
+12594,"python, sql, java",data scientist
+12671,"jd edwards, erp, edi",data scientist
+12673,"software, informatica, web, database, sql, oracle, db2, teradata",software engineer
+12675,"retail, s, sap, mm, configuration",data scientist
+12680,"mdm, informatica",data scientist
+12731,"algorithms, artificial intelligence, data science, python, r, sql",data scientist
+12750,"amazon redshift, apache hive, apache kafka, bash, c++, creativity, db2, eclipse, git, html5, java, javascript, jdbc, junit, linux, mapreduce, metadata, microstrategy, mongodb, mysql, node.js, objective c, oracle, python, redis, sql, sql server, teradata, visual studio, windows server, written communication",software engineer
+12780,communication,software engineer
+12808,"business intelligence, microsoft excel, powerpoint, development, cognos",data scientist
+12822,"it, sales",data scientist
+12845,"java, scala, microservices, aws",software engineer
+12853,"linux, javascript",software engineer
+12854,"automotive, software, java, sql, development, apache, javascript, database, mysql, oracle",software engineer
+12855,"application, ux, javascript, mysql",software engineer
+12860,"api, application, c++, javascript, management, system",software engineer
+12861,"it, systems, security",data scientist
+12862,"software, python",software engineer
+12865,"data analytics, etl, sql, cognos, ssrs, ssas, ssis",data scientist
+12871,"management, data analytics, data management, sql, data visualization",data scientist
+12874,"data, analytics, statistics, sql, sas, visualization, reports",data scientist
+12877,"data analytics, python, scala",data scientist
+12913,"big data, analytics, python, c++, data science, database, data visualization",data scientist
+13117,"dod, it, security clearance, security, cissp, documentation, compliance, technical support",software engineer
+13327,"computer vision, 3d, robotics, architect, firmware",software engineer
+13337,"information systems, .net, c#, sql",software engineer
+13414,"infrastructure, agile, waterfall, pmp, leadership, transformation",data scientist
+13483,"protocol, tcp, ip, security, architecture, cissp",data scientist
+13728,"interface, quality, system, peoplesoft",data scientist
+13729,"artificial intelligence, data management, team leadership, big data",data scientist
+13730,"interface, quality, system, it, peoplesoft",data scientist
+13731,"data visualization, dashboards, data analytics, tableau, sql",data scientist
+13732,"network, change management, systems",data scientist
+13734,"basic, mysql, sql, management",data scientist
+13735,"python, sql, h, s, code review, design, product development, sql, h, s, code review, design, product development",data scientist
+13743,sql,data scientist
+13744,"data management, data analysis, process improvement, informatica, sql, project management, cloud, database",data scientist
+13747,"data warehouse, sql, oracle, database, management, systems",data scientist
+13749,"hbase, jenkins, java, statistics, hive, kubernetes, azure, application development, amazon web services, gradle, spark, kafka, sql, scala, open source, big data, hadoop",data scientist
+13751,"sql, gcp, kubernetes, big data, etl, software development, requirements analysis, postgresql, python, unix, windows server, snowflake, apache kafka, hadoop, powerbi, tableau, excel",data scientist
+13753,"it, sdlc, management, business intelligence, data analysis, ibm, iis, informatica",data scientist
+13755,"data warehouse, it, management, basic, systems, qa, db2, oracle, sql, pc, cognos, business objects, web, cms",data scientist
+13758,"p, as, django, server",data scientist
+13761,"ansi, analytics, cms, com, claims, compliance, computer science, cross, functional, data analysis, 10, microsoft word, microsoft powerpoint, microsoft excel, fice, government, health care",data scientist
+13763,"apache hadoop, apache hive, apache spark, artificial intelligence, cloud, data analysis, data integration, data warehouse, etl, olap, sql, python, data science, database, meta, data management, data qa, scala, software, continuous improvement, oltp",data scientist
+13764,"data analytics, business intelligence, bi, ssis, ssas, ssrs, microsoft, sql server, tableau, powerbi, redshift",data scientist
+13771,"sql, database, data warehouse, python, development, java, analysis, it, desktop",data scientist
+13775,"it, quality, sales, management, supply chain, security",data scientist
+13777,"python, oracle, mysql, algorithms, architecture",data scientist
+13778,"management, business intelligence, management, business intelligence",data scientist
+13780,"aws, gcp, azure, big data, biology, management, etl, aws, gcp, azure, big data, biology, management, etl",data scientist
+13841,"agile, animation, business partnership, cis, communication",data scientist
+13883,"management, architect, security, it, software",data scientist
+13885,"management, systems, linux, security, it, software",data scientist
+13900,"python, java, sql, api",data scientist
+13903,"hardware, sap, hcm, peoplesoft, analysis, technical, communication",data scientist
+13905,"system, python, linux, tcp, ip",software engineer
+13910,"oltp, olap, tableau",data scientist
+13911,"transact, sql, sql, sas, microsoft ssis, microsoft ssrs, mongodb, nosql, process improvement, microsoft sql server, etl, microsoft ssas, scrum, agile, apache hadoop, data integrity, data analysis, database, health care",data scientist
+13914,"azure, sql, ficial",data scientist
+13916,it,data scientist
+13926,"laboratory, technician, plc, ups, systems, excel, powerpoint, ccna, management, windows, linux, security",data scientist
+13927,"act, analytics, best practices, business administration, business intelligence, business partnership, css, communication",data scientist
+13928,"micro, network, pc, outlook",data scientist
+13929,"networks, sas, windows, linux, bash, python, perl",data scientist
+13930,"emc, data, netapp",data scientist
+13938,"management, informatica, quality, linux, it, systems, sdlc, unix, python, perl, database, sql, oracle, dba, software, engineers, qa, network, security, erp, crm, peoplesoft, jd edwards, lawson, sap, business intelligence, architect, ux, web",data scientist
+13940,"ms word, ms excel",data scientist
+13989,"it, java, software, unix, linux, web, consult, application, development, j2ee, api, soap, apache, sql, javascript, php, html, system, systems, management",java developer
+13995,"software, engineers, java, javascript, sql",software engineer
+13997,"management, sql, systems, scripts",data scientist
+14007,"microsoft, sql, adf, data lake, snowflake, ci, rest , soap , microsoft, sql, adf, data lake, snowflake, ci, rest , soap , mq",data scientist
+14010,"data management, microsoft ssas",data scientist
+14014,"python, java, etl, sql, database, api, software development, meta, data management, cloud, data warehouse, database design, agile, amazon web services, microsoft windows azure, continuous integration",data scientist
+14016,documentation,data scientist
+14022,"java, c++, scala, python, spark, aws, data analytics, java, c++, scala, python, spark, aws, data analytics, ai",software engineer
+14023,"java, c++, scala, python, spark, aws, data analysis, c++, scala, python, spark, aws, data analysis",software engineer
+14029,"python, apache spark, data visualization, agile development, software development, product development, product design, test, analysis",software engineer
+14033,"python, spark, oracle",data scientist
+14038,"c, c++, linux, c, c++, linux",software engineer
+14039,"spark, sql, python, c#, java, ml, nlp, databases, azure, aws, gcp",data scientist
+14044,"nlp, java, bigdata, python",data scientist
+14045,"p, as, numpy, spark, data science, statistics, algorithms",data scientist
+14046,"nlp, python, computer vision, data science",data scientist
+14049,"python, r, python, r",data scientist
+14128,"dba, database, tsql, sql, t, sql, linux, unix, data, network, sql queries, automation, devops",software engineer
+14131,"remote, database, sql, mysql, sql server, sdlc, agile",software engineer
+14304,"software, java, j2ee, mysql",software engineer
+14306,"java, systems, desktop",software engineer
+14307,"php, node, aws, backend, cloud, python",software engineer
+14386,"j2ee, jsf, json, jpa, hibernate, oracle db",java developer
+14392,"git, oracle db, oracle sql, jenkins, sql server, svn, unix, c++, gcp, production support, compliance, iso, linux, azure, c#.net, oracle, c#, microsoft sql server, sql, c, cloud, bash",software engineer
+14427,"business intelligence, microsoft sql server, microsoft ssis, microsoft ssrs, sql, microsoft ssas, c#, .net, software development",software engineer
+14435,"sql, microsoft access, applications, sql, microsoft access, applications, database",software engineer
+14440,"data warehouse, it, software, development, basic, systems, web, java, ejb, jsp, j2ee, sql, pl, sql, sas, olap, management, ibm, oracle, informatica, tibco, data analysis",data scientist
+14441,"p, as, django",data scientist
+14442,"continuous improvement, data warehouse, qa, sql, time management, communication",data scientist
+14443,"etl, mdm, cloud, data analytics, goverce, data warehouse, architecture",data scientist
+14444,"analytics, architecture, artificial intelligence, big data, business intelligence, business partnership, data integration, data science, database, data warehouse, etl, implementation, meta, data management, leadership, data visualization, microsoft ssrs, tableau, software architecture, microsoft power bi, statistics",data scientist
+14445,"data warehouse, it, business intelligence, sql, unix, java, j2ee, html, pl, sql, engineers, management, system, development, sdlc, sap, informatica, c",data scientist
+14446,"data warehouse, architecture, apache, sql, mysql, informatica, architect",data scientist
+14447,"data warehouse, management, teradata, data architecture, erwin, sql",data scientist
+14448,"data warehouse, architect, sql, quality, microsoft access, excel, it",data scientist
+14449,"data warehouse, management",data scientist
+14450,"sql, data warehouse, cloud, data, tableau, visualization, bi, aws",data scientist
+14451,"data warehouse, application, development, informatica, cognos, business intelligence",data scientist
+14453,"artificial intelligence, systems, architect, data warehouse, data architecture, development, sql, epic",data scientist
+14454,"business intelligence, talend, power bi, db2, business intelligence, talend, power bi, db2",data scientist
+14455,"data warehouse, sql, python, it",data scientist
+14457,"data warehouse, sql, python, sas",data scientist
+14458,"etl, sql, business intelligence",data scientist
+14459,"etl, informatica, sql, t, sql, ssrs, ssis, ssas, power bi",data scientist
+14460,"data warehouse, database, informatica, sql, architecture, it",data scientist
+14514,"game, software, engineers, games, switch, pc, linux, middleware, c, systems, opengl, it",software engineer
+14548,"game, architecture, development",software engineer
+14600,"ar, vr, c++, c#, 3d",software engineer
+14602,"photoshop, 2d",data scientist
+14605,"documentation, education, https, computer science, business intelligence, c, innovation, open source, tcp, udp, python, software, linux",software engineer
+14608,"analysis, video, python",data scientist
+14638,"c++, objective, c, data structures, oop, aws, gcp, java, objective, c, data structures, oop, aws, gcp, java",software engineer
+14644,"java, spring boot, spring mvc, javascript, angular, react, html5, css3, aws, azure, cloud, microservices",java developer
+14648,"architecture, oop, matlab, com, integration",software engineer
+14689,"it, network, management, web, access, security, encryption, ssl, database, applications, architecture, lifecycle, windows, linux, unix, cissp, tcp, ip, smtp, http, vpn, systems",data scientist
+14703,"simulation, software, systems, development, analysis, sas, hardware, graphics, 3d, gis, opengl, it, unisys",software engineer
+14704,"software, gis, c, sql, asp, .net, web, api, javascript, python",software engineer
+14708,"aws, rails, ruby, c++, gis, rails, ruby, c++, gis, restful web services",software engineer
+14709,"gis, javascript, nodejs, angular, nosql, mongodb, aws , gis, javascript, nodejs, angular, nosql, mongodb, aws",software engineer
+14712,"javascript, nodejs, angular, react, nosql, mongodb, aws, javascript, nodejs, angular, react, nosql, mongodb, aws, gis",software engineer
+14717,"jira, agile, java",java developer
+14734,"databases, sql, mysql, r, python",data scientist
+14735,"artificial intelligence, civil, networks",data scientist
+14737,"laboratory, security, applications, java, python, matlab, linux, unix, windows",data scientist
+14738,"laboratory, java, python, matlab, linux, unix, windows, security",data scientist
+14740,"physics, matlab, python",data scientist
+14744,"gis, esri, sql, postgres",data scientist
+14746,"python, physics, java, linux, windows, software",software engineer
+14747,"security, artificial intelligence, python, sql, java, bash, unix, gis",data scientist
+14750,"software, it, application, asp, isp, surveillance, systems, oracle",software engineer
+14752,"environmental, python, sql",data scientist
+14753,"software, application, development, engineers, security, java, python, web, network, it, unisys",software engineer
+14804,"python, matlab, c++",data scientist
+14821,"java, sdlc, systems, cio, management, j2ee, xml, web, jsp, jdbc, sql, oracle, db2, html, javascript, ide",java developer
+14827,"java, sdlc, systems, cio, management, j2ee, xml, web, jsp, jdbc, sql, oracle, db2, html, javascript, ide, security",java developer
+14850,epic,data scientist
+14851,"business intelligence, analytics, business objects, can, com, clarity, crystal reports, dashboard, data warehouse, database, epic, health care, it management, kpi, active directory, leadership, mentorship, microsoft sql server, microsoft ssas, microsoft ssis, microsoft ssrs, olap, oracle, presentations, project management, qa, software, transact, sql",data scientist
+14854,"software, epic, qa, asp, .net, web, api, javascript, sql",software engineer
+14871,"spark, python, scala, bigdata, emr, talend",data scientist
+14885,"sql, hadoop, pyspark, sqoop, hbase, amazon web services, emr, python, apache hadoop, apache spark, cloud, java, kafka",data scientist
+14936,"etl, python, hadoop, spark, python, hadoop, spark",software engineer
+14939,"api, java, sql, web, python, development, management",software engineer
+14979,database design,data scientist
+14980,"collaboration, innovation, integration",data scientist
+14990,"epic, system, software, development, interface, networks, it",software engineer
+15006,"hipaa, ards",data scientist
+15007,dna,data scientist
+15031,"act, agile, analytics, architecture, budget, business administration, can, communication",data scientist
+15040,"software, development, systems, oracle, sql, database, business objects",software engineer
+15048,"python, flask, rest api, azure, agile methodology",software engineer
+15051,"api, analytics, architecture, compliance, computer science, data integration, enterprise software, health care, human resources, business development, communication",data scientist
+15065,"java, sms, development, management",software engineer
+15066,"java, sms, development, management, it",software engineer
+15081,"java, golang, python",software engineer
+15083,"java, springboot, lambda, emr, ci, cd, devops",java developer
+15257,"power bi, sql, python, r, hadoop, spark, databricks",data scientist
+15500,"software, lifecycle, management, python, sql, linux",software engineer
+15649,"java, springboot, restful, webservices, microservices, spark, scala, hadoop",java developer
+15694,"c#, roid, c#, roid, xamarin",software engineer
+15695,"java, c++, go, golang, software development",software engineer
+15758,"java, micro services",java developer
+15775,"java, it, consult, sql, pl, sql, web, oracle, systems, cio",java developer
+15793,"software, development, architecture, it, windows, linux",software engineer
+15795,"security, cne, software, it",data scientist
+15797,"wireless, scientific, it",data scientist
+15800,"scientific, it",data scientist
+15812,"software, cms, fda, cio, it, crm",software engineer
+15825,"sei, software, java, python, systems",software engineer
+15829,sei,data scientist
+15834,"software, architect, sdlc, analytical, java, javascript",software engineer
+15837,"software, intern",software engineer
+15838,"python, javascript, software, development, metrics, qa, cto",software engineer
+15839,"python, javascript, software, qa, cto",software engineer
+15840,"software, java",software engineer
+15841,"software, java, python, management",software engineer
+15842,"software, mysql, javascript, soap",software engineer
+15843,"software, teradata, java, sql, security",software engineer
+15844,"software, java, python, html, sql, web, http, api",software engineer
+15845,"systems, software, management, scripts",software engineer
+15846,"java, architecture, management",software engineer
+15848,"development, web, sdlc, java, javascript",software engineer
+15849,"embedded, linux, systems, scripts",software engineer
+15850,"revision control, software, software development, web development, mobile applications, .net, c#, git, javascript, microsoft sql server, nice, react.js, san",software engineer
+15851,"python, django, javascript, react, reactjs, python, django, javascript, react, reactjs, react.js",software engineer
+15852,"e, commerce",software engineer
+15853,"java, tcp, ip, c, c++ , java, tcp, ip, c, c++",software engineer
+15888,"agile, architecture, business intelligence, continuous integration, microsoft windows azure, python, azure, databricks",data scientist
+15908,"network, python",software engineer
+15934,"security, xml, cio, python, bash, systems, powerpoint, software",data scientist
+15935,"architect, security, it, cio, management, data architecture, systems, architecture, uml, analysis",data scientist
+15959,"c, c++",software engineer
+15961,"sql, support",software engineer
+15965,"software, python, development, java, javascript, linux, unix, sql",software engineer
+16101,"artificial intelligence, automation, c, c#, client, server, computer science, devops, microservices, mobile applications, plm, product management, qa, soa, software, software architecture, system integration, ui, web applications",software engineer
+16282,"active directory, amazon web services, architecture, automation, backup, can, cisco, cloud, data centers, disaster recovery, gpo, v, it infrastructure, identity management, infrastructure, microsoft windows azure, microsoft windows server, microsoft technologies, migration, netapp, okta, operating systems, policies, recovery, sap basis, security, software deployment, storage, upgrades, vmware, virtualization",data scientist
+16283,"technician, cisco, it, adobe, database",data scientist
+16287,"it, ethernet, outlook, excel, systems",data scientist
+16288,"technician, systems, management, excel, it, software",data scientist
+16292,data centers,data scientist
+16294,"it, technician, network",data scientist
+16296,"arista, linux",data scientist
+16299,ip,data scientist
+16330,device drivers,software engineer
+16454,"json, db2, git, websphere, middleware, computer science, html, servlets, jpa, deployment, ajax, maven, mysql, software development, tomcat, postgresql, jms, communication",java developer
+16455,"roid development, business requirements, configuration, integration, functional requirements, software development",software engineer
+16460,"salesforce, apex, bitbucket, business requirements, computer science, salesforce.com, software development, it, jira, sdlc, software",software engineer
+16497,"aws, node.js, react, javascript",software engineer
+16514,"software, foundation, management, development, architecture, security, application, windows, applications, web, api, asp, net, hub",software engineer
+16528,cass,java developer
+16532,"java, angular",java developer
+16641,"php, python, javascript, go, api, python, javascript, go, api",software engineer
+16739,"asp, java, oop, xml, html, oracle, sql",software engineer
+16746,"java, microservices, linux, unix, multi, web services, soa, java, microservices, linux, unix, multi, web services, soa, xsd",java developer
+16955,".net, api, analytics, automation, best practices, bootstrap, business analysis, css, computer science, continuous integration, data integration, data structure, database design, design patterns, django, documentation, education, flask, framework, functional requirements, git, html, it, it operations, implementation, insurance, integration, json, java, javascript, operations, python, qa, restful, react.js, sql, saas, software, software configuration, software deployment, software design, software development, specification, supervision, system integration, systems design, technical support, web services",software engineer
+16991,data steward,data scientist
+16993,"systems, python, networks, apache, sql, database, matlab",data scientist
+16995,"java, web, javascript, xml",software engineer
+16998,"systems, physics, python, sql, security",data scientist
+17009,"data analytics, business intelligence, bi, ssis, ssas, ssrs, microsoft, sql server, tableau, .net, c#, power bi, redshift, cloud",data scientist
+17084,"software, crm, javascript, asp, ado, html, xml, web, erp, system, application, development, validation, it, engineers, qa, systems, network, security, business intelligence, ux",software engineer
+17107,"exchange, sql, python, javascript, software",software engineer
+17129,"systems, it, java, j2ee, web, jsp, jdbc, soap, apache, uml, sql, micro",java developer
+17209,"computer science, design, develop, development, documentation, graphics, hardware, implementation, infrastructure, maintece, mobile",software engineer
+17235,"mdm, data migration, sd, sap hana, microsoft excel, can",data scientist
+17236,"data migration, etl, sql, microservices, devops",data scientist
+17237,"sharepoint, o365, data migration",data scientist
+17238,"architect, systems, sql, simulation",data scientist
+17239,"cis, computer science, data migration, information systems, sql, architecture, migration, emr, etl, management information systems",data scientist
+17240,"etl, sql, sql server, sql, sql server, data migration",data scientist
+17241,"python, bom, business requirements, cad, change management, communication",data scientist
+17243,"etl, informatica, hadoop, oracle, pl, sql, sql, data migration, data integration, java, automation, db2, mongodb",data scientist
+17244,"active directory, business partnership, can, communication",data scientist
+17245,"sql, api",data scientist
+17246,"sql, t, sql, etl",data scientist
+17247,"microsoft ssis, migration, retail, database, data migration, documentation, microsoft windows azure",data scientist
+17249,"data migration, gcp, hadoop, spark, hive, kafka, rabbitmq, sql, etl, java, python",data scientist
+17250,"active directory, can, leadership, microsoft excel, microsoft sql server, migration, nice, communication",data scientist
+17251,microservices,data scientist
+17274,project management,data scientist
+17283,".net, c#, cis, crm, communication",software engineer
+17288,"relational database, sql, program management, jpa, java, jenkins, git, confluence, jira, project management, bitbucket, xml, security clearance, software development, microsoft visio",software engineer
+17289,"security clearance, software development, jpa, microsoft visio, jenkins, ms office, program management, bitbucket, xml, git, java, sql, confluence, jira",software engineer
+17291,"software, system, java, j2ee, xml, dom, windows, pl, sql, ada, excel, powerpoint",software engineer
+17294,"h, s, on",software engineer
+17296,"systems, software, engineers, java, development, linux, python, perl, security, ide",software engineer
+17297,"systems, software, engineers, development, security, java, linux, apache, oracle",software engineer
+17298,"automotive, software, development, javascript, mysql, sql",software engineer
+17299,"automotive, software, engineers, java, asp, .net, web, database, oracle, api",software engineer
+17300,"automotive, management, ims, software, engineers, asp, .net, web, database, oracle, api",software engineer
+17301,"automotive, software, engineers, oracle, pl, sql, api",software engineer
+17302,"automotive, software, engineers, db2, mysql, oop",software engineer
+17306,"adaptability, cloud, python, software development, software design, systems design, java",software engineer
+17309,"systems, software, engineers, development, java, linux, security, apache, oracle",software engineer
+17311,"software, systems, test, java, linux",software engineer
+17312,"automotive, software, engineers, java, asp, .net, web, oracle, api",software engineer
+17313,"automotive, software, management, development, application, html, javascript, sql",software engineer
+17477,"apache hadoop, apache kafka, big data, communication",java developer
+17487,"software, java, engineers, api",software engineer
+17516,"microsoft, windows server, virtualization, active directory",data scientist
+17517,"system, matlab, python, systems, java, application, materials, applications, library",data scientist
+17520,"data centers, technician, microsoft word, microsoft outlook",data scientist
+17521,"data centers, firewall, hardware, microsoft windows, switches, operating systems, routers",data scientist
+17522,"security, management, it, systems, disaster recovery, system, windows, mcse, ccnp",data scientist
+17529,"audio, video",data scientist
+17539,"api, apache, python",software engineer
+17772,"sip, telecom",software engineer
+17775,"telecom, bss, etl, data quality, data science, bss, oss, azure",data scientist
+17986,"salesforce, sfdc, scala, aws",java developer
+17989,c,software engineer
+17990,"tcp, ip, java, c++, perl, ruby, iot, aws, ip, java, c++, perl, ruby, iot, aws",software engineer
+17992,"java, j2ee, hibernate, openstack, vmware, postgres, kubernetes, git, ooad",java developer
+18018,"consult, software, javascript, development, apache",software engineer
+18019,"automotive, software, management, ims, engineers, asp, .net, web, database, oracle, api, sql, qa",software engineer
+18020,"software, engineers, sql, automotive",software engineer
+18021,"automotive, software, engineers, web, java, consult, development, sdlc, python, api, qa",software engineer
+18022,"security, software, java, linux, rf, python, ide, protocol, matlab",software engineer
+18023,"automotive, software, engineers, python, oracle, api, web",software engineer
+18024,"automotive, software, management, development, application, system, api, .net, sql, python",software engineer
+18025,"automotive, software, crm, management, html, javascript, sql",software engineer
+18026,"application, windows, performance, analysis, javascript, linux, software",software engineer
+18027,"automotive, software, management, development, application, html, javascript, php, python",software engineer
+18028,"amazon web services, business acumen, communication",software engineer
+18031,"azure, communication",software engineer
+18037,"automotive, it, development, release, linux, web, apache, middleware, tcp, ip, python, bash",software engineer
+18042,"engineers, python",software engineer
+18043,"management, system, engineers",software engineer
+18044,"surveillance, access, management, systems, application, java, api, micro, oracle, mysql",software engineer
+18047,"apache, java, python",software engineer
+18048,"linux, unix, sdlc",software engineer
+18095,"java, compliance",java developer
+18096,"java, test, development, web, database, jdbc, systems, cio, j2ee, uml",java developer
+18097,"java, consult, systems, cio, it, j2ee, security",java developer
+18098,"java, web, database, jdbc, xml, html, soap, sql, systems, cio",java developer
+18099,"java, development, engineers, ip, mysql, sql, uml, linux, python",java developer
+18100,"java, development, it, mysql, ansi, management",java developer
+18101,"java, it, consult, sql, pl, sql, web, oracle, systems, cio, gps",java developer
+18102,"java, systems, cio, javascript, html, xml, oracle, linux, python, bash, perl, security",java developer
+18103,"systems, java, it, j2ee, jdbc, soap, websphere, apache, jsp, javascript, uml, sql, api, security, application, performance, management",java developer
+18104,"systems, java, it, j2ee, web, jsp, jdbc, soap, sql",java developer
+18105,"systems, java, it, j2ee, web, jsp, jdbc, soap, apache, uml, sql, micro",java developer
+18106,"java, systems, cio, management, it, sdlc, javascript, xml, ejb, html, soap, web, security",java developer
+18107,"java, software, crm, j2ee",java developer
+18108,"systems, java, sdlc, management, j2ee, xml, web, jsp, jdbc, sql, oracle, db2, html, javascript, ide",java developer
+18109,"java, application, software, engineers, systems, cio, c, test, development",java developer
+18110,"rest apis, java, spring boot, microservices, react.js, angularjs, github, javascript, sql, ui, cloud, amazon web services, microsoft windows azure, google cloud",java developer
+18111,"node.js, restful, json, javascript, test, terraform, amazon web services, automation",java developer
+18112,"ux, html, javascript, oracle, mysql, software, linux, sql, assembly, jcl, cics, vsam, apache, automated",java developer
+18113,"apache kafka, capital market, java, real, time, sql",java developer
+18114,microservices,java developer
+18115,"web services, soap, bitbucket, junit, jenkins, healthcare",java developer
+18116,"security clearance, secret clearance",java developer
+18117,solr,java developer
+18118,"java, full stack, development, web services, struts, angular",java developer
+18119,"agile, java, springboot, scrum",java developer
+18176,"c#, .net, angular js, sql server",software engineer
+18301,".net, microsoft sharepoint, microservices, node.js, microsoft sql server, sso, saml",software engineer
+18305,".net, sharepoint",software engineer
+18348,"software, java, c",software engineer
+18373,"ruby, rails, react, postgres, aws , ruby, rails, react, postgres, aws",software engineer
+18385,"software, web, development",software engineer
+18392,"ruby, mysql, cloud, aws, azure, artificial intelligence, linux, ubuntu, java, ruby, mysql, cloud, aws, azure, artificial intelligence, linux, ubuntu, java, microservices",software engineer
+18393,"javascript, html",software engineer
+18413,"software, php, development, linux, systems, mysql, javascript, it",software engineer
+18454,"automotive, software, engineers, release, system, management, performance, java, javascript, mysql, xml, development",software engineer
+18455,"automotive, software, release, java, mysql, apache",software engineer
+18456,"software, system, java, python, development, database, materials, release, javascript",software engineer
+18458,"software, management, performance, release, java, javascript, api, xml",software engineer
+18460,"software, iterative, development, performance, release, java, api, xml, systems, micro, architecture, python",software engineer
+18462,"sql, mysql, test, development, release, python, api",software engineer
+18499,"c, project management, c, project management, aerospace",software engineer
+18500,"medical devices, microcontrollers, c, c++, ood, wifi, medical devices, microcontrollers, c, c++, ood, wifi",software engineer
+18528,"java, j2ee, jsp, javascript, html, css, xml, hibernate, sql, eclipse, weblogic, servlets, jdbc, jms, mvc, jpa",java developer
+18534,"java, j2ee, pl, sql, jsf, oracle",java developer
+18545,toad,software engineer
+18698,"database, qlikview, jenkins, sql, qa, tableau",data scientist
+18699,"software, engineers, python, nlp, java, it",data scientist
+18701,"javascript, development, api, websphere, java, jdbc, database, oracle, db2, mysql, software, engineers, systems, scripts",software engineer
+18768,"code, java, sql, linux, shell script, j2ee, web application, restful apis, api, restful",java developer
+18769,"springboot, aws, microservices, mongodb",java developer
+18776,"software, java, tcp, http, sql",software engineer
+18777,"python, software development, git, django, automation, api",software engineer
+18779,"c#, .net, .net core, aws, tdd, ci, cd",software engineer
+18799,"it, software, test, sql, xml",software engineer
+18807,"security, cne, software, application, physics, java, python, linux, windows, analysis, systems, fpga, network, it",data scientist
+18809,"scientific, security, cne, software, application, it",data scientist
+18810,"security, cne, software, application, it",data scientist
+18811,"performance, analysis, systems, system, architecture, development, php, python, mysql, sql, oracle, application, it",data scientist
+18812,"software, physics, networks, python, java, mysql, web, soap, html, it",software engineer
+18814,sales,data scientist
+18815,simulation,data scientist
+18816,"nlp, python, s3, sqs, lambda, rds, dynamodb, aws, nosql, sql, mysql, nlp, r, r, statistics, mathematics, computer science, quantitative",data scientist
+18817,"ml, algorithms, data analysis, data science, r",data scientist
+18818,"amazon web services, apache spark, analytics, data science, framework, python, computer science",data scientist
+18821,"azure, data architect",data scientist
+18822,nlp,data scientist
+18823,"python, spark",data scientist
+18824,artificial intelligence,data scientist
+18825,architect,data scientist
+18860,"medicaid, cobol, mainframe, etl, webmethods",data scientist
+18861,"cobol, etl",data scientist
+18862,"etl, webmethods, cobol",data scientist
+18863,"architect, software, development, sdlc, iterative, web, windows, foundation, architecture, cobol, vb, .net, uml, sql",software engineer
+18870,"python, java",software engineer
+18871,"apache, java, python, javascript",software engineer
+18880,"management, python, sql, oracle, java, sdlc, unix",software engineer
+18888,"architecture, test, software, engineers, web, application, html, java, ux, http",software engineer
+18902,"c++, java , biology, winforms, wcf, wpf, sql, pl, sql, excel, c++, java , biology, winforms, wcf, wpf, sql, pl, sql, excel",software engineer
+18903,"c++ , python",software engineer
+18913,"software, it, scientific, excel, outlook, powerpoint",software engineer
+18918,"software, python, linux, scientific",software engineer
+18922,"software, simulation, systems, security, aerospace, physics, python, matlab, 3d, opengl, system",software engineer
+18932,"oracle, it, solaris, software, hardware, computer science",software engineer
+18938,"software, javascript, html, it, python, java, lotus, applications, oracle, mysql, sql, linux, development",software engineer
+18939,"software, lotus, systems, user interface, sql, security, java",software engineer
+18959,"embedded c, node.js, linux",software engineer
+18993,"access, security, java, sql, python, database, wsdl, soap",software engineer
+18996,"application, security, sdlc",software engineer
+18997,"application, security, sdlc",software engineer
+19000,"cryptography, c, c++, c, c++, data structures",software engineer
+19001,"java, spring boot, hibernate, angular, react, java, spring boot, hibernate, angular, react, jenkins",java developer
+19023,"java, microservices, springboot, kafka, nosql, ci, cd, test automation",java developer
+19028,"core java, linux, maven, aws, oracle",java developer
+19029,core java,java developer
+19030,"springboot, java",java developer
+19031,"maven, java, project management, rabbitmq, relational database, tomcat, weblogic, user interface design, jsp, sql server, python, angularjs, jira, full stack, sql",java developer
+19032,"java, microservices, spring boot, angular",java developer
+19033,"angularjs, bitbucket, hibernate, software development, web services, bamboo, java, confluence, javascript, devops, technical, html5, jira, sql",java developer
+19034,"j2ee, rest, api, agile",java developer
+19035,"j2ee, html, struts, xml",java developer
+19036,"java, spring boot, aws, amazon web services, aws, node, nodejs, node.js, javascript, mvc, spring mvc, java, java, aws, node",java developer
+19037,"java, websphere, application, html, javascript, jsp, jdbc, web, rational, ide, software, it, unisys",java developer
+19038,"java, software, architecture, analysis, gui, security, access, javascript, web, interface, development",java developer
+19039,"java, spring framework, hibernate, sql, pl, sql, weblogic, soap, rest, microservices, junit, xml",java developer
+19040,"software, visual basic, sql, ux, micro, transact, sql, javascript, oracle",java developer
+19047,"software, python, sql, api, ibm",software engineer
+19050,"systems, java, j2ee, python, sdlc, perl, javascript, software, network, system, windows, linux, vm",software engineer
+19051,"software, development, validation, release, systems, quality, api, it, javascript, sql, html, unix, linux",software engineer
+19054,"full stack, automation, devops, python, security",software engineer
+19055,"apis, blockchain, golang, java, kubernetes, network protocols, security, apis, blockchain, golang, java, kubernetes, network protocols, security, automation",software engineer
+19058,"agile, salesforce, sql, oracle, rest services",software engineer
+19059,"automation, c, c#, robotics, interfaces, lan, linux",software engineer
+19060,"development, test, qa, linux, vm, javascript, java, c, python, system",software engineer
+19061,"applications, ux, java, python, linux, unix",software engineer
+19063,"python, bash",software engineer
+19064,"angularjs, cloud, html, javascript, nosql, ruby on rails, react.js, software development, software design, software, linux, infrastructure, innovation",software engineer
+19065,application,software engineer
+19073,"software, system, java, object oriented design",software engineer
+19079,"cloud, it, java, c++, python, html5, css3, javascript, ajax, json, agile",software engineer
+19080,"software, xslt, release, management, security, xml, oop, web, api, sql, html, asp, .net, ibm, architecture, iis, ssl, it",software engineer
+19084,"xamarin, c# , .net, object",software engineer
+19088,"engineers, c, sql, database, test, api",software engineer
+19089,"c#, xamarin, roid, c#, xamarin, roid",software engineer
+19090,"blockchain, blockchain, restful api",software engineer
+19091,"software, python, sql, systems, scripts",software engineer
+19092,"c#, azure, mongodb, ci, cd, .net, .net core, microservices, kubernetes, terraform, devops, git, cloud, iaas, integration, microsoft sql server, rdbms, software, continuous integration, computer science, microsoft windows azure, ado.net, linq, entity framework, html, css, dhtml, xml, wcf, rest, soap, oop, ood",software engineer
+19097,"data, application development, python, artificial intelligence, ai, ml, degree, automation, ficial, bank, etl, workflow, build",software engineer
+19099,"dynamics crm, erp",software engineer
+19101,"c#, c++, windows, gui, robotics, linux",software engineer
+19103,"software, development, windows, embedded, fda, gui, iso, application, soap",software engineer
+19105,"c++, visual studio, windows, agile, git, vmware, jira , c++, visual studio, windows, agile, git, vmware, jira",software engineer
+19106,"c#, c++",software engineer
+19107,"c++, python, windows",software engineer
+19108,"software, system, windows, api, excel, powerpoint, java, j2ee, xml, dom, pl, sql",software engineer
+19109,"automotive, software, management, development, application, windows, linux, python, architecture, tcp, ip",software engineer
+19110,"windows, java, linux",software engineer
+19111,"c, c++, linux, windows, bluetooth, software development, embedded software, computer science",software engineer
+19114,"software, test, development, java, python, xml, case, sql, soap, wsdl, user interface, html, xslt, windows, linux, oracle",software engineer
+19115,"engineers, python, software, gui, windows, unix, solaris, system, artificial intelligence, development",software engineer
+19116,"software, management, system, development, windows, database, oracle, mysql, sql, html, xml, soap, wsdl, javascript, apache, excel, powerpoint, security",software engineer
+19117,"software, qa, application, python, web, sql, windows, linux, perl",software engineer
+19118,"software, it, pc, windows, desktop, oop, web, micro, architecture, sql",software engineer
+19119,"software, test, quality, system, xml, python, windows, gui, it",software engineer
+19120,"software, windows, sql, uml, fda, aerospace, systems, scripts",software engineer
+19121,"software, web, vb, javascript, html, xml, asp, windows, libraries, ado, database, sql, http, api, visual basic, .net, it",software engineer
+19123,"software, sql, sdlc, oltp, java, windows, database, management, system, automotive",software engineer
+19124,"software, python, java, javascript, web, development, linux, unix, windows, sql, risk management, iso",software engineer
+19125,"software, sql, iis, windows, javascript, it",software engineer
+19126,"software, next, development, applications, asp, .net, python, php, javascript, sql, development, qa, software, foundation, iis, windows, systems",software engineer
+19127,"software, vb, .net, sql, visual basic, windows, it",software engineer
+19128,"software, c, sql, desktop, windows, web, asp, .net, test",software engineer
+19129,"software, windows, ood",software engineer
+19130,"security, software, ssl, it, java, javascript, python, perl, unix, windows",software engineer
+19131,"software, windows, linux, embedded, systems, desktop, firmware, aerospace",software engineer
+19132,"software, development, architecture, java, python, linux, windows, it",software engineer
+19133,"software, scientific, tcp, ip, linux, windows, java, python, perl, it",software engineer
+19136,"software, interface, asp, .net, javascript, windows, sql, library, api, architect, it, erp",software engineer
+19171,"python, javascript, api, soap, sql",software engineer
+19172,"software, kronos, quality, java, development, management",software engineer
+19173,"oop, leadership, distribution, supply chain, logistics, technology, .net, sql, oracle, agile, business acumen",software engineer
+19177,"crm, software, unix, linux, java, c, python, system, tcp, ip, systems",software engineer
+19178,"java, j2ee, .net, javascript, architect, management, healthcare",software engineer
+19180,"java, aws, full stack",software engineer
+19182,"javascript, js, react, react.js, reactjs, html, css, redux, restful api, api",software engineer
+19184,"security, database, mysql, soap",software engineer
+19185,"automotive, software, engineers, it, system",software engineer
+19188,"c#, .net, angular, oop, soa, restful, javascript, sql, devops, python, aws, cloud, agile, orm, mvc, mvvm",software engineer
+19189,"cross, functional, devops, qa, social media, software, team leadership, web services, code review, python, react, oop, ooa, soa, cd, cd",software engineer
+19198,"data analysis, tableau, sql, python, data science",data scientist
+19199,"analytics, data science, data analysis, oracle, python, javascript, google cloud",data scientist
+19204,"software, sql, consult, systems, python",data scientist
+19207,"software, business intelligence, python, java, environmental",software engineer
+19208,"software, business intelligence, python, sql, environmental",software engineer
+19211,"microsoft sql server, power bi, microsoft ssas, data lake, database administration, data analytics, microsoft certified professional",data scientist
+19215,"analytics, apache spark, big data, business partnership, data science, embedded systems, infrastructure, innovation, mapreduce, mentorship, process improvement, python, solid, software, supervision, collaboration, communication",data scientist
+19225,"analytical, development",data scientist
+19256,"java, microservices, kafka, mongodb, react, node, mulesoft, mule",java developer
+19282,"automotive, software, java, html, desktop, web, soap, javascript, api, xml, python, j2ee, mysql, linux",software engineer
+19288,"consult, javascript, development, apache, software",software engineer
+19312,"etl, health care, oracle, sql, sas, aws, azure, cognos",data scientist
+19315,"automotive, software, engineers, web, python, html, user interface, java, javascript, sql, oracle, quality, management, test",software engineer
+19316,"automotive, software, engineers, management, web, python, html, user interface, java, javascript, sql, oracle, quality, test",software engineer
+19317,"software, java, architecture, web",software engineer
+19336,"java, spring boot, api, microservices, soa",java developer
+19358,"systems, software, engineers, security, java, linux, system, unix, artificial intelligence",software engineer
+19359,"angularjs, adaptability, cloud, java, javascript, node.js, nosql, react.js, sql, ruby on rails, software development, software design",software engineer
+19360,"software, development, applications, sdlc, java, hub",software engineer
+19361,"angularjs, adaptability, cloud, sql, software development, software design, python, react.js, ruby on rails, software",software engineer
+19362,"systems, software, rf, security, java",software engineer
+19363,"adaptability, angularjs, cloud, infrastructure, nosql, javascript, node.js, react.js, ruby on rails, sql, software development, systems design",software engineer
+19364,"software, java, engineers, sdlc, hub, it, library",software engineer
+19365,"java, apache, sql, software, engineers, sdlc, it, library",software engineer
+19366,"software, sql",software engineer
+19367,"automotive, software, engineers, web, java, video",software engineer
+19368,"automotive, software, management, ims, engineers, api, security, java, asp, web, database, oracle, sql, qa",software engineer
+19369,"automotive, software, web, test, unix, sql, mysql",software engineer
+19370,"automotive, software, test, performance, development, api",software engineer
+19373,"software, web, java, javascript, html, ux, gis, development",software engineer
+19374,"java, python, javascript, api, linux, software",software engineer
+19385,"java, j2ee, pl, sql, oracle",java developer
+19397,"systems, it, java, j2ee, web, jsp, jdbc, soap, sql",java developer
+19398,"systems, java, j2ee, api, sql, oracle, management, web, xml, linux",java developer
+19400,"it, java, software, bash, javascript, python, development",java developer
+19401,"it, python, java, html, javascript, sql, bash, software, development",java developer
+19402,"java, uml, html, soap, web, api, sql, content management, systems, software",software engineer
+19403,"java, uml, html, sql, web, content management, systems, software",software engineer
+19404,"java, uml, html, soap, web, api, sql, content management, system, software",software engineer
+19408,"java, mssql",java developer
+19409,"java, c, software, engineers, it, web, linux, windows, ux",software engineer
+19411,"agile, architecture, best practices, javascript, microsoft windows azure, https, implementation, j2ee, java, pl, sql, software, sql, software development, postgresql, integration, product development",software engineer
+19412,"java, restful, sql, software deployment, web design",java developer
+19413,"java, j2ee, html, javascript, servlet, struts, web services, sql, xml, linux, apache, jms, jdbc",java developer
+19415,"java, microservices, restful, software development, css, ajax, aws",java developer
+19416,"java, gui, jsp, web, application, sql, mysql, javascript, xml, html, soap, unix, software",java developer
+19417,"software, java, excel, powerpoint, security",java developer
+19455,"sdlc, software, security, java",software engineer
+19456,"java, sql, aws, python, management",software engineer
+19457,"management, dod, management, dod, simulation",software engineer
+19458,"c++, python, qt, tcp, ip, c++, python, qt, tcp, ip",software engineer
+19459,"c#, management, ci, cd, cloud, javascript",software engineer
+19461,".net, azure, aws, c#, ruby, rails",software engineer
+19462,management,software engineer
+19463,"unity, c#, ios, roid, swift, objective, c, java, unity, c#, ios, roid, swift, objective, c, java, kotlin",software engineer
+19464,"agile, bash, ficial services, microsoft windows azure, kubernetes, jenkins, linux, integration, infrastructure, amazon web services, ansible, cloud",software engineer
+19465,"react.js, react native, apis, react.js, react native, apis, leadership",software engineer
+19466,"react, react native, apis, react, react native, apis, leadership",software engineer
+19468,"saas, product development, aws, sql server, ruby on rails",software engineer
+19471,"software, applications, sdlc, java, hub",software engineer
+19473,"software, development, applications, java, sdlc, it, library, hub",software engineer
+19476,"sdlc, it, library, hub",software engineer
+19477,"cms, oop, middleware, xml, python, sdlc, linux",software engineer
+19478,"automotive, web, java, javascript, oracle, plsql",software engineer
+19479,"automotive, software, oracle, sql, micro, api, java",software engineer
+19483,"automotive, software, development, oracle, it, middleware, web, soap, wsdl, xml, api, http, ssl",software engineer
+19485,"apache, java, python, linux, network",software engineer
+19488,"ruby on rails, rspec, mvc, aws, ruby, redis, amqp, rspec, mvc, aws, ruby, redis, amqp, postgresql",software engineer
+19489,"ruby on rails, rspec, postgresql, mvc, redis, ruby, amqp, rspec, postgresql, mvc, redis, ruby, amqp, aws",software engineer
+19490,"rspec, mvc, postgresql, amqp, ruby on rails, aws , rspec, mvc, postgresql, amqp, ruby on rails, aws",software engineer
+19491,"ruby on rails, css3, postgres, sass, html5, css3, postgres, sass, html5, elasticsearch",software engineer
+19493,"ruby on rails, ruby, rails, ruby, rails, react, react.js, reactjs, javascript, tx",software engineer
+19495,"ruby on rails, product development, javascript, product development, javascript, saas",software engineer
+19496,"rspec, mvc, oop, postgresql, redis, amqp, aws, mvc, oop, postgresql, redis, amqp, aws, ruby on rails",software engineer
+19500,"ruby on rails, postgresql, sql, rspec, javascript, react, aws, azure, postgresql, sql, rspec, javascript, react, aws, azure",software engineer
+19504,"ruby, rails, vue, react, aws, ruby, rails, vue, react, aws, postgres",software engineer
+19511,"ruby on rails, postgres, heroku, rest, redis, postgres, heroku, rest, redis, vue",software engineer
+19512,"angularjs, ruby on rails, mysql, redis, solr, css, html, javascript, angularjs, ruby on rails, mysql, redis, solr, css, html, javascript, typescript",software engineer
+19513,"ruby, ruby on rails, javascript, linux, unix, rdbms, postgresql, mysql, redis, ruby on rails, javascript, linux, unix, rdbms, postgresql, mysql, redis",software engineer
+19547,"software, javascript",software engineer
+19548,"software, javascript, web, sql, oracle",software engineer
+19549,"software, javascript, test, development",software engineer
+19552,"software, html, javascript",software engineer
+19555,"javascript, software, system, architecture, api",software engineer
+19568,"java, javascript, struts, hibernate, rest, restful",java developer
+19570,"java, javascript, hibernate, struts",java developer
+19601,"software, java, javascript, sql, test, development",software engineer
+19604,"software, test, development, java, python, xml, case, engineers, system, sql, soap, wsdl, user interface, html, xslt, windows, linux, oracle",software engineer
+19640,"java, ibm, cobol, jcl, it",java developer
+19671,"apple, mobile devices, oem, os x, presentations, high availability, laptop, microsoft windows azure, computer science, education, attention to detail, software configuration, software deployment, specification, project management, qa, repair, self motivated, software, business partnership, can, communication",software engineer
+19794,"system, architect, systems, architecture, telecommunications, software, development, security, network, management, engineers",data scientist
+19811,"software, system, architect, excel, powerpoint, gui, wireless, network, sdlc",software engineer
+19897,"it, web, java, oracle, architect, linux, dba, security, development, ide, javascript, jsp, pl, sql, sdlc, windows, iso",java developer
+19935,"leadership, saas, cloud, agile, architecture, software deployment, amazon web services",software engineer
+20021,"quality, qa",software engineer
+20101,".net, api, agile, c#, css, continuous integration, data science, jms, javascript, json, implementation, nosql, mysql, software development, software, saas, sql, sdlc, postgresql, qa, restful, kubernetes, rabbitmq, akka, mongodb, redis, html, configuration, cloud, it, flask, tdd, solid, high availability, hardware, leadership, operations, python, telephony, ui, typescript, computer science, amazon web services",software engineer
+20102,".net, c#, angularjs, microsoft sql server, linq, javascript, software development",software engineer
+20108,"sql server, nosql, mongodb, ai, system architecture, nodejs, clojure, python, php, .net, c#, agile",software engineer
+20109,"jvm, java, software, continuous integration, jms, junit, communication",java developer
+20114,h,software engineer
+20130,"java, database, management",software engineer
+20133,"systems, java, system, development, sql, jdbc, python, bash, it",java developer
+20182,"business administration, information technology, data management",data scientist
+20183,"data management, data science",data scientist
+20237,"automotive, software, test, engineers, web, api, sql, python, informatica, consult, java, database, qa",software engineer
+20279,".net, agile, articulate, c#, microsoft windows, network protocols, network management, test cases, test plans, use cases, test management",software engineer
+20287,"selenium, junit, java, jenkins, aws, git, selenium, junit, java, jenkins, aws, git, agile",software engineer
+20288,"qa, sql, sql server, selenium, automation, web, saas",software engineer
+20292,"sql, agile, test automation, selenium, c#, .net , sql, agile, test automation, selenium, c#, .net",software engineer
+20293,"mathematics, it, leadership, most, aerospace, budget, c, can, computer science, self motivated, senior management, software, project implementation, python, qa, education, microsoft office, microsoft visio, microsoft windows, military, physics, test cases, test scripts",software engineer
+20296,"software, qa, quality, it, release, management",software engineer
+20298,"c, python, qa, test cases, test scripts, software",software engineer
+20301,"qa, software, database, micro, systems, quality, development, automated, web, soap, linux, windows, oracle, sql, teradata, java, python",software engineer
+20307,"qa, software, systems, quality, java, unix, database, pl, sql, sql, lan, wan, it, ibm, test, development, sdlc, windows, pc, scripts",software engineer
+20380,"c++, python, golang, distributed systems, python, golang, distributed systems",software engineer
+20407,"software, test, api, engineers, basic, systems, web, javascript, it",software engineer
+20408,"software, test, oop, sql, api, performance, automated, telecommunications, c, artificial intelligence, foundation",software engineer
+20410,"development, test, system, application, qa, engineers, oop, java, php, python",software engineer
+20411,"test, java",software engineer
+20415,"software, test, qa",software engineer
+20421,"mobile, m",software engineer
+20426,"c++, communication",software engineer
+20466,"civil, it, software, systems, python",software engineer
+20481,"software, systems, security, development, outlook, excel, powerpoint, defense systems, it",software engineer
+20619,"cloud, java, devops, security clearance, migration, communication",java developer
+20757,"azure, databricks, sql",data scientist
+20798,"software, ux, java, application, architecture, development, analysis, ood, oop, xml, api, database, sql, interface",software engineer
+20803,"amazon web services, roid development, kotlin, json, mobile applications, oop, restful, java, github, mvvm, c#",software engineer
+20804,"automotive, embedded software, hardware, software, software development, software deployment, scalability, ios development",software engineer
+20815,"engineers, architecture, python, protocol, qa, java",software engineer
+20847,"software, systems, development, javascript, sql, test, security, apache, http, system, defense systems, it, analysis",software engineer
+20852,"software, siebel, development, sdlc, consult, management, crm, analysis, soap, oracle",software engineer
+20855,sdlc,software engineer
+20861,"java, it, architect, linux, api, ide, sdlc, systems, j2ee, application, web, development, siebel, sql, security, architecture",software engineer
+20972,"systems, development, architecture, python, it",data scientist
+20979,"java, linux, python, windows, xml, xslt, jdbc, soap, it",data scientist
+21083,"data science, data structures, git, linux, python, software development, collaboration",software engineer
+21103,"java, python, scala",software engineer
+21111,"apache hadoop, big data, data science, data visualization, elasticsearch, javascript, node.js, nosql, scala, sql, tableau",data scientist
+21133,"big data, data analysis, data science, python, sql, collaboration",data scientist
+21134,"data science, elasticsearch, git, github, javascript, linux, mysql, nagios, node.js, python, redis, service, ubuntu, web applications",software engineer
+21136,"c++, matlab, computer science, documentation, multi, software development",software engineer
+21138,"computer science, communication",software engineer
+21142,"database, computer science, sharepoint, technology, powerpoint, word, excel, agile, scrum, project management",data scientist
+21155,"java, j2ee, oracle, mysql, sql",java developer
+21167,"java, javascript, html, css, angularjs",java developer
+21187,"java, python, typescript, written communication",software engineer
+21188,"java, management, quality, development, j2ee, windows, linux, pl, sql, oracle, sql, javascript, web, micro",software engineer
