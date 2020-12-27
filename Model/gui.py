@@ -1,11 +1,11 @@
 import tkinter as tk
-from model import clf, vectorizer, le
+from model import svm, vectorizer, le, td, sfm
 from PIL import ImageTk, Image
 
 # Functions
 def predict_res():
     inp = [entry_field1.get()]
-    res = clf.predict(vectorizer.transform(inp))
+    res = svm.predict(sfm.transform(td.transform(vectorizer.transform(inp))))
     out = le.inverse_transform(res)
     result['text']="You could be a " + out[0]
     if out[0]=="data scientist":
