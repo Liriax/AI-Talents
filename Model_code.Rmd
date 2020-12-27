@@ -25,33 +25,22 @@ knitr::opts_chunk$set(echo = T, cache = TRUE)
 options(scipen = 99999) # Do not wish to have scientific  notations.
 
 
-
 ```
 
 
 ```{r, warning = F, message = F}
 # loading the required packages:
-require(tidyverse)
-require(parsnip)
-require(yardstick)
-require(rsample)
-require(doParallel)
-require(recipes)
-require(ggridges)
-require(ggplot2)
-require(patchwork)
-require(xgboost)
-require(tidymodels)
-require(FactoMineR)
-require(tibble)
-require(tm)
-require(tidytext)
+
+library(FactoMineR)
+library(tibble)
+library(tm)
+library(tidyverse)
+library(parallel)
+library(ggplot2)
+library(tidytext)
 require(sentimentr)
-require(SentimentAnalysis)
-require(lexicon)
-require(tokenizers)
-require(wordcloud)
-require(docstring)
+library(SentimentAnalysis)
+library(lexicon)
 
 ### IMPORTANT! ###
 # Set the number of cores you will use for parallel calculation.
@@ -59,6 +48,7 @@ require(docstring)
 
 CORES <- 8
 cl <- parallel::makeCluster(CORES)
+
 ```
 
 
@@ -75,11 +65,43 @@ cl <- parallel::makeCluster(CORES)
 ### 1. Getting the data to run in R and tidyverse
 
 ```{r}
-# Loading in the data, binding them together----
 
-DF <- read.csv("linkedin.csv")
-  
-  
+# Cleaning the edx data----
+
+DF_edx <- read.csv("edx_courses.csv") %>% 
+  select(title, course_description , course_length , course_effort) %>% 
+  rename( length_in_weeks = course_length )
+
+DF_edx$course_description <- DF_edx$course_description %>% 
+  tolower() %>%
+  gsub("[^[:alpha:]]", " ", .) %>% 
+  gsub('\\b\\w{1}\\s|\\b\\w{21,}\\s','', .) %>% 
+  removeWords(., stopwords(kind = "en")) %>% 
+  gsub("[[:space:]]+", " ", .)
+
+DF_edx$title <- DF_edx$title %>% 
+  tolower() %>%
+  gsub("[^[:alpha:]]", " ", .) %>% 
+  gsub('\\b\\w{1}\\s|\\b\\w{21,}\\s','', .) %>% 
+  removeWords(., stopwords(kind = "en")) %>% 
+  gsub("[[:space:]]+", " ", .)
+
+DF_edx$length_in_weeks <- DF_edx$length_in_weeks  %>% 
+  gsub(" Weeks", "", .) %>% 
+  as.numeric()
+
+DF_edx <- DF_edx %>% 
+  mutate(min_hours_per_week = as.numeric(gsub("â€“.+", "", course_effort)),
+         max_hours_per_week = as.numeric(gsub(".+â€“| hours per week", "", course_effort)), 
+         avg_hours = (min_hours_per_week +max_hours_per_week)/2,
+         expected_hours = avg_hours*length_in_weeks) %>%
+  select(title, course_description , expected_hours)
+
+
+write.csv(DF_edx,"Cleaned_edx.csv", row.names = F)
+
+DF <- read.csv("Cleaned_edx.csv")
+
 ```
 
 
@@ -119,4 +141,8 @@ Now we can preposses the data. In the case of our corpus, we:
 
 
 ```
+
+
+
+
 
