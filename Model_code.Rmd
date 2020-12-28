@@ -148,11 +148,18 @@ DF_edx$Skills <-apply(
   function(u) paste( names(which(u)), collapse=", " ) 
 )
 
-#getting the average time it takes to learn a skill 
+#getting the average time it takes to learn a skill (based on the average time of the courses that said skill appeared in)
 
 
-Skill_times <- tibble( Skill = colnames(skill_check[,5:1194]), Skill_time = colMeans( skill_check[,5:1194]*skill_check$expected_hours )) 
+Skill_times <- tibble( Skill = colnames(skill_check[,5:1194]), Skill_time = colSums( skill_check[,5:1194]*skill_check$expected_hours )/colSums(skill_check[,5:1194])) 
 
+
+```
+
+
+
+```{r}
+#saving the csv files. 
 
 
 write.csv(DF_edx,"Cleaned_edx.csv", row.names = F)
@@ -162,9 +169,6 @@ write.csv(Skill_times,"Skill_times.csv", row.names = F)
 
 
 ```
-
-
-
 
 
 
