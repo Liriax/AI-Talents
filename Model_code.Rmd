@@ -41,13 +41,8 @@ library(tidytext)
 require(sentimentr)
 library(SentimentAnalysis)
 library(lexicon)
-
-### IMPORTANT! ###
-# Set the number of cores you will use for parallel calculation.
-# Do not exceed the recommended amount. 
-
-CORES <- 8
-cl <- parallel::makeCluster(CORES)
+require(tokenizers)
+require(stringr)
 
 ```
 
@@ -62,7 +57,7 @@ cl <- parallel::makeCluster(CORES)
 
 
 
-### 1. Getting the data to run in R and tidyverse
+### 1. Cleaning up the edx data: 
 
 ```{r}
 
@@ -98,49 +93,110 @@ DF_edx <- DF_edx %>%
   select(title, course_description , expected_hours)
 
 
+
+```
+
+
+----
+
+### 2. Checking the skills present in the edx data
+
+
+
+```{r}
+
+# loading all skills and crafting our own dictionary of skills
+
+DF_jobs <- read.csv("Model/test.csv")
+
+#making a vector with all the skill names
+
+All_skills <- paste(c(DF_jobs$required_skills), collapse = ", ") %>% 
+  scan(text = .,
+       what = "character",
+       quote = "", 
+       sep = ",") %>% 
+  trimws(., which = "both") 
+
+
+
+Freq_skills <- table(All_skills)%>% 
+  sort(decreasing = T) %>% 
+  as.data.frame() %>% 
+  filter(Freq > 4)
+
+Skill_dictionary <- as.vector(as.character(Freq_skills$All_skills)) %>% 
+  gsub("\\+", "\\\\+", .)
+
+
+
+```
+
+
+```{r}
+
+
+
+#checking which skills are present in the dataset.
+
+skill_check <- cbind(DF_edx, sapply(Skill_dictionary, function(w){grepl(paste0("\\b",w,"\\b"),DF_edx$course_description)}))
+
+# filtering out the skills on the edx DF
+
+DF_edx$Skills <-apply(
+  skill_check[,5:1194], 1, 
+  function(u) paste( names(which(u)), collapse=", " ) 
+)
+
+#getting the average time it takes to learn a skill 
+
+
+Skill_times <- tibble( Skill = colnames(skill_check[,5:1194]), Skill_time = colMeans( skill_check[,5:1194]*skill_check$expected_hours )) 
+
+
+
 write.csv(DF_edx,"Cleaned_edx.csv", row.names = F)
 
-DF <- read.csv("Cleaned_edx.csv")
-
-```
-
-
-### 2. Prepossesing and getting the data ready for modelling. 
-
-
-\pagebreak
-
-**3.2 Prepossessing the data** 
-
-Now we can preposses the data. In the case of our corpus, we: 
-
-- Removed datapoints with no title, and bodies with less than 30 words.
-
-- Removed uppercase letters.
-
-- Removed any character that isn't alphabetical
-
-- Removed any words that were shorter than 2 letters and larger than 21 letters
-
-- Removed stopwords (words that are frequent but carry no meaning). 
-
-
-```{r}
-
-# Now we do some prepossessing of the data
+write.csv(Skill_times,"Skill_times.csv", row.names = F)
 
 
 
 ```
 
-\pagebreak
-
-**3.3 Tokenizing the data and creating bigrams**
-
-```{r}
 
 
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
