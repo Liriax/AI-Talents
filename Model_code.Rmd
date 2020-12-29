@@ -55,9 +55,11 @@ require(stringr)
 \pagebreak
 
 
-
+----
 
 ### 1. Cleaning up the edx data: 
+
+----
 
 ```{r}
 
@@ -101,6 +103,7 @@ DF_edx <- DF_edx %>%
 
 ### 2. Checking the skills present in the edx data
 
+----
 
 
 ```{r}
@@ -172,11 +175,77 @@ write.csv(Skill_times,"Skill_times.csv", row.names = F)
 
 
 
+----
+
+### 3. Getting the industry and company size average skill: 
+
+----
+
+
+```{r}
+
+# Cleaning the glassdoor data----
+
+DF_glassdoor <- read.csv("glassdoor_job_posting.csv") %>% 
+  select(Job.Title, Job.Description , Size , Sector)  %>% 
+  mutate(Sector = as.factor(Sector))  %>% 
+  filter(Size != "-1", Size != "Unknown")
+
+DF_glassdoor$Sector <- DF_glassdoor$Sector  %>%
+  gsub("-1", "Data Analysis", .)
+
+# pre-processing the description
+
+DF_glassdoor$Job.Description <- DF_glassdoor$Job.Description %>% 
+  tolower() %>%
+  gsub("[^[:alnum:]|\\+]", " ", .) %>% 
+  gsub('\\b\\w{21,}\\s','', .) %>% 
+  removeWords(., stopwords(kind = "en")) %>% 
+  gsub("[[:space:]]+", " ", .)
+
+# Checking which skills are present in each description
+
+skill_check_gd <- cbind(DF_glassdoor,
+                        sapply(Skill_dictionary, function(w){grepl(paste0("\\b",w,"\\b"),DF_glassdoor$Job.Description)}))
+
+# Adding the skill matches in the text
+
+DF_glassdoor$Skills <-apply(
+  skill_check_gd[,5:1195], 1, 
+  function(u) paste( names(which(u)), collapse=", " ) 
+)
+
+DF_glassdoor$Size <- DF_glassdoor$Size %>% 
+  gsub("1 to 50 Employees|51 to 200 Employees", "Small", .) %>% 
+  gsub("201 to 500 Employees|501 to 1000 Employees", "Medium Small", .)%>% 
+  gsub("1001 to 5000 Employees|5001 to 10000 Employees", "Medium Large", .)%>% 
+  gsub("10000\\+ Employees", "Large", .)
+
+DF_Sector_skills <-   as.tibble(DF_glassdoor) %>% 
+  select( Sector, Size, Skills) %>% 
+  mutate(Sector = as.factor(Sector), Size = as.factor(Size) ) %>%
+  group_by(Sector, Size) %>% 
+  mutate(All_skills = paste0(Skills, collapse = ", ")) %>% 
+  ungroup() %>% 
+  group_by(Sector, Size,All_skills ) %>% 
+  summarise()
+
+
+```
 
 
 
+```{r}
+
+#saving the data as .csv
 
 
+write.csv(DF_glassdoor,"Cleaned_Glassdoor.csv", row.names = F)
+
+write.csv(DF_Sector_skills,"Sector_skills.csv", row.names = F)
+
+
+```
 
 
 
