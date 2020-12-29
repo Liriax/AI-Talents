@@ -1,10 +1,10 @@
 from model import svm, vectorizer, le, td, sfm
-import numpy as np
+#import numpy as np
 import pandas as pd
 import collections
 # Functions
 def findSimilarJobTitle(title):
-        new_title = np.nan
+        new_title = ""
         if "software" in title:
             new_title = "software engineer"
         elif "project" in title:
@@ -74,10 +74,10 @@ def getNTopSkillsFromJob(df, job, n):
 
   return df
 
-def getUserInput():
-    skills = input("What are your skills? Please separate with comma: ")
-    job = input("What is your current job position?")
-    return (skills, job)
+# def getUserInput():
+#     skills = input("What are your skills? Please separate with comma: ")
+#     job = input("What is your current job position?")
+#     return (skills, job)
 
 def predict_res(skills):
     if skills=="": return ""
@@ -87,37 +87,47 @@ def predict_res(skills):
     #result="You could also be a " + out[0]
     #print(result)
     return out[0]
-    
-def findSkillGap(job, skills):
-    perc = findTopSkillsFromJob(df, job)
+def getSkillGapAndFreq(df, job, skills, n_skills):
+    df = getNTopSkillsFromJob(df, job, n_skills)
     should = {}
     gap = []
-    for skill, per in perc:
-        should.update({skill:per})
+    for index, row in df.iterrows(): 
+      skill = row.skills
+      perc = row.frequency
+      should.update({skill:perc})
     n = 0
     total = sum(should.values())
+    assert total!=0
     for skill in should.keys():
         if skill not in skills.split(', '):
             gap.append(skill)
             n+=should.get(skill)
-    if len(gap)>=0:
-        print("Your skill gaps are: " + str(gap))
-        print("Your are " + str(int(n/total*100)) + " percent away")
+    percentage_away = int(n/total*100)
+    return (gap, percentage_away)
+def findSkillGap(df, job, skills, n_skills):
+    tup = getSkillGapAndFreq(df, job, skills, n_skills)
+    gap = tup[0]
+    percentage_away = tup[1]
+    if len(gap)>0: return ', '.join(gap) + " and you are "+ str(percentage_away) + " percent away"
+    else: return "None"
+    
+def getSkillGapList(df, job, skills, n_skills):
+    time = pd.read_csv("skill_time.csv", encoding = "ISO-8859-1")
+    tup = getSkillGapAndFreq(df, job, skills, n_skills)
 
-    else: print("No skill gaps identified.")
+    gap = tup[0]
+    skills = []
+    hours = []
+    for index, row in time.iterrows():
+      skill = row.skill
+      hr = row.time
+      if skill in gap:
+        skills.append(skill)
+        hours.append(int(hr))
+    res = pd.DataFrame(list(zip(skills, hours)), columns = ['skill','time'])
+    res.to_csv("result2.csv", encoding = "ISO-8859-1")
 
 #df = pd.read_csv("test.csv", encoding = "ISO-8859-1")
-#tup = getUserInput()
-#skills = tup[0]
-#input_job = tup[1]
-#findTopSkillsFromJob(df, "software engineer")
-'''
-skills = "java, python"
-input_job = "software developer"
-job = findSimilarJobTitle(input_job)
-predict_res(skills)
-if job!=np.nan:
-    findSkillGap(job, skills)
-else: print("Sorry, job title not supported yet!")
 
-'''
+
+
