@@ -1,0 +1,13 @@
+name: TechSkillytics
+title: TechSkillytics
+username:
+account: liriaxiaoge
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3432642
+bundleId: 4038061
+url: https://liriaxiaoge.shinyapps.io/TechSkillytics/
+when: 1609230770.36095
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: environment.R
