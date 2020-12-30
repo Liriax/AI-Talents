@@ -129,15 +129,18 @@ Freq_skills <- table(All_skills)%>%
   filter(Freq > 4)
 
 Skill_dictionary <- as.vector(as.character(Freq_skills$All_skills)) %>% 
-  gsub("\\+", "\\\\+", .)
+  gsub("\\+", "\\\\+", .) %>%
+  gsub("[[:digit:]]", "", .) %>% 
+  gsub("V...", "", .) %>% 
+  gsub("\\.", "", .)
 
+Skill_dictionary <- Skill_dictionary[Skill_dictionary !=""]
 
 
 ```
 
 
 ```{r}
-
 
 
 #checking which skills are present in the dataset.
@@ -147,14 +150,14 @@ skill_check <- cbind(DF_edx, sapply(Skill_dictionary, function(w){grepl(paste0("
 # filtering out the skills on the edx DF
 
 DF_edx$Skills <-apply(
-  skill_check[,5:1194], 1, 
+  skill_check[,5:ncol(skill_check)], 1, 
   function(u) paste( names(which(u)), collapse=", " ) 
 )
 
 #getting the average time it takes to learn a skill (based on the average time of the courses that said skill appeared in)
 
 
-Skill_times <- tibble( Skill = colnames(skill_check[,5:1194]), Skill_time = colSums( skill_check[,5:1194]*skill_check$expected_hours )/colSums(skill_check[,5:1194])) 
+Skill_times <- tibble( Skill = colnames(skill_check[,5:ncol(skill_check)]), Skill_time = colSums( skill_check[,5:ncol(skill_check)]*skill_check$expected_hours )/colSums(skill_check[,5:ncol(skill_check)])) 
 
 
 ```
@@ -211,7 +214,7 @@ skill_check_gd <- cbind(DF_glassdoor,
 # Adding the skill matches in the text
 
 DF_glassdoor$Skills <-apply(
-  skill_check_gd[,5:1195], 1, 
+  skill_check_gd[,5:ncol(skill_check_gd)], 1, 
   function(u) paste( names(which(u)), collapse=", " ) 
 )
 
@@ -266,28 +269,14 @@ write.csv(DF_Sector_skills,"Sector_skills.csv", row.names = F)
 require(wordcloud)
 
 
-
 # Make plots.
-plot_list = list()
+
 for (i in 1:28) {
-    p = ggplot(iris, aes_string(x=var_list[[i]][1], y=var_list[[i]][2])) +
-        geom_point(size=3, aes(colour=Species))
-    plot_list[[i]] = p
-}
 
-# creating a pdf where each page is a separate plot.
-
-pdf("word_clouds.pdf")
-for (i in 1:3) {
-    print(plot_list[[i]])
-}
-dev.off()
-
-
-
+  
 # First: tokenize the data
 
-text_tokens <- scan(text = DF_Sector_skills[[2,3]],
+text_tokens <- scan(text = DF_Sector_skills[[i,3]],
                       what = "character",
                       quote = "",
                     sep = ",")
@@ -300,14 +289,18 @@ freq_text <- table(text_tokens)%>%
 
 # Third: make wordcloud
 
+pdf(paste0("WC_",DF_Sector_skills[[i,1]],"-", DF_Sector_skills[[i,2]],".pdf"))
 
-jpeg("rplot.jpg", width = 350, height = 350)
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
-text(x=0.5, y=0.5, paste0(DF_Sector_skills[[2,1]], DF_Sector_skills[[2,2]]))
+text(x=0.5, y=0.5, paste0(DF_Sector_skills[[i,1]]," - ", DF_Sector_skills[[i,2]]))
 w_cloud <- wordcloud(words = freq_text$text_tokens,
-          freq = freq_text$Freq)
+          freq = freq_text$Freq,
+          min.freq = 1)
+
+dev.off()
+}
 
 
 ```

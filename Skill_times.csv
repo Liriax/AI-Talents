@@ -14,7 +14,7 @@
 "html",59.6666666666667
 "agile",17.0833333333333
 "windows",41
-".net",24.5
+"net",24.5
 "database",29
 "css",58
 "unix",12
@@ -25,7 +25,7 @@
 "analysis",35.8092783505155
 "mysql",35
 "cisco",NA
-"j2ee",NA
+"jee",NA
 "c\+\+",NA
 "api",20.5
 "system",40.2738095238095
@@ -35,7 +35,7 @@
 "cissp",NA
 "sql server",NA
 "cloud",39.1578947368421
-"asp.net",NA
+"aspnet",NA
 "application",47.4305555555556
 "hardware",36
 "ip",15
@@ -49,7 +49,7 @@
 "excel",30.6785714285714
 "lan",76
 "c",40.7407407407407
-"html5",26.5
+"html.1",59.6666666666667
 "etl",NA
 "engineering",48.0416666666667
 "devops",16.3333333333333
@@ -97,7 +97,7 @@
 "project",37.4347826086956
 "asp",NA
 "access",49.5576923076923
-"css3",6
+"css.1",58
 "powerpoint",21
 "ui",91
 "active directory",NA
@@ -137,10 +137,10 @@
 "computer science",42.4074074074074
 "lifecycle",17.5
 "microsoft sql server",NA
-"node.js",28
+"nodejs",NA
 "chef",32
 "android",54.5
-"db2",NA
+"db",NA
 "selenium",NA
 "microservices",12
 "technical support",NA
@@ -236,7 +236,7 @@
 "websphere",NA
 "developer",31.3125
 "stored procedures",NA
-"vb.net",NA
+"vbnet",NA
 "mobile",40.5909090909091
 "business objects",13.5
 "citrix",NA
@@ -253,7 +253,7 @@
 "web development",56.5
 "commerce",26
 "ecommerce",63
-"react.js",28
+"reactjs",NA
 "solaris",NA
 "ids",NA
 "ruby on rails",NA
@@ -275,10 +275,10 @@
 "tdd",NA
 "protocol",18.75
 "salesforce",NA
-"windows 7",NA
+"windows ",41
 "cd",25
 "micro",32.7272727272727
-"nodejs",NA
+"nodejs.1",NA
 "vb",NA
 "apache spark",90
 "best practices",30.9642857142857
@@ -296,8 +296,8 @@
 "ssas",NA
 "wpf",NA
 "aerospace",37.5
-"angular.js",NA
-"asp.net mvc",NA
+"angularjs.1",NA
+"aspnet mvc",NA
 "database design",36
 "emr",NA
 "gis",NA
@@ -311,7 +311,7 @@
 "business analysis",NA
 "defense systems",NA
 "eigrp",NA
-"f5",NA
+"f",20.6666666666667
 "itil",NA
 "palo alto",NA
 "visual basic",NA
@@ -346,7 +346,6 @@
 "pci",NA
 "project manager",31.4166666666667
 "weblogic",NA
-"V349",34.405641025641
 "analyst",41.3
 "budget",23.4
 "cisa",NA
@@ -386,7 +385,7 @@
 "laptop",33
 "linq",NA
 "microsoft ssrs",NA
-"s3",52
+"s",32.8997641509434
 "servicenow",NA
 "design patterns",54
 "ebs",12
@@ -405,7 +404,7 @@
 "cloud security",10.5
 "consulting",26.6666666666667
 "data structures",46
-"ec2",12
+"ec",NA
 "elasticsearch",NA
 "financial services",41.5
 "installation",NA
@@ -420,7 +419,7 @@
 "consultant",23.5
 "eclipse",28
 "gcp",NA
-"html 5",NA
+"html ",59.6666666666667
 "information systems",NA
 "java script",NA
 "ms sql",NA
@@ -428,7 +427,7 @@
 "physics",78.3958333333333
 "production",44.2096774193548
 "production support",NA
-"reactjs",NA
+"reactjs.1",NA
 "rest api",NA
 "san",34.5
 "server",36.875
@@ -437,7 +436,7 @@
 "uat",NA
 "v",40
 "vba",NA
-"3d",36.2142857142857
+"d",29.4375
 "backend",10.5
 "business process",NA
 "data architect",NA
@@ -460,7 +459,7 @@
 "terraform",NA
 "user experience",29.6666666666667
 "web design",44
-"b2b",NA
+"bb",NA
 "ceh",NA
 "data centers",NA
 "director",32.1
@@ -505,7 +504,7 @@
 "less",48.7333333333333
 "mac",54
 "mq",NA
-"net",24.5
+"net.1",24.5
 "network design",NA
 "obiee",NA
 "plsql",NA
@@ -532,11 +531,11 @@
 "erwin",NA
 "giac",NA
 "information assurance",NA
-"jee",NA
+"jee.1",NA
 "laboratory",44.25
 "microstrategy",NA
 "ms sql server",NA
-"office 365",17.5
+"office ",21.7083333333333
 "oracle dba",NA
 "product development",18
 "restful api",NA
@@ -549,19 +548,18 @@
 "troubleshoot",NA
 "vulnerability management",NA
 "workflow",18.5
-"2012",29
 "alm",NA
 "apache kafka",NA
 "brocade",NA
-"c#.net",NA
+"c#net",NA
 "centos",NA
 "cisco routers",NA
 "code review",NA
-"contract w2",NA
+"contract w",NA
 "customer support",NA
 "django",NA
 "dlp",NA
-"etc.",39.6944444444444
+"etc",39.6944444444444
 "financial",41.49
 "it management",NA
 "mobile development",NA
@@ -571,7 +569,6 @@
 "qos",NA
 "sip",18
 "testng",NA
-"3",53.25
 "ad",18
 "cross",29.8055555555556
 "data security",12
@@ -591,8 +588,8 @@
 "snowflake",NA
 "to",NA
 "toad",NA
-".net core",NA
-"ado.net",NA
+"net core",NA
+"adonet",NA
 "asa",NA
 "client",43.75
 "continuous delivery",NA
@@ -656,14 +653,14 @@
 "vm",NA
 "voice",24.35
 "z",NA
-".net framework",NA
+"net framework",NA
 "apache tomcat",NA
 "authentication",30
 "backup administration",NA
 "browsers",29
 "cad",33
 "creativity",35
-"etc",39.6944444444444
+"etc.1",39.6944444444444
 "graphics",84
 "jcl",NA
 "mcp",NA
@@ -687,11 +684,10 @@
 "strategy",25.7173913043478
 "ubuntu",90
 "wireframes",NA
-"802.11",NA
 "ada",NA
 "amazon",54.75
-"amazon ec2",12
-"amazon s3",12
+"amazon ec",NA
+"amazon s",NA
 "apache hive",NA
 "cisco certifications",NA
 "data collection",42.5
@@ -731,7 +727,7 @@
 "https",57.7333333333333
 "interfaces",40.0714285714286
 "invision",NA
-"ipv6",NA
+"ipv",NA
 "it operations",NA
 "it service management",NA
 "it support",NA
@@ -763,8 +759,7 @@
 "unisys",NA
 "word",18.2857142857143
 "xamarin",NA
-"11g",NA
-"7",35.375
+"g",73.1153846153846
 "access management",12
 "act",44.9
 "adobe creative suite",NA
@@ -819,8 +814,6 @@
 "web server",28
 "web service",NA
 "xhtml",NA
-"10",28.9333333333333
-"2",35.1101694915254
 "a\+",NA
 "agile development",26.3333333333333
 "alcatel",NA
@@ -829,7 +822,7 @@
 "arista",NA
 "arm",56.5833333333333
 "atm",28
-"backbone.js",NA
+"backbonejs",NA
 "bmc",NA
 "business analyst",NA
 "cicd",NA
@@ -869,15 +862,15 @@
 "netapp",NA
 "next",51.9848484848485
 "ooad",NA
-"oracle 12c",NA
+"oracle c",NA
 "peripherals",42
 "product management",18.5
 "redux",NA
 "reliable",22.4
 "requirements",48.3125
 "routing protocols",NA
-"s",32.8997641509434
-"salesforce.com",NA
+"s.1",32.8997641509434
+"salesforcecom",NA
 "secret clearance",NA
 "sei",13.5
 "servers",47.6
@@ -907,7 +900,6 @@
 "wifi",43.1666666666667
 "wireshark",NA
 "xsd",NA
-"8",55.8529411764706
 "adf",NA
 "aml",NA
 "and",NA
@@ -929,7 +921,7 @@
 "functional requirements",NA
 "gcih",NA
 "gulp",NA
-"hl7",NA
+"hl",NA
 "ims",NA
 "install",26.5
 "ise",NA
@@ -943,7 +935,7 @@
 "ms excel",NA
 "network operations",NA
 "nortel",NA
-"o365",NA
+"o",27.0990099009901
 "openshift",NA
 "oracle sql",NA
 "oscilloscope",NA
@@ -964,10 +956,6 @@
 "vuejs",NA
 "wireless communication",NA
 "workday",NA
-"1",34.5169491525424
-"2016",28.8571428571429
-"4",36.78125
-"5",27.4666666666667
 "ai",43.1666666666667
 "android development",NA
 "ansi",NA
@@ -982,7 +970,7 @@
 "cobit",NA
 "coldfusion",NA
 "datawarehouse",NA
-"es6",NA
+"es",25.8022388059701
 "evaluation",53.0909090909091
 "fixed income",NA
 "forensics",144
@@ -1001,11 +989,11 @@
 "medical device",NA
 "metadata",NA
 "microsoft sql",NA
-"microsoft windows 7",NA
+"microsoft windows ",NA
 "ml",NA
 "nginx",NA
 "nice",NA
-"nist 800",NA
+"nist ",NA
 "oozie",NA
 "oracle db",NA
 "oracle rac",NA
@@ -1032,12 +1020,11 @@
 "threat",28.3333333333333
 "ui development",NA
 "user interface design",27
-"visual basic .net",NA
+"visual basic net",NA
 "vue",NA
-"vue.js",NA
+"vuejs.1",NA
 "vulnerability assessment",NA
 "wireframe",NA
-"53",NA
 "adaptability",10
 "alteryx",NA
 "animation",81
@@ -1060,7 +1047,7 @@
 "graphic design",10
 "gsec",NA
 "hedge fund",NA
-"ibm db2",NA
+"ibm db",NA
 "information architecture",NA
 "interaction design",21
 "lawson",NA
@@ -1104,7 +1091,7 @@
 "flask",NA
 "game",46.1818181818182
 "gpo",NA
-"i2c",NA
+"ic",NA
 "ibm websphere",NA
 "ics",NA
 "ipad",NA
@@ -1133,7 +1120,7 @@
 "web application development",NA
 "web security",NA
 "wireless network",NA
-"18c",NA
+"c.1",40.7407407407407
 "accessibility",108
 "accounting",27
 "acquisition",65.8333333333333
@@ -1165,11 +1152,11 @@
 "houston",NA
 "isso",35
 "ivr",NA
-"j2ee web services",NA
+"jee web services",NA
 "kronos",NA
 "mcafee",NA
 "openview",NA
-"oracle 11g",NA
+"oracle g",NA
 "organized",26
 "pharmaceutics",NA
 "presentation",23.4375
