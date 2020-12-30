@@ -231,7 +231,23 @@ def findTopSkillsFromJob(df, job):
         print(skill + " with " + str(int(100*prob))+ " percent probability")
     return perc
 
+def findTopSkillsFromSector(df, sector):
+    skills=[]
+    for index, row in df.iterrows(): 
+        if row.sector == sector:
+            for skill in row.required_skills.split(', '):
+                skills.append(skill)
+    top_skills = collections.Counter(skills).most_common()[:5]
+    perc = []
+    for skill, count in top_skills:
+        perc.append((skill, count/len(skills)))
+    print("The top skills for " + sector + " are: ")
+    for skill, prob in perc:
+        print(skill + " with " + str(int(100*prob))+ " percent probability")
+    return perc
 #df = pd.read_csv("test.csv", encoding = "ISO-8859-1")
 #findTopSkillsFromJob(df, "software engineer")
 
-    
+df = pd.read_csv("Sector_skills.csv", encoding = "ISO-8859-1")
+#print(findTopSkillsFromSector(df, "Information Technology"))
+print(getSkillFreqDict(df))
