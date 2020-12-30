@@ -4,8 +4,11 @@
 
 
 library(shiny)
+library(wordcloud)
 PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn', 'category_encoders')
 df<-read.csv('test.csv',encoding="ISO-8859-1")
+
+company_df = data.frame(employee=c("Alice"), position=c("data analyst"), skills=c("sql, R"))
 
 # UI design ----------------------------------------------------------------
 ui <- navbarPage("TechSkillytics",
@@ -56,7 +59,30 @@ ui <- navbarPage("TechSkillytics",
     )
   ),
 # 2. Slide 
- tabPanel("2. Slide", "This panel is intentionally left blank"),
+ tabPanel("2. Slide",
+   fluidPage(
+     titlePanel(title = "Adding employee profiles"), 
+     sidebarLayout(
+       
+       sidebarPanel(textInput("employee_name","Enter employee name"),
+                    br(),
+                    textInput("employee_skills","Enter employee skills"),
+                    br(),
+                    textInput("employee_position","Enter employee position"),
+                    actionButton("add_btn", "Add"),
+                    br(),
+                    textInput("training","Enter the skills that you plan to train")
+                    ),
+       mainPanel(
+         plotOutput("teamSkills"),
+         
+         DT::dataTableOutput("table")
+         
+       )
+       
+     )
+   )
+ ),
 
 # 3. Slide 
  tabPanel("3. Slide", "Also blank")
@@ -108,6 +134,19 @@ server <- function(input, output) {
               main="Learning Time",
               xlab="hours")
     })
+    
+    values <- reactiveValues()
+    values$df <- company_df
+    observeEvent(input$add_btn, {
+      newLine <- isolate(c(input$employee_name, input$employee_position, input$employee_skills))
+      isolate(values$df <- rbind(values$df, newLine))
+    })
+    output$table <- DT::renderDataTable(values$df, editable="all")
+    # output$teamSkills <- renderPlot({
+    #   v <- values$df
+    #   data <- getSkillFreqDict(v,"skills")
+    #   barplot(height=data$frequency, names=data$skills,horiz=TRUE,col=rgb(0, 0.8, 0.8, 0.8))
+    # })
 }
 
 # Run the application ---------------------------------------

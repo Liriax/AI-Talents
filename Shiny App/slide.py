@@ -112,22 +112,31 @@ def findSkillGap(df, job, skills, n_skills):
     else: return "None"
     
 def getSkillGapList(df, job, skills, n_skills):
-    time = pd.read_csv("skill_time.csv", encoding = "ISO-8859-1")
+    time = pd.read_csv("Skill_times.csv", encoding = "ISO-8859-1")
+    time.dropna(inplace=True)
+    time = time.sort_values(by=['Skill_time'])
     tup = getSkillGapAndFreq(df, job, skills, n_skills)
 
     gap = tup[0]
     skills = []
     hours = []
     for index, row in time.iterrows():
-      skill = row.skill
-      hr = row.time
+      skill = row.Skill
+      hr = row.Skill_time
       if skill in gap:
         skills.append(skill)
         hours.append(int(hr))
     res = pd.DataFrame(list(zip(skills, hours)), columns = ['skill','time'])
     res.to_csv("result2.csv", encoding = "ISO-8859-1")
-
-#df = pd.read_csv("test.csv", encoding = "ISO-8859-1")
-
+    
+def getSkillFreqDict(df,col):
+    skills = []
+    for skill_set in df[col]:
+        skill_set=str(skill_set)
+        for skill in skill_set.split(", "):
+            skills.append(skill)
+    dic =  collections.Counter(skills)
+    res = pd.DataFrame(list(zip(dic.keys(), dic.values())), columns = ['skills','frequency'])
+    return res
 
 
