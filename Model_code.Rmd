@@ -231,6 +231,7 @@ DF_Sector_skills <-   as.tibble(DF_glassdoor) %>%
   summarise()
 
 
+
 ```
 
 
@@ -252,6 +253,64 @@ write.csv(DF_Sector_skills,"Sector_skills.csv", row.names = F)
 
 
 
+----
+
+### 4. Making wordclouds
+
+----
+
+```{r,fig.height=3,fig.width=3,warning=FALSE,message=FALSE}
+
+# Making a loop to print out all word clouds.
+
+require(wordcloud)
+
+
+
+# Make plots.
+plot_list = list()
+for (i in 1:28) {
+    p = ggplot(iris, aes_string(x=var_list[[i]][1], y=var_list[[i]][2])) +
+        geom_point(size=3, aes(colour=Species))
+    plot_list[[i]] = p
+}
+
+# creating a pdf where each page is a separate plot.
+
+pdf("word_clouds.pdf")
+for (i in 1:3) {
+    print(plot_list[[i]])
+}
+dev.off()
+
+
+
+# First: tokenize the data
+
+text_tokens <- scan(text = DF_Sector_skills[[2,3]],
+                      what = "character",
+                      quote = "",
+                    sep = ",")
+
+# Second: make frequency tables
+
+freq_text <- table(text_tokens)%>% 
+  sort(decreasing = T) %>% 
+  as.data.frame()
+
+# Third: make wordcloud
+
+
+jpeg("rplot.jpg", width = 350, height = 350)
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, paste0(DF_Sector_skills[[2,1]], DF_Sector_skills[[2,2]]))
+w_cloud <- wordcloud(words = freq_text$text_tokens,
+          freq = freq_text$Freq)
+
+
+```
 
 
 
