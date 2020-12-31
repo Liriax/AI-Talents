@@ -42,8 +42,8 @@ def findAllTopSkillsFromJob(df, job):
     for index, row in df.iterrows(): 
         if row.job_title == job:
             n+=1
-            for skill in row.required_skills.split(', '):
-                skills.append(skill)
+            for skill in row.required_skills.split(','):
+                skills.append(skill.strip())
     top_skills = collections.Counter(skills).most_common()
     perc = []
     for skill, count in top_skills:
@@ -51,13 +51,13 @@ def findAllTopSkillsFromJob(df, job):
             perc.append((skill, count/n))
     return perc
     
-def findTopSkillsFromJob(df, job):
-    perc = findAllTopSkillsFromJob(df, job)
-    print("The top skills for " + job + " are: ")
-    if len(perc)>=10: perc = perc[:11]
-    for skill, prob in perc:
-        print(skill + " with " + str(int(100*prob))+ " percent probability")
-    return perc
+# def findTopSkillsFromJob(df, job):
+#     perc = findAllTopSkillsFromJob(df, job)
+#     print("The top skills for " + job + " are: ")
+#     if len(perc)>=10: perc = perc[:11]
+#     for skill, prob in perc:
+#         print(skill + " with " + str(int(100*prob))+ " percent probability")
+#     return perc
     
 def getNTopSkillsFromJob(df, job, n):
   l = findAllTopSkillsFromJob(df, job)
@@ -87,6 +87,7 @@ def predict_res(skills):
     #result="You could also be a " + out[0]
     #print(result)
     return out[0]
+    
 def getSkillGapAndFreq(df, job, skills, n_skills):
     df = getNTopSkillsFromJob(df, job, n_skills)
     should = {}
@@ -99,7 +100,8 @@ def getSkillGapAndFreq(df, job, skills, n_skills):
     total = sum(should.values())
     assert total!=0
     for skill in should.keys():
-        if skill not in skills.split(', '):
+        if skill not in skills.split(','):
+            skill=skill.strip()
             gap.append(skill)
             n+=should.get(skill)
     percentage_away = int(n/total*100)
@@ -129,14 +131,17 @@ def getSkillGapList(df, job, skills, n_skills):
     res = pd.DataFrame(list(zip(skills, hours)), columns = ['skill','time'])
     res.to_csv("result2.csv", encoding = "ISO-8859-1")
     
-def getSkillFreqDict(df,col):
-    skills = []
-    for skill_set in df[col]:
-        skill_set=str(skill_set)
-        for skill in skill_set.split(", "):
-            skills.append(skill)
-    dic =  collections.Counter(skills)
-    res = pd.DataFrame(list(zip(dic.keys(), dic.values())), columns = ['skills','frequency'])
-    return res
+def getTeamSkillGap(df, team, n):
+  team_skill_gap = []
+  for index, row in team.iterrows():
+    job = row.position
+    skills = row.skills
+    job = findSimilarJobTitle(job)
+    if job == "": continue
+    tup = getSkillGapAndFreq(df, job, skills, n)
+    gap = tup[0]
+    team_skill_gap = team_skill_gap + gap
+  return team_skill_gap
+
 
 

@@ -4,7 +4,6 @@
 # Edit this name if desired when starting a new app
 VIRTUALENV_NAME = 'python_environment'
 
-
 # ------------------------- Settings (Do not edit) -------------------------- #
 
 if (Sys.info()[['user']] == 'shiny'){
