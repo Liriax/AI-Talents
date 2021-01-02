@@ -102,7 +102,9 @@ body <- dashboardBody(
           width = 5,
           h4("Your Team's Skill Pool"),
           wordcloud2Output("teamSkills")
-        ),
+        )
+      ),
+      fluidRow(
         box(
           title = "Workforce Profile",
           solidHeader = T,
@@ -229,7 +231,7 @@ server <- function(input, output) {
 
       # Third: make wordcloud
       wordcloud2a(freq_text,
-                 color = "random-light", size=0.4)
+                 color = "random-light", size=0.3)
     })
 
     output$teamSkills <- renderWordcloud2({
