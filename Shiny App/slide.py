@@ -110,8 +110,13 @@ def findSkillGap(df, job, skills, n_skills):
     tup = getSkillGapAndFreq(df, job, skills, n_skills)
     gap = tup[0]
     percentage_away = tup[1]
-    if len(gap)>0: return ', '.join(gap) + " and you are "+ str(percentage_away) + " percent away"
+    if len(gap)>0: return ', '.join(gap)# + " and you are "+ str(percentage_away) + " percent away"
     else: return "None"
+def findSkillGapPercentage(df, job, skills, n_skills):
+    tup = getSkillGapAndFreq(df, job, skills, n_skills)
+    gap = tup[0]
+    percentage_away = tup[1]
+    return percentage_away
     
 def getSkillGapList(df, job, skills, n_skills):
     time = pd.read_csv("Skill_times.csv", encoding = "ISO-8859-1")
