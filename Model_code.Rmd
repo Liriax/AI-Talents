@@ -128,14 +128,10 @@ Freq_skills <- table(All_skills)%>%
   as.data.frame() %>% 
   filter(Freq > 4)
 
-Skill_dictionary <- as.vector(as.character(Freq_skills$All_skills)) %>% 
-  gsub("\\+", "\\\\+", .) %>%
-  gsub("[[:digit:]]", "", .) %>% 
-  gsub("V...", "", .) %>% 
-  gsub("\\.", "", .)
 
-Skill_dictionary <- Skill_dictionary[Skill_dictionary !=""]
+Skill_dictionary <- read.csv("Skill_dictionary.csv")
 
+Skill_dictionary <- as.vector(Skill_dictionary$x)
 
 ```
 
@@ -304,8 +300,6 @@ dev.off()
 
 
 ```
-
-
 
 
 
