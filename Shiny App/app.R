@@ -15,7 +15,7 @@ library(visNetwork)
 library(rintrojs)
 
 
-PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn', 'category_encoders')
+PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn==0.23.2', 'category_encoders','joblib')
 df<-read.csv('test.csv',encoding="ISO-8859-1")
 sector_df <- read.csv('Sector_skills.csv')
 company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
@@ -25,130 +25,143 @@ company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data anal
 
 
 
-sidebar<-dashboardSidebar(
-  sidebarMenu(
-    menuItem("Individual", tabName = "db1", icon = icon("dashboard"))
-    ,
-    menuItem("Company", tabName = "db2", icon = icon("dashboard"))
-  )
-)
-body <- dashboardBody(
-  
-  tabItems(
-    tabItem(
-      tabName = "db1",
-      fluidRow(
-        box(
-          title = "Individual Skill Analysis",
-          solidHeader = T,
-          width = 3, 
-          collapsible = T,
-          collapsed = F,
-          textInput("current_job","Enter your current job title"),
-          selectInput("job",label = "Or choose a Job Title",
-                      choices = c("software engineer",
-                                  "project manager","database administrator",
-                                  "big data engineer", "data analyst",
-                                  "business intelligence analyst","java developer",
-                                  "information security analyst","security architect","network engineer",
-                                  "IT support","application developer","information systems coordinater",
-                                  "database administrator","web developer","cloud engineer","DevOps engineer",
-                                  "UX designer", "quality assurance engineer","hardware engineer"),
-                      selected = "software engineer"),
-          
-          textInput("current_skills","Enter your current skills (separated by comma)"),
-          sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
-        ),
-        
-        
-        box(
-          title = "Job Position Information",
-          br(),
-          solidHeader = T,
-          collapsible = T,
-          width = 4,
-          collapsed = F,
-          plotOutput("skillPlot")),
-        
-        box(
-          solidHeader = T,
-          collapsible = T,
-          collapsed = F,
-          width = 5,
-          title = "Skill Gap Analysis",
-          #h5(strong("Skill gaps: ")),
-          #textOutput("skill_gap"),
-          h5(strong("Learning Time")),
-          plotOutput("skillTime")
-        ),
-        fluidRow(        
-          infoBoxOutput("predicted_job"),
-          infoBoxOutput("percentage"),
-          valueBoxOutput("value")
-        ),
-      )
-    )
-    ,
-    tabItem(
-      tabName = "db2",
-      fluidRow(
-        box(
-          title = "Company Profile",
-          solidHeader = T,
-          width = 2,
-          textInput('company_name', 'Company name'),
-          selectInput('company_sector', 'Company sector', c(sector_df$Sector)),
-          selectInput('company_size', 'Company size', c("All","Small", "Medium Small","Medium Large", "Large")),
-          tags$p("Small: 1-200 Employees"),
-          tags$p("Medium Small: 201-1000 Employees"),
-          tags$p("Medium Large: 1001-10000 Employees"),
-          tags$p("Large: more than 10000 Employees")
-        ),
-        box(
-          solidHeader = T,
-          width = 5,
-          h4("Your sector's wanted skills"), 
-          # wordcloud2Output('sectorplot')
-        ),
-        box(
-          solidHeader = T,
-          width = 5,
-          h4("Your Team's Skill Pool"),
-          # wordcloud2Output("teamSkills")
-        )
-      ),
-      fluidRow(
-        box(
-          title = "Workforce Profile",
-          solidHeader = T,
-          width = 3,
-          textInput("employee_name","Enter employee name"),
-          textInput("employee_skills","Enter employee skills (separate by comma)"),
-          textInput("employee_position","Enter employee position"),
-          actionButton("add_btn", "Add"),
-          textInput("training","Enter the skill that you plan to train"),
-          valueBoxOutput("training_effect")
-        ),
-        box(
-          title = "Workforce Data",
-          solidHeader = T,
-          width = 4,
-          hr(),
-          # DT::dataTableOutput("table")
-        ),
-        box(
-          title = "Team Skill Gap",
-          solidHeader = T,
-          width = 5,
-          # plotOutput("team_gap")
-        )
-      )
-    )
+# sidebar<-dashboardSidebar(
+#   sidebarMenu(
+#     menuItem("Individual", tabName = "db1", icon = icon("dashboard"))
+#     ,
+#     menuItem("Company", tabName = "db2", icon = icon("dashboard"))
+#   )
+# )
 
-  )
-  
-  
+sidebar<-sidebarPanel(
+  # textInput('company_name', 'Company name'),
+  selectInput('company_sector', 'Company sector', c(sector_df$Sector)),
+  selectInput('company_size', 'Company size', c("All","Small", "Medium Small","Medium Large", "Large")),
+  tags$p("Small: 1-200 Employees"),
+  tags$p("Medium Small: 201-1000 Employees"),
+  tags$p("Medium Large: 1001-10000 Employees"),
+  tags$p("Large: more than 10000 Employees")
 )
+
+body <- mainPanel(
+  # wordcloud2Output('sectorplot')
+)
+# body <- dashboardBody(
+#   
+#   tabItems(
+    # tabItem(
+    #   tabName = "db1",
+    #   fluidRow(
+    #     box(
+    #       title = "Individual Skill Analysis",
+    #       solidHeader = T,
+    #       width = 3, 
+    #       collapsible = T,
+    #       collapsed = F,
+    #       textInput("current_job","Enter your current job title"),
+    #       selectInput("job",label = "Or choose a Job Title",
+    #                   choices = c("software engineer",
+    #                               "project manager","database administrator",
+    #                               "big data engineer", "data analyst",
+    #                               "business intelligence analyst","java developer",
+    #                               "information security analyst","security architect","network engineer",
+    #                               "IT support","application developer","information systems coordinater",
+    #                               "database administrator","web developer","cloud engineer","DevOps engineer",
+    #                               "UX designer", "quality assurance engineer","hardware engineer"),
+    #                   selected = "software engineer"),
+    #       
+    #       textInput("current_skills","Enter your current skills (separated by comma)"),
+    #       sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
+    #     ),
+    #     
+    #     
+    #     box(
+    #       title = "Job Position Information",
+    #       br(),
+    #       solidHeader = T,
+    #       collapsible = T,
+    #       width = 4,
+    #       collapsed = F,
+    #       #plotOutput("skillPlot")
+    #       ),
+    #     
+    #     box(
+    #       solidHeader = T,
+    #       collapsible = T,
+    #       collapsed = F,
+    #       width = 5,
+    #       title = "Skill Gap Analysis",
+    #       h5(strong("Learning Time")),
+    #       # plotOutput("skillTime")
+    #     ),
+    #     fluidRow(        
+    #       # infoBoxOutput("predicted_job"),
+    #       # infoBoxOutput("skill_gap"),
+    #       # valueBoxOutput("value")
+    #     ),
+    #   )
+    # )
+    # ,
+#     tabItem(
+#       tabName = "db2",
+#       fluidRow(
+#         box(
+#           title = "Company Profile",
+#           solidHeader = T,
+#           width = 2,
+#           textInput('company_name', 'Company name'),
+#           selectInput('company_sector', 'Company sector', c(sector_df$Sector)),
+#           selectInput('company_size', 'Company size', c("All","Small", "Medium Small","Medium Large", "Large")),
+#           tags$p("Small: 1-200 Employees"),
+#           tags$p("Medium Small: 201-1000 Employees"),
+#           tags$p("Medium Large: 1001-10000 Employees"),
+#           tags$p("Large: more than 10000 Employees")
+#         ),
+#         box(
+#           solidHeader = T,
+#           width = 5,
+#           h4("Your sector's wanted skills"), 
+#           # wordcloud2Output('sectorplot')
+#         ),
+#         box(
+#           solidHeader = T,
+#           width = 5,
+#           h4("Your Team's Skill Pool"),
+#           # wordcloud2Output("teamSkills")
+#         )
+#       ),
+#       fluidRow(
+#         box(
+#           title = "Workforce Profile",
+#           solidHeader = T,
+#           width = 3,
+#           textInput("employee_name","Enter employee name"),
+#           textInput("employee_skills","Enter employee skills (separate by comma)"),
+#           textInput("employee_position","Enter employee position"),
+#           actionButton("add_btn", "Add"),
+#           textInput("training","Enter the skill that you plan to train"),
+#           valueBoxOutput("training_effect")
+#         ),
+#         box(
+#           title = "Workforce Data",
+#           solidHeader = T,
+#           width = 4,
+#           hr(),
+#           # DT::dataTableOutput("table")
+#         ),
+#         box(
+#           title = "Team Skill Gap",
+#           solidHeader = T,
+#           width = 5,
+#           # plotOutput("team_gap")
+#         )
+#       )
+#     )
+# 
+#   )
+#   
+#   
+# )
 
 
 
@@ -178,6 +191,96 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                        }",
                      "body {padding-top: 75px;}"),
                    
+                 
+                 
+                 #-----------------------------------
+                 tabPanel("Input", value = "input",
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<br><br><center> <h1>Hello!</h1> </center><br>"),
+                                   shiny::HTML("<h5>Please enter your current job position</h5>")
+                            ),
+                            column(3)
+                          ),
+                          
+                          fluidRow(
+                            
+                            style = "height:20px;"),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   textInput("current_job",""),
+                                   
+                                   )
+                          ),
+                          
+                          fluidRow(
+                            
+                            style = "height:20px;"),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<h5>Or choose a Job Title</h5>")
+                            ),
+                            column(3)
+                          ),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   selectInput("job",label="",
+                                               choices = c("software engineer",
+                                                           "project manager","database administrator",
+                                                           "big data engineer", "data analyst",
+                                                           "business intelligence analyst","java developer",
+                                                           "information security analyst","security architect","network engineer",
+                                                           "IT support","application developer","information systems coordinater",
+                                                           "database administrator","web developer","cloud engineer","DevOps engineer",
+                                                           "UX designer", "quality assurance engineer","hardware engineer"),
+                                               selected = "software engineer")
+                                   )
+                          ),
+                          
+                          fluidRow(
+                            
+                            style = "height:20px;"),
+                          
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<h5>Enter your current skills</h5>")
+                            ),
+                            column(3)
+                          ),
+                          
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   textInput("current_skills","Please separate your skills by a comma"),
+                                   
+                            )
+                          ),
+                          
+                          fluidRow(
+                            
+                            style = "height:20px;"),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
+                                   
+                            )
+                          )
+                          
+                   
+                   
+                 ),
                  
                  #----------------------------------
                  
@@ -228,12 +331,88 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             # PAGE BREAK
                             tags$hr(),
                             
-                            # The skills the team has
                             fluidRow(
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> First,  </h1> </center><br>"),
-                                     shiny::HTML("<h5> let's see the skills you told us you already have. According to our survey, these are the skills that your team posseses:  </h5>")
+                                     shiny::HTML("<h5> let's see the most wanted skills for your job position:  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            #1
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     plotOutput("skillPlot")
+                              ),
+                              column(3)
+                            ),
+                            
+                            
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> And these are your skill gaps:  </h5>")
+                              )
+                            ),
+                            #2
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     infoBoxOutput("skill_gap")
+                              ),
+                              column(3)
+                            ),
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> Which means you are this far away from the skill requirements:  </h5>")
+                              )
+                            ),
+                            #3
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     valueBoxOutput("value")
+                              ),
+                              column(3)
+                            ),
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> Your skills actually match to this job title as well  </h5>")
+                              )
+                            ),
+                            #4
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     textOutput("predicted_job")
+                              ),
+                              column(3)
+                            ),
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> And the learning time for your lacking skills is  </h5>")
+                              )
+                            ),
+                            #5
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     plotOutput("skillTime")
+                              ),
+                              column(3)
+                            ),
+                            
+                            
+                            # The skills the team has
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<br><br><center> <h1> Now,  </h1> </center><br>"),
+                                     shiny::HTML("<h5> let's see the skills your team members told us they already have. According to our survey, these are the skills that your team posseses:  </h5>")
                               ),
                               column(3)
                             ),
@@ -242,7 +421,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             fluidRow(
                               
                               style = "height:50px;"),
-                            
+                            #6
                             fluidRow(
                               column(3),
                               column(6,
@@ -260,11 +439,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               ),
                               column(3)
                             ),
-                            # 
-                            # fluidRow(
-                            #   
-                            #   style = "height:50px;"),
-                            
+                           
+                            #7
                             fluidRow(
                               column(3),
                               column(6,
@@ -276,7 +452,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               style = "height:50px;"),
                             
                             
-                            
+                            #8
                             fluidRow(
                               column(3),
                               column(6,
@@ -302,21 +478,21 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             # PAGE BREAK
                             tags$hr(),
                             
-                            # 2
-                            fluidRow(
-                              column(3),
-                              column(6,
-                                     shiny::HTML("<br><br><center> <h1> Now...  </h1> </center><br>"),
-                                     shiny::HTML("<h5> let's see what is expected in the market for the position you are in:  </h5>")
-                              ),
-                              column(3)
-                            ),
                             
-                            fluidRow(
-                              
-                              style = "height:300px;"),
+                            # fluidRow(
+                            #   column(3),
+                            #   column(6,
+                            #          shiny::HTML("<br><br><center> <h1> Now...  </h1> </center><br>"),
+                            #          shiny::HTML("<h5> let's see what is expected in the market for the position you are in:  </h5>")
+                            #   ),
+                            #   column(3)
+                            # ),
+                            # 
+                            # fluidRow(
+                            #   
+                            #   style = "height:300px;"),
                             
-                            # 3
+                            
                             fluidRow(
                               column(3),
                               column(6,
@@ -326,7 +502,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3)
                             ),
                         
-                            
+                            #9
                             fluidRow(
                               column(3),
                               column(6,
@@ -337,22 +513,22 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 
                               style = "height:300px;"),
                             
-                            # 4
-                            fluidRow(
-                              column(3),
-                              column(6,
-                                     shiny::HTML("<br><br><center> <h1> According to our estimations...  </h1> </center><br>"),
-                                     shiny::HTML("<h5> to learn the skills your team misses, it would take roughly:  </h5>")
-                              ),
-                              column(3)
-                            ),
                             
-                            fluidRow(
-                              
-                              style = "height:300px;"),
+                            # fluidRow(
+                            #   column(3),
+                            #   column(6,
+                            #          shiny::HTML("<br><br><center> <h1> According to our estimations...  </h1> </center><br>"),
+                            #          shiny::HTML("<h5> to learn the skills your team misses, it would take roughly:  </h5>")
+                            #   ),
+                            #   column(3)
+                            # ),
+                            # 
+                            # fluidRow(
+                            #   
+                            #   style = "height:300px;"),
                             
                             
-                            # 5
+                            # 10
                             fluidRow(
                               column(3),
                               column(6,
@@ -374,9 +550,9 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                  
                  
                  # -----------------------------------------------
-                   
-                   tabPanel("DATA INPUT", value = "Input",
-                            
+
+                   tabPanel("Other sectors", value = "sectors",
+
                             sidebarLayout( sidebar, body )  # Closes the sidebarLayout
                    ),  # Closes the second tabPanel called "TechSkillytics"
                  
@@ -626,84 +802,85 @@ server <- function(input, output) {
       valueBox(skilled_n, paste(" out of ",total_n, " of your team already have this skill"))
     })
 
-    output$team_gap <- renderPlot({
-      if (nrow(selected_employee())==1){
-        job <- findSimilarJobTitle(selected_employee()$position)
-        # if (job==""){job<-input$job}
-        getNTopSkillsFromJob(df, job, input$skills)
-        data <-read.csv('result.csv',encoding="ISO-8859-1")
-
-        # Render a bar plot that shows top skills for a given job title
-
-        ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-          theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-
-      } else{
-        if (nrow(selected_employee())==0){
-          v <- values$df
-        }
-        else{
-          v <- selected_employee()
-        }
-        text_tokens <- getTeamSkillGap(df, v, input$skills)
-        freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
-
-        # Render a bar plot
-        ggplot(freq_text, aes(text_tokens, Freq))+
-          geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
-          theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
-      }
-      })
+    # output$team_gap <- renderPlot({
+    #   if (nrow(selected_employee())==1){
+    #     job <- findSimilarJobTitle(selected_employee()$position)
+    #     # if (job==""){job<-input$job}
+    #     getNTopSkillsFromJob(df, job, input$skills)
+    #     data <-read.csv('result.csv',encoding="ISO-8859-1")
+    # 
+    #     # Render a bar plot that shows top skills for a given job title
+    # 
+    #     ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+    #       theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+    # 
+    #   } else{
+    #     if (nrow(selected_employee())==0){
+    #       v <- values$df
+    #     }
+    #     else{
+    #       v <- selected_employee()
+    #     }
+    #     text_tokens <- getTeamSkillGap(df, v, input$skills)
+    #     freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
+    # 
+    #     # Render a bar plot
+    #     ggplot(freq_text, aes(text_tokens, Freq))+
+    #       geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
+    #       theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
+    #   }
+    #   })
 
     # DB1 SL --------------------------------------------------------------------
-    findJob <- reactive({findSimilarJobTitle(input$current_job)})
-    output$predicted_job <- renderInfoBox({
-      infoBox("Predicted Job",predict_res(input$current_skills))
-    })
-    
-   
-    output$percentage <- renderInfoBox({
-      job <- findJob()
-      if (job==""){job<-input$job}
-      infoBox("Skill Gaps",findSkillGap(df, job, input$current_skills, input$skills))
-    })
-    output$value <- renderValueBox({
-      job <- findJob()
-      if (job==""){job<-input$job}
-      valueBox(paste(100 - findSkillGapPercentage(df, job, input$current_skills, input$skills),"%"), "Completion")
-    })
-    
-    # Render a bar plot that shows top skills for a given job title
-    
-    output$skillPlot <- renderPlot({
-      job <- findJob()
-      if (job==""){job<-input$job}
-      getNTopSkillsFromJob(df, job, input$skills)
-      data <-read.csv('result.csv',encoding="ISO-8859-1")
-
-      ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-        theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-
-      # barplot(height=data$frequency, names=data$skills,
-      #         main=paste("Top skills for", job),col=rgb(1, 0.8, 0.8, 0.8),
-      #         ylab="Frequency in Percent")
-
-    })
-    
-    # Render a bar plot that shows learning time for the person
-    
-    output$skillTime <- renderPlot({
-      job <- findJob()
-      if (job==""){job<-input$job}
-      getSkillGapList(df, job, input$current_skills, input$skills)
-      data <-read.csv('result2.csv',encoding="ISO-8859-1")
-      # Render a bar plot
-      # barplot(height=data$time, names=data$skill,horiz=TRUE,col=rgb(0, 0.8, 0.8, 0.8),
-      #         main="Learning Time",
-      #         xlab="hours")
-      ggplot(data, aes(x=reorder(skill, -time), y=time))+geom_bar(stat='identity', fill="royalblue2")+coord_flip()+labs(x = "", y="hour")+theme_bw()
-
-    })
+    # findJob <- reactive({findSimilarJobTitle(input$current_job)})
+    # 
+    # output$predicted_job <- renderText({
+    #   predict_res(input$current_skills)
+    # })
+    # 
+    # 
+    # output$skill_gap <- renderInfoBox({
+    #   job <- findJob()
+    #   if (job==""){job<-input$job}
+    #   infoBox("Skill Gaps",findSkillGap(df, job, input$current_skills, input$skills))
+    # })
+    # output$value <- renderValueBox({
+    #   job <- findJob()
+    #   if (job==""){job<-input$job}
+    #   valueBox(paste(100 - findSkillGapPercentage(df, job, input$current_skills, input$skills),"%"), "Completion")
+    # })
+    # 
+    # # Render a bar plot that shows top skills for a given job title
+    # 
+    # output$skillPlot <- renderPlot({
+    #   job <- findJob()
+    #   if (job==""){job<-input$job}
+    #   getNTopSkillsFromJob(df, job, input$skills)
+    #   data <-read.csv('result.csv',encoding="ISO-8859-1")
+    # 
+    #   ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+    #     theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+    # 
+    #   # barplot(height=data$frequency, names=data$skills,
+    #   #         main=paste("Top skills for", job),col=rgb(1, 0.8, 0.8, 0.8),
+    #   #         ylab="Frequency in Percent")
+    # 
+    # })
+    # 
+    # # Render a bar plot that shows learning time for the person
+    # 
+    # output$skillTime <- renderPlot({
+    #   job <- findJob()
+    #   if (job==""){job<-input$job}
+    #   getSkillGapList(df, job, input$current_skills, input$skills)
+    #   data <-read.csv('result2.csv',encoding="ISO-8859-1")
+    #   # Render a bar plot
+    #   # barplot(height=data$time, names=data$skill,horiz=TRUE,col=rgb(0, 0.8, 0.8, 0.8),
+    #   #         main="Learning Time",
+    #   #         xlab="hours")
+    #   ggplot(data, aes(x=reorder(skill, -time), y=time))+geom_bar(stat='identity', fill="royalblue2")+coord_flip()+labs(x = "", y="hour")+theme_bw()
+    # 
+    # })
 
 }
 

@@ -9,7 +9,7 @@ from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.feature_selection import SelectFromModel
 from sklearn.pipeline import Pipeline
 from sklearn.naive_bayes import MultinomialNB
-#from joblib import dump, load
+from joblib import dump, load
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.feature_selection import SelectKBest, chi2
@@ -39,14 +39,16 @@ for index, row in df.iterrows():
 # encode labels
 le = preprocessing.LabelEncoder()
 labels_en = le.fit_transform(labels) 
+dump(le, 'label_encoder.joblib')
 
 x1, x2, y1, y2 = train_test_split(data, labels)
 
 # vectorize data
 vectorizer = CountVectorizer(tokenizer=my_tokenizer)
-#dump(vectorizer, 'vec.joblib')
 
 X = vectorizer.fit_transform(data)
+dump(vectorizer, 'vec.joblib')
+
 td = TfidfTransformer()
 X = td.fit_transform(X)
 # feature selection
@@ -54,8 +56,7 @@ fs = ExtraTreesClassifier(n_estimators=50).fit(X, labels_en)
 sfm = SelectFromModel(fs, prefit=True)
 #X = sfm.transform(X)
 #X=SelectKBest(f_classif,k=200).fit_transform(X, labels_en)
-#dump(model, 'feature_selecter.joblib')
-
+dump(td, 'td.joblib')
 
 x_train, x_test, y_train, y_test = train_test_split(X, labels_en)
 # train model
@@ -63,7 +64,7 @@ neigh = KNeighborsClassifier(n_neighbors=3).fit(x_train, y_train)
 svm = SVC().fit(x_train, y_train)
 clf = MultinomialNB().fit(x_train, y_train)
 ada = AdaBoostClassifier(n_estimators=100, random_state=0).fit(x_train, y_train)
-#dump(clf, 'model1.joblib')
+dump(svm, 'svm_model.joblib')
 
 
 #print(str(docs_new) + "->" + str(le.inverse_transform(predicted)))

@@ -1,7 +1,19 @@
-from model import svm, vectorizer, le, td, sfm
+#from model import svm, vectorizer, le, td
 from preprocessing import findTopSkillsFromJob, findSimilarJobTitle
 import numpy as np
 import pandas as pd
+from joblib import load
+
+def my_tokenizer(s):
+    return s.split(', ')
+
+svm = load('svm_model.joblib')
+vectorizer = load('vec.joblib')
+le = load('label_encoder.joblib')
+td = load('td.joblib')
+
+
+
 # Functions
 def getUserInput():
     skills = input("What are your skills? Please separate with comma: ")
@@ -13,7 +25,6 @@ def predict_res(skills):
     res = svm.predict(td.transform(vectorizer.transform(inp)))
     out = le.inverse_transform(res)
     result="You could also be a " + out[0]
-    print(result)
     
 def findSkillGap(job, skills):
     perc = findTopSkillsFromJob(df, job)
@@ -25,15 +36,4 @@ def findSkillGap(job, skills):
         if skill not in should.keys():
             gap.append(skill)
     print("Your skill gaps are: " + str(gap))
-
-
-df = pd.read_csv("test.csv", encoding = "ISO-8859-1")
-tup = getUserInput()
-skills = tup[0]
-input_job = tup[1]
-job = findSimilarJobTitle(input_job)
-predict_res(skills)
-if job!=np.nan:
-    findSkillGap(job, skills)
-else: print("Sorry, job title not supported yet!")
 

@@ -1,8 +1,24 @@
-from model import svm, vectorizer, le, td, sfm
-#import numpy as np
+#from model import svm, vectorizer, le, td, sfm
+import numpy as np
 import pandas as pd
 import collections
+from joblib import load
+
+def my_tokenizer(s):
+     l = []
+     for e in s.split(','):
+       l.append(e.strip())
+     return l
+    #return s.split(', ')
+    
+svm = load('svm_model.joblib')
+vectorizer = load('vec.joblib')
+le = load('label_encoder.joblib')
+td = load('td.joblib')
+
 # Functions
+
+      
 def findSimilarJobTitle(title):
         new_title = ""
         if "software" in title:
@@ -35,6 +51,7 @@ def findSimilarJobTitle(title):
         if "hardware" in title: new_title = "hardware engineer"
 
         return new_title
+        
 def findAllTopSkillsFromJob(df, job):
     n=0
     skills=[]
@@ -51,13 +68,6 @@ def findAllTopSkillsFromJob(df, job):
             perc.append((skill, count/n))
     return perc
     
-# def findTopSkillsFromJob(df, job):
-#     perc = findAllTopSkillsFromJob(df, job)
-#     print("The top skills for " + job + " are: ")
-#     if len(perc)>=10: perc = perc[:11]
-#     for skill, prob in perc:
-#         print(skill + " with " + str(int(100*prob))+ " percent probability")
-#     return perc
     
 def getNTopSkillsFromJob(df, job, n):
   l = findAllTopSkillsFromJob(df, job)
@@ -74,20 +84,14 @@ def getNTopSkillsFromJob(df, job, n):
 
   return df
 
-# def getUserInput():
-#     skills = input("What are your skills? Please separate with comma: ")
-#     job = input("What is your current job position?")
-#     return (skills, job)
-
 def predict_res(skills):
-    if skills=="": return ""
     inp = [skills]
     res = svm.predict(td.transform(vectorizer.transform(inp)))
     out = le.inverse_transform(res)
-    #result="You could also be a " + out[0]
-    #print(result)
     return out[0]
-    
+
+
+
 def getSkillGapAndFreq(df, job, skills, n_skills):
     df = getNTopSkillsFromJob(df, job, n_skills)
     should = {}
@@ -106,12 +110,14 @@ def getSkillGapAndFreq(df, job, skills, n_skills):
             n+=should.get(skill)
     percentage_away = int(n/total*100)
     return (gap, percentage_away)
+    
 def findSkillGap(df, job, skills, n_skills):
     tup = getSkillGapAndFreq(df, job, skills, n_skills)
     gap = tup[0]
     percentage_away = tup[1]
     if len(gap)>0: return ', '.join(gap)# + " and you are "+ str(percentage_away) + " percent away"
     else: return "None"
+    
 def findSkillGapPercentage(df, job, skills, n_skills):
     tup = getSkillGapAndFreq(df, job, skills, n_skills)
     gap = tup[0]
