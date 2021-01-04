@@ -7,8 +7,6 @@ library(dplyr)
 library(ggplot2)  
 library(tidyverse)
 library(shinydashboard)
-
-library(dplyr)
 library(stringr)
 library(png)
 library(shinyjs)
@@ -23,7 +21,7 @@ sector_df <- read.csv('Sector_skills.csv')
 company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
 
 
-# Trying somthing out -----------------------------
+# Trying something out -----------------------------
 
 
 
@@ -227,15 +225,53 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             # PAGE BREAK
                             tags$hr(),
                             
-                            # HOW
+                            # The skills the person has
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<br><br><center> <h1> SLIDE 1 </h1> </center><br>"),
-                                     shiny::HTML("<h5>(...)</h5>")
+                                     shiny::HTML("<br><br><center> <h1> First,  </h1> </center><br>"),
+                                     shiny::HTML("<h5> let's see the skills you told us you already have. According to our survey, these are the skills that your team posseses:  </h5>")
                               ),
                               column(3)
                             ),
+            
+                            
+                            fluidRow(
+                              
+                              style = "height:50px;"),
+                            
+                            fluidRow(
+                              box(
+                                title = "Workforce Data",
+                                solidHeader = T,
+                                width = 4,
+                                hr(),
+                                DT::dataTableOutput("table")
+                              )),
+                            
+                            fluidRow(
+                              
+                              style = "height:50px;"),
+                            
+                            
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> According to our calculations, these are the skill gaps in your team:  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            
+                            fluidRow(
+                              
+                              style = "height:50px;"),
+                            
+                            fluidRow(
+                            box(
+                              title = "Team Skill Gap",
+                              solidHeader = T,
+                              width = 5,
+                              plotOutput("team_gap"))),
                             
                             fluidRow(
                               
@@ -244,12 +280,12 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             # PAGE BREAK
                             tags$hr(),
                             
-                            # WHERE
+                            # 2
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<br><br><center> <h1> SLIDE 2 </h1> </center><br>"),
-                                     shiny::HTML("<h5> (...) </h5>")
+                                     shiny::HTML("<br><br><center> <h1> Now...  </h1> </center><br>"),
+                                     shiny::HTML("<h5> let's see what is expected in the market for the position you are in:  </h5>")
                               ),
                               column(3)
                             ),
@@ -258,6 +294,50 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               
                               style = "height:300px;"),
                             
+                            # 3
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<br><br><center> <h1> How about...  </h1> </center><br>"),
+                                     shiny::HTML("<h5>  We check how the scene is for companies like the one you work in?  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            
+                            fluidRow(
+                              
+                              style = "height:300px;"),
+                            
+                            
+                            
+                            # 4
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<br><br><center> <h1> According to our estimations...  </h1> </center><br>"),
+                                     shiny::HTML("<h5> to learn the skills your team misses, it would take roughly:  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            
+                            fluidRow(
+                              
+                              style = "height:300px;"),
+                            
+                            
+                            # 5
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
+                                     shiny::HTML("<h5> TechQuartier also offers a variety of products that can improve your team's performance.Check us out at: (website)  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            
+                            fluidRow(
+                              
+                              style = "height:300px;"),
                            
                             # PAGE BREAK
                             tags$hr(),
@@ -328,7 +408,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                          div(class="panel-body",  width = "600px",
                                              align = "center",
                                              div(
-                                               tags$img(src = "man.svg", 
+                                               tags$img(src = "Joao_c.png", 
                                                         width = "50px", height = "50px")
                                              ),
                                              div(
@@ -347,7 +427,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                          div(class="panel-body",  width = "600px", 
                                              align = "center",
                                              div(
-                                               tags$img(src = "woman.svg", 
+                                               tags$img(src = "Liria_c.png", 
                                                         width = "50px", height = "50px")
                                              ),
                                              div(
@@ -366,7 +446,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                          div(class="panel-body",  width = "600px", 
                                              align = "center",
                                              div(
-                                               tags$img(src = "woman.svg", 
+                                               tags$img(src = "Sara_c.png", 
                                                         width = "50px", height = "50px")),
                                              div(
                                                tags$h5("Sara-Nel"),
