@@ -18,7 +18,7 @@ library(rintrojs)
 PYTHON_DEPENDENCIES = c('pandas','numpy==1.19.3','scikit-learn', 'category_encoders','joblib')
 df<-read.csv('test.csv',encoding="ISO-8859-1")
 sector_df <- read.csv('Sector_skills.csv')
-company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
+company_df = data.frame(employee=c("Lauren Ipsum", "Tim Friedmann", "Stefan Meyer", "Adam Smith"), position=c("data analyst", "software engineer", "project manager", "business intelligence analyst"), skills=c("sql,r, tableau, statistics, python","java,c,javascript, python", "agile,linux,sap, r, python", "economics, finance, r, c#"))
 
 
 # Trying something out -----------------------------
@@ -194,12 +194,15 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                  
                  
                  #-----------------------------------
-                 tabPanel("Input", value = "input",
+                 tabPanel("INPUT", value = "input",
                           fluidRow(
                             column(3),
                             column(6,
                                    shiny::HTML("<br><br><center> <h1>Hello!</h1> </center><br>"),
-                                   shiny::HTML("<h5>Please enter your current job position</h5>")
+                                   shiny::HTML("<h5> Your company has hired TechQuartier's new service, TechSkillytics.</h5> 
+                                               <h5> Each member of your <i>(fictional)</i> team has received the questionnaire below via email, and your teammates have already responded and sent it to TechQuartier.</h5>
+                                               <h5> Once the entire team finishes the questionnaire and send it to TechQuartier, you will receive an email with a link to the TechSkillytics app.</h5>
+                                               <h5> Since you're the last one left, your results will be available as soon as you are complete! </h5>")
                             ),
                             column(3)
                           ),
@@ -207,14 +210,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             
                             style = "height:20px;"),
-                          
-                          fluidRow(
-                            column(3),
-                            column(6,
-                                   textInput("current_job",""),
-                                   
-                                   )
-                          ),
+                          # 
+                          # fluidRow(
+                          #   column(3),
+                          #   column(6,
+                          #          textInput("current_job",""),
+                          #          
+                          #          )
+                          # ),
                           
                           fluidRow(
                             
@@ -223,7 +226,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   shiny::HTML("<h5>Or choose a Job Title</h5>")
+                                   shiny::HTML("<h5>First, </h5>
+                                               <h5> we would like you to chose a job title from the list below that best matches your current job.</h5>")
                             ),
                             column(3)
                           ),
@@ -252,7 +256,9 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   shiny::HTML("<h5>Enter your current skills</h5>")
+                                   shiny::HTML("<h5> Now,</h5>
+                                   <h5>   we need you to tell us what skills you possess, and believe are the most essential for the role you play in your team.</h5>
+                                               <h5>Please write them in the line below, sepparating each skill with a comma ( , )</h5>")
                             ),
                             column(3)
                           ),
@@ -261,7 +267,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   textInput("current_skills","Please separate your skills by a comma"),
+                                   textInput("current_skills","Prioritize skills which you believe sets you aside!"),
                                    
                             )
                           ),
@@ -276,6 +282,16 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
                                    
                             )
+                          ),
+                          
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<h5> Thank you for sending us your skills!</h5>
+                                   <h5>  Now you can check our analysis by clicking on the RESULTS tab.</h5>")
+                            ),
+                            column(3)
                           )
                           
                    
@@ -316,10 +332,12 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<br><br><center> <h1>Hello!</h1> </center><br>"),
+                                     shiny::HTML("<br><br><center> <h1>Hello, again!</h1> </center><br>"),
                                      shiny::HTML("<h5>With the data that we have collected from you and your teammates,
                                                    we have assembled a summary of your skills and calculated potential skill gaps
-                                                   your team may have.</h5>")
+                                                   your team may have.</h5>
+                                                 <h5> We ran the data you gave us with the data we have gathered by analyzing job seeking websites, online course websites and others.</h5>
+                                                 <h5> Ready to learn a little more about how your skills compare with the market?</h5>")
                               ),
                               column(3)
                             ),
@@ -533,7 +551,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
-                                     shiny::HTML("<h5> TechQuartier also offers a variety of products that can improve your team's performance.Check us out at: (website)  </h5>")
+                                     shiny::HTML("<h5> Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sector's\" tab! </h5>")
                               ),
                               column(3)
                             ),
@@ -652,11 +670,11 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                tags$img(src = "Sara_c.png", 
                                                         width = "50px", height = "50px")),
                                              div(
-                                               tags$h5("Sara-Nel"),
-                                               tags$h6( tags$i(" (...) "))
+                                               tags$h5("Sara-Nel Ünal"),
+                                               tags$h6( tags$i("From Germany and Turkey"))
                                              ),
                                              div(
-                                               " (...) "
+                                               " Currently still in school but graduating this year. I entered the AI Talents program to challenge myself and explore my interests in the areas of Business and Data Science. "
                                              )
                                          )
                                      )
@@ -679,14 +697,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 server <- function(input, output) {
     # Virtualenv settings --------------------------------------------------------
   virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
-  python_path = Sys.getenv('PYTHON_PATH')
-
-
-  # Create virtual env and install dependencies
-  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  reticulate::use_virtualenv(virtualenv_dir, required = T)
-  reticulate::source_python('slide.py')
+  # python_path = Sys.getenv('PYTHON_PATH')
+  # 
+  # 
+  # # Create virtual env and install dependencies
+  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  # reticulate::use_virtualenv(virtualenv_dir, required = T)
+  # reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",
@@ -802,35 +820,35 @@ server <- function(input, output) {
       valueBox(skilled_n, paste(" out of ",total_n, " of your team already have this skill"))
     })
 
-    # Below are python codes----------------------------
-output$team_gap <- renderPlot({
-  if (nrow(selected_employee())==1){
-    job <- findSimilarJobTitle(selected_employee()$position)
-    # if (job==""){job<-input$job}
-    getNTopSkillsFromJob(df, job, input$skills)
-    data <-read.csv('result.csv',encoding="ISO-8859-1")
-
-    # Render a bar plot that shows top skills for a given job title
-
-    ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-      theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-
-  } else{
-    if (nrow(selected_employee())==0){
-      v <- values$df
-    }
-    else{
-      v <- selected_employee()
-    }
-    text_tokens <- getTeamSkillGap(df, v, input$skills)
-    freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
-
-    # Render a bar plot
-    ggplot(freq_text, aes(text_tokens, Freq))+
-      geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
-      theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
-  }
-  })
+#     # Below are python codes----------------------------
+# output$team_gap <- renderPlot({
+#   if (nrow(selected_employee())==1){
+#     job <- findSimilarJobTitle(selected_employee()$position)
+#     # if (job==""){job<-input$job}
+#     getNTopSkillsFromJob(df, job, input$skills)
+#     data <-read.csv('result.csv',encoding="ISO-8859-1")
+# 
+#     # Render a bar plot that shows top skills for a given job title
+# 
+#     ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+#       theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+# 
+#   } else{
+#     if (nrow(selected_employee())==0){
+#       v <- values$df
+#     }
+#     else{
+#       v <- selected_employee()
+#     }
+#     text_tokens <- getTeamSkillGap(df, v, input$skills)
+#     freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
+# 
+#     # Render a bar plot
+#     ggplot(freq_text, aes(text_tokens, Freq))+
+#       geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
+#       theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
+#   }
+#   })
 
     # DB1 SL --------------------------------------------------------------------
     findJob <- reactive({findSimilarJobTitle(input$current_job)})
