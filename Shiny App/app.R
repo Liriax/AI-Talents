@@ -27,7 +27,8 @@ company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data anal
 
 sidebar<-dashboardSidebar(
   sidebarMenu(
-    menuItem("Individual", tabName = "db1", icon = icon("dashboard")),
+    menuItem("Individual", tabName = "db1", icon = icon("dashboard"))
+    ,
     menuItem("Company", tabName = "db2", icon = icon("dashboard"))
   )
 )
@@ -86,7 +87,8 @@ body <- dashboardBody(
           valueBoxOutput("value")
         ),
       )
-    ),
+    )
+    ,
     tabItem(
       tabName = "db2",
       fluidRow(
@@ -106,13 +108,13 @@ body <- dashboardBody(
           solidHeader = T,
           width = 5,
           h4("Your sector's wanted skills"), 
-          wordcloud2Output('sectorplot')
+          # wordcloud2Output('sectorplot')
         ),
         box(
           solidHeader = T,
           width = 5,
           h4("Your Team's Skill Pool"),
-          wordcloud2Output("teamSkills")
+          # wordcloud2Output("teamSkills")
         )
       ),
       fluidRow(
@@ -132,16 +134,17 @@ body <- dashboardBody(
           solidHeader = T,
           width = 4,
           hr(),
-          DT::dataTableOutput("table")
+          # DT::dataTableOutput("table")
         ),
         box(
           title = "Team Skill Gap",
           solidHeader = T,
           width = 5,
-          plotOutput("team_gap")
+          # plotOutput("team_gap")
         )
       )
     )
+
   )
   
   
@@ -225,7 +228,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             # PAGE BREAK
                             tags$hr(),
                             
-                            # The skills the person has
+                            # The skills the team has
                             fluidRow(
                               column(3),
                               column(6,
@@ -241,17 +244,37 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               style = "height:50px;"),
                             
                             fluidRow(
-                              box(
-                                title = "Workforce Data",
-                                solidHeader = T,
-                                width = 4,
-                                hr(),
+                              column(3),
+                              column(6,
                                 DT::dataTableOutput("table")
                               )),
                             
                             fluidRow(
                               
                               style = "height:50px;"),
+                            
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> And this is how the skill pool of your team looks like:  </h5>")
+                              ),
+                              column(3)
+                            ),
+                            # 
+                            # fluidRow(
+                            #   
+                            #   style = "height:50px;"),
+                            
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     wordcloud2Output("teamSkills")
+                              )),
+                            
+                            fluidRow(
+                              
+                              style = "height:50px;"),
+                            
                             
                             
                             fluidRow(
@@ -267,11 +290,10 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               style = "height:50px;"),
                             
                             fluidRow(
-                            box(
-                              title = "Team Skill Gap",
-                              solidHeader = T,
-                              width = 5,
-                              plotOutput("team_gap"))),
+                              column(3),
+                              column(6,
+                                plotOutput("team_gap"))
+                              ),
                             
                             fluidRow(
                               
@@ -303,12 +325,17 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               ),
                               column(3)
                             ),
+                        
                             
                             fluidRow(
-                              
+                              column(3),
+                              column(6,
+                                     wordcloud2Output("sectorplot"))
+                            ),
+
+                            fluidRow(
+
                               style = "height:300px;"),
-                            
-                            
                             
                             # 4
                             fluidRow(
@@ -431,11 +458,11 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                         width = "50px", height = "50px")
                                              ),
                                              div(
-                                               tags$h5("Liria Zhang"),
-                                               tags$h6( tags$i(" (...) "))
+                                               tags$h5("Xiaoge Zhang"),
+                                               tags$h6( tags$i("aka Liria, from China"))
                                              ),
                                              div(
-                                               " (...) "
+                                               "Studying Business Information Systems in TU Darmstadt, Germany. I entered the AI Talents programm to gain real data-driven product development experiences and challenge my programming skills."
                                              )
                                          )
                                      )
@@ -480,10 +507,10 @@ server <- function(input, output) {
 
 
   # Create virtual env and install dependencies
-  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  # reticulate::use_virtualenv(virtualenv_dir, required = T)
-  # reticulate::source_python('slide.py')
+  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  reticulate::use_virtualenv(virtualenv_dir, required = T)
+  reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",
@@ -599,84 +626,84 @@ server <- function(input, output) {
       valueBox(skilled_n, paste(" out of ",total_n, " of your team already have this skill"))
     })
 
-    # output$team_gap <- renderPlot({
-    #   if (nrow(selected_employee())==1){
-    #     job <- findSimilarJobTitle(selected_employee()$position)
-    #     # if (job==""){job<-input$job}
-    #     getNTopSkillsFromJob(df, job, input$skills)
-    #     data <-read.csv('result.csv',encoding="ISO-8859-1")
-    #     
-    #     # Render a bar plot that shows top skills for a given job title
-    #     
-    #     ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-    #       theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-    #     
-    #   } else{
-    #     if (nrow(selected_employee())==0){
-    #       v <- values$df
-    #     }
-    #     else{
-    #       v <- selected_employee()
-    #     }
-    #     text_tokens <- getTeamSkillGap(df, v, input$skills)
-    #     freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
-    # 
-    #     # Render a bar plot
-    #     ggplot(freq_text, aes(text_tokens, Freq))+
-    #       geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
-    #       theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
-    #   }
-    #   })
+    output$team_gap <- renderPlot({
+      if (nrow(selected_employee())==1){
+        job <- findSimilarJobTitle(selected_employee()$position)
+        # if (job==""){job<-input$job}
+        getNTopSkillsFromJob(df, job, input$skills)
+        data <-read.csv('result.csv',encoding="ISO-8859-1")
+
+        # Render a bar plot that shows top skills for a given job title
+
+        ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+          theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+
+      } else{
+        if (nrow(selected_employee())==0){
+          v <- values$df
+        }
+        else{
+          v <- selected_employee()
+        }
+        text_tokens <- getTeamSkillGap(df, v, input$skills)
+        freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
+
+        # Render a bar plot
+        ggplot(freq_text, aes(text_tokens, Freq))+
+          geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
+          theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
+      }
+      })
 
     # DB1 SL --------------------------------------------------------------------
-    # findJob <- reactive({findSimilarJobTitle(input$current_job)})
-    # output$predicted_job <- renderInfoBox({
-    #   infoBox("Predicted Job",predict_res(input$current_skills))
-    # })
+    findJob <- reactive({findSimilarJobTitle(input$current_job)})
+    output$predicted_job <- renderInfoBox({
+      infoBox("Predicted Job",predict_res(input$current_skills))
+    })
     
    
-    # output$percentage <- renderInfoBox({
-    #   job <- findJob()
-    #   if (job==""){job<-input$job}
-    #   infoBox("Skill Gaps",findSkillGap(df, job, input$current_skills, input$skills))
-    # })
-    # output$value <- renderValueBox({
-    #   job <- findJob()
-    #   if (job==""){job<-input$job}
-    #   valueBox(paste(100 - findSkillGapPercentage(df, job, input$current_skills, input$skills),"%"), "Completion")
-    # })
+    output$percentage <- renderInfoBox({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      infoBox("Skill Gaps",findSkillGap(df, job, input$current_skills, input$skills))
+    })
+    output$value <- renderValueBox({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      valueBox(paste(100 - findSkillGapPercentage(df, job, input$current_skills, input$skills),"%"), "Completion")
+    })
     
     # Render a bar plot that shows top skills for a given job title
     
-    # output$skillPlot <- renderPlot({
-    #   job <- findJob()
-    #   if (job==""){job<-input$job}
-    #   getNTopSkillsFromJob(df, job, input$skills)
-    #   data <-read.csv('result.csv',encoding="ISO-8859-1")
-    #   
-    #   ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-    #     theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-    #   
-    #   # barplot(height=data$frequency, names=data$skills,
-    #   #         main=paste("Top skills for", job),col=rgb(1, 0.8, 0.8, 0.8),
-    #   #         ylab="Frequency in Percent")
-    #   
-    # })
+    output$skillPlot <- renderPlot({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      getNTopSkillsFromJob(df, job, input$skills)
+      data <-read.csv('result.csv',encoding="ISO-8859-1")
+
+      ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+        theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+
+      # barplot(height=data$frequency, names=data$skills,
+      #         main=paste("Top skills for", job),col=rgb(1, 0.8, 0.8, 0.8),
+      #         ylab="Frequency in Percent")
+
+    })
     
     # Render a bar plot that shows learning time for the person
     
-    # output$skillTime <- renderPlot({
-    #   job <- findJob()
-    #   if (job==""){job<-input$job}
-    #   getSkillGapList(df, job, input$current_skills, input$skills)
-    #   data <-read.csv('result2.csv',encoding="ISO-8859-1")
-    #   # Render a bar plot
-    #   # barplot(height=data$time, names=data$skill,horiz=TRUE,col=rgb(0, 0.8, 0.8, 0.8),
-    #   #         main="Learning Time",
-    #   #         xlab="hours")
-    #   ggplot(data, aes(x=reorder(skill, -time), y=time))+geom_bar(stat='identity', fill="royalblue2")+coord_flip()+labs(x = "", y="hour")+theme_bw()
-    #   
-    # })
+    output$skillTime <- renderPlot({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      getSkillGapList(df, job, input$current_skills, input$skills)
+      data <-read.csv('result2.csv',encoding="ISO-8859-1")
+      # Render a bar plot
+      # barplot(height=data$time, names=data$skill,horiz=TRUE,col=rgb(0, 0.8, 0.8, 0.8),
+      #         main="Learning Time",
+      #         xlab="hours")
+      ggplot(data, aes(x=reorder(skill, -time), y=time))+geom_bar(stat='identity', fill="royalblue2")+coord_flip()+labs(x = "", y="hour")+theme_bw()
+
+    })
 
 }
 
