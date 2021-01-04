@@ -388,11 +388,6 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 
 
 
-# trying something  ---------------
-
-
-
-
 
 
 
