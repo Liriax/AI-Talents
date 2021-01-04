@@ -88,7 +88,7 @@ def predict_res(skills):
     inp = [skills]
     res = svm.predict(td.transform(vectorizer.transform(inp)))
     out = le.inverse_transform(res)
-    return out[0]
+    return str(out[0])
 
 
 
