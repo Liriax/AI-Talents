@@ -211,10 +211,10 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<br><br><center> <h1>Hello!</h1> </center><br>"),
-                                   shiny::HTML("<h5> Your company has hired TechQuartier's new service, TechSkillytics.</h5> 
-                                               <h5> Each member of your <i>(fictional)</i> team has received the questionnaire below via email, and your teammates have already responded and sent it to TechQuartier.</h5>
-                                               <h5> Once the entire team finishes the questionnaire and send it to TechQuartier, you will receive an email with a link to the TechSkillytics app.</h5>
-                                               <h5> Since you're the last one left, your results will be available as soon as you are complete! </h5>")
+                                   shiny::HTML("<h5>	&nbsp; Your company has hired TechQuartier's new service, TechSkillytics.</h5> 
+                                               <h5> Each member of your (fictional) team has received the questionnaire below via email, and your teammates have already responded and sent it to TechQuartier.</h5>
+                                               <h5> 	&nbsp; Once the entire team finishes the questionnaire and send it to TechQuartier, you will receive an email with a link to the TechSkillytics app.</h5>
+                                               <h5>  Since you're the last one left, your results will be available as soon as you are complete! </h5>")
                             ),
                             column(3)
                           ),
@@ -231,8 +231,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   shiny::HTML("<h5>First, </h5>
-                                               <h5> we would like you to chose a job title from the list below that best matches your current job.</h5>")
+                                   shiny::HTML("<h5>  	&nbsp; First, </h5>
+                                               <h5>	we would like you to chose a job title from the list below that best matches your current job.</h5>")
                             ),
                             column(3)
                           ),
@@ -261,7 +261,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   shiny::HTML("<h5> Now,</h5>
+                                   shiny::HTML("<h5> 	&nbsp; Now,</h5>
                                    <h5>   we need you to tell us what skills you possess, and believe are the most essential for the role you play in your team.</h5>
                                                <h5>Please write them in the line below, sepparating each skill with a comma ( , )</h5>")
                             ),
@@ -305,9 +305,11 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    selectInput("company",label="",
-                                               choices = c("Software Giant", "Tech Medicals"),
+                                               choices = c("Software Giant", "HelloNow", "Equilibrium" ),
                                                selected = "Software Giant"),
-                                   h6("Software Giant is a small company in the Information Technology sector")
+                                   h6("Software Giant is a small company in the Information Technology sector"),
+                                   h6("HelloNow is a medium-small company in the Business Services sector"),
+                                   h6("Equilibrium is a large company in the Finance sector")
                                    
                             )
                           ),
@@ -380,9 +382,22 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> First,  </h1> </center><br>"),
-                                     shiny::HTML("<h5> let's see the most wanted skills for your job position:  </h5>")
+                                     shiny::HTML("<h5> let's see the most wanted skills for your job position...  </h5>")
                               ),
                               column(3)
+                            ),
+                            
+                            
+                            fluidRow(
+                              
+                              style = "height:150px;"),
+                            
+                            
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> These are the frequency of the skills we found being demanded for you position on the job market: </h5>")
+                              )
                             ),
                             #1
                             fluidRow(
@@ -395,9 +410,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             
                             fluidRow(
+                              
+                              style = "height:150px;"),
+                            
+                            
+                            fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<h5> And these are your skill gaps:  </h5>")
+                                     shiny::HTML("<h5> This means that you may want to work on the following skills:  </h5>")
                               )
                             ),
                             #2
@@ -408,10 +428,15 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               ),
                               column(3)
                             ),
+                            
+                            
+                            fluidRow(
+                              
+                              style = "height:150px;"),
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<h5> Which means you are this far away from the skill requirements:  </h5>")
+                                     shiny::HTML("<h5> which means you are this far away from having the perfect skillset:  </h5>")
                               )
                             ),
                             #3
@@ -422,24 +447,34 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               ),
                               column(3)
                             ),
+                            
+                            
+                            fluidRow(
+                              
+                              style = "height:150px;"),
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<h5> Your skills actually match to this job title as well  </h5>")
+                                     shiny::HTML("<h5> According to our calculations, your skillset would be perfect for this position:  </h5>")
                               )
                             ),
                             #4
                             fluidRow(
                               column(3),
                               column(6,
-                                     textOutput("predicted_job")
+                                     textOutput("predicted_job"),
+                                     
+                                     
+                                     fluidRow(
+                                       
+                                       style = "height:150px;")
                               ),
                               column(3)
                             ),
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<h5> And the learning time for your lacking skills is  </h5>")
+                                     shiny::HTML("<h5> This is the amount of hours you would need to invest in order to train the skills you are lacking:  </h5>")
                               )
                             ),
                             #5
@@ -457,7 +492,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> Now,  </h1> </center><br>"),
-                                     shiny::HTML("<h5> let's see the skills your team members told us they already have. According to our survey, these are the skills that your team posseses:  </h5>")
+                                     shiny::HTML("<h5> &nbsp;  let's see the skills your team members told us they already have. According to our survey, these are the skills that your team posseses:  </h5>")
                               ),
                               column(3)
                             ),
@@ -475,7 +510,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:50px;"),
+                              style = "height:150px;"),
                             
                             fluidRow(
                               column(3),
@@ -594,7 +629,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
-                                     shiny::HTML("<h5> Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sector's\" tab! </h5>")
+                                     shiny::HTML("<h5>  &nbsp; Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sectors\" tab! </h5>
+                                                 <h5>  &nbsp; This is just the demo of what the app can do. In the future we would like to implement more features, like an analysis of what social media thinks of your skills/position and relay more interative information between team members easing the information transer between your team members! ")
                               ),
                               column(3)
                             ),
@@ -642,7 +678,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                             h5("About the Data")
                                                        )
                                              ),
-                                             tags$p(h6("We have obtained the data used in this program by webscraping job seeking websites, online course websites and others. As for the template, we have largely used the same template as the one used for career-pathfinder, which can be accessed at https://shiny.rstudio.com/gallery/career-pathfinder.html")),
+                                             tags$p(h6(" &nbsp; We have obtained the data used in this program by web scraping job seeking websites (such as Glassdoor, and Dice), online course websites (such as Edx), and others to help us model industry sectors and define the skills (like a dataset from Linkedin, found on Kaggle). We used python to scrape the data with selenium, and R to clean the data for use.  As for the template for the app, we developed it in Rstudio using Shiny, and have largely relied on the same template as the one used for career-pathfinder, which can be accessed at https://shiny.rstudio.com/gallery/career-pathfinder.html ")),
                                              
                                          )
                                      ) # Closes div panel
@@ -717,7 +753,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                tags$h6( tags$i("From Germany and Turkey"))
                                              ),
                                              div(
-                                               " Currently still in school but graduating this year. I entered the AI Talents program to challenge myself and explore my interests in the areas of Business and Data Science. "
+                                               " Currently still in high school but graduating this year. I entered the AI Talents program to challenge myself and explore my interests in the areas of Business and Data Science. "
                                              )
                                          )
                                      )
@@ -739,15 +775,15 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 # Define server logic ------------------------------------------------------------
 server <- function(input, output) {
     # Virtualenv settings --------------------------------------------------------
-  virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
-  python_path = Sys.getenv('PYTHON_PATH')
-
-
-  # Create virtual env and install dependencies
-  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  reticulate::use_virtualenv(virtualenv_dir, required = T)
-  reticulate::source_python('slide.py')
+  # virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
+  # python_path = Sys.getenv('PYTHON_PATH')
+  # 
+  # 
+  # # Create virtual env and install dependencies
+  # # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  # reticulate::use_virtualenv(virtualenv_dir, required = T)
+  # reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",
