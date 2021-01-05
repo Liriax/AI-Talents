@@ -403,7 +403,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:150px;"),
+                              style = "height:300px;"),
                             
                             
                             fluidRow(
@@ -424,7 +424,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:150px;"),
+                              style = "height:300px;"),
                             
                             
                             fluidRow(
@@ -445,11 +445,11 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:150px;"),
+                              style = "height:300px;"),
                             fluidRow(
                               column(3),
                               column(6,
-                                     shiny::HTML("<h5> which means you are this far away from having the perfect skillset:  </h5>")
+                                     shiny::HTML("<h5> If you had all of those, you'd have a perfect skillset! Right now, this is how complete your skill set is:   </h5>")
                               )
                             ),
                             #3
@@ -464,7 +464,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:150px;"),
+                              style = "height:300px;"),
                             fluidRow(
                               column(3),
                               column(6,
@@ -480,7 +480,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                      
                                      fluidRow(
                                        
-                                       style = "height:150px;")
+                                       style = "height:300px;")
                               ),
                               column(3)
                             ),
@@ -523,7 +523,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:150px;"),
+                              style = "height:300px;"),
                             
                             fluidRow(
                               column(3),
@@ -643,6 +643,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
                                      shiny::HTML("<h5>  &nbsp; Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sectors\" tab! </h5>
+                                     <h5></h5>
                                                  <h5>  &nbsp; This is just the demo of what the app can do. In the future we would like to implement more features, like an analysis of what social media thinks of your skills/position and relay more interative information between team members easing the information transer between your team members! ")
                               ),
                               column(3)
@@ -691,7 +692,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                             h5("About the Data")
                                                        )
                                              ),
-                                             tags$p(h6(" &nbsp; We have obtained the data used in this program by web scraping job seeking websites (such as Glassdoor, and Dice), online course websites (such as Edx), and others to help us model industry sectors and define the skills (like a dataset from Linkedin, found on Kaggle). We used python to scrape the data with selenium, and R to clean the data for use.  As for the template for the app, we developed it in Rstudio using Shiny, and have largely relied on the same template as the one used for career-pathfinder, which can be accessed at https://shiny.rstudio.com/gallery/career-pathfinder.html ")),
+                                             tags$p(h6(" We have obtained the data used in this program by web scraping job seeking websites (such as Glassdoor, and Dice), online course websites (such as Edx), and others to help us model industry sectors and define the skills (like a dataset from Linkedin, found on Kaggle). We used python to scrape the data with selenium, and R to clean the data for use.  As for the template for the app, we developed it in Rstudio using Shiny, and have largely relied on the same template as the one used for career-pathfinder, which can be accessed at https://shiny.rstudio.com/gallery/career-pathfinder.html ")),
                                              
                                          )
                                      ) # Closes div panel

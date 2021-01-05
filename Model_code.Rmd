@@ -260,16 +260,19 @@ write.csv(DF_Sector_skills,"Sector_skills.csv", row.names = F)
 
 ```{r,fig.height=3,fig.width=3,warning=FALSE,message=FALSE}
 
-# Making a loop to print out all word clouds.
+# # Making a loop to print out all word clouds.
+# 
+# require(wordcloud)
+# 
+# 
+# # Make plots.
+# 
 
-require(wordcloud)
-
-
-# Make plots.
+i = 7
 
 for (i in 1:28) {
 
-  
+
 # First: tokenize the data
 
 text_tokens <- scan(text = DF_Sector_skills[[i,3]],
@@ -279,8 +282,8 @@ text_tokens <- scan(text = DF_Sector_skills[[i,3]],
 
 # Second: make frequency tables
 
-freq_text <- table(text_tokens)%>% 
-  sort(decreasing = T) %>% 
+freq_text <- table(text_tokens)%>%
+  sort(decreasing = T) %>%
   as.data.frame()
 
 # Third: make wordcloud
@@ -314,9 +317,39 @@ dev.off()
 
 ```{r}
 # 
-# DF <- read.csv(unz("TechSkillytics.csv.zip", "TechSkillytics.csv"))
-# 
-# DF <- data.frame(Name = DF$What.is.your.name., Skills = )
+
+DF1 <- read.csv("company2.csv")
+
+DF2 <- data.frame(employee = c("Emely Schutz"," Carly Gerke"," Rosamaria Ledford", "Jina Aylor", "Dione Parenteau", "Ezequiel Crusoe", "Arnoldo Gary", "Stephine Valasquez", "Jazmin Faught", "Gudrun Mcmurtrie"),
+                  position = c("database administrator", "application developer", "business intelligence analyst", "network engineer", "project manager", "java developer", "information security analyst", "security architect", "cloud engineer", "quality assurance engineer"),
+                  skills = c(" python, databases,excel, sql, machine learning
+",
+                             " python, excel,ai,  systems, software design, machine learning
+",
+                             " python, management, r, excel,ai",
+                             " python,  databases, excel, sql, 	
+ engineering, machine learning
+",
+                             " python, management, r, excel, business intelligence",
+                             " python,java, excel,",
+                             " python,  databases, excel,ai, machine learning",
+                             " python,  databases, excel, sql",
+                             " python,  databases, excel, machine learning
+",
+                             " python, management, r, excel, sql"))
+
+
+DF3 <- data.frame(employee = c(),
+                  skills = c(),
+                  position = c())
+
+
+
+write.csv(DF1,"Software_Giant.csv", row.names = F)
+
+write.csv(DF1,"HelloNow.csv", row.names = F)
+
+write.csv(DF1,"Equilibrium.csv", row.names = F)
 
 ```
 
