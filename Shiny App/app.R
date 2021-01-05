@@ -15,11 +15,15 @@ library(visNetwork)
 library(rintrojs)
 
 
-PYTHON_DEPENDENCIES = c('pandas','numpy==1.19.3','scikit-learn', 'category_encoders','joblib')
+PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn==0.22.2.post1', 'category_encoders','joblib')
 df<-read.csv('test.csv',encoding="ISO-8859-1")
 sector_df <- read.csv('Sector_skills.csv')
-company_df = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
 
+df_empty = data.frame(employee=c("You"),position=c("java"),skills=c("python"))
+company_df2 = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
+# Predefined dataset for Software Giant
+company_df = read.csv("company2.csv")
+# company_df3 = 
 
 # Trying something out -----------------------------
 
@@ -41,10 +45,16 @@ sidebar<-sidebarPanel(
   tags$p("Medium Small: 201-1000 Employees"),
   tags$p("Medium Large: 1001-10000 Employees"),
   tags$p("Large: more than 10000 Employees")
+  # ,
+  # textInput("employee_name","Enter employee name"),
+  # textInput("employee_skills","Enter employee skills (separate by comma)"),
+  # textInput("employee_position","Enter employee position"),
+  # actionButton("add_btn", "Add")
 )
 
 body <- mainPanel(
-  # wordcloud2Output('sectorplot')
+  # DT::renderDataTable("customize_table"),
+ wordcloud2Output('sectorplot2')
 )
 # body <- dashboardBody(
 #   
@@ -276,9 +286,30 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
                                    
                             )
-                          )
+                          ),
                           
-                   
+                          fluidRow(
+                            
+                            style = "height:20px;"),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<h5>Which company do you work for?</h5>")
+                            ),
+                            column(3)
+                          ),
+                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   selectInput("company",label="",
+                                               choices = c("Software Giant", "Tech Medicals"),
+                                               selected = "Software Giant"),
+                                   h6("Software Giant is a small company in the Information Technology sector")
+
+                            )
+                          )
                    
                  ),
                  
@@ -527,8 +558,24 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             #   
                             #   style = "height:300px;"),
                             
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     shiny::HTML("<h5> Wonder how many team members have a certain skill?  </h5>")
+                              ),
+                              column(3)
+                            ),
                             
-                            # 10
+                            #10
+                            fluidRow(
+                              column(3),
+                              column(6,
+                                     textInput("training","Enter the skill"),
+                                     valueBoxOutput("training_effect")
+                              ),
+                              column(3)
+                            ),
+                            # 11
                             fluidRow(
                               column(3),
                               column(6,
@@ -551,7 +598,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                  
                  # -----------------------------------------------
 
-                   tabPanel("Other sectors", value = "sectors",
+                   tabPanel("All Sectors", value = "sectors",
 
                             sidebarLayout( sidebar, body )  # Closes the sidebarLayout
                    ),  # Closes the second tabPanel called "TechSkillytics"
@@ -683,8 +730,8 @@ server <- function(input, output) {
 
 
   # Create virtual env and install dependencies
-  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
   reticulate::use_virtualenv(virtualenv_dir, required = T)
   reticulate::source_python('slide.py')
 
@@ -732,119 +779,36 @@ server <- function(input, output) {
                                                                                                                               browser.padding = 0, browser.fill = TRUE))
     chart
   }
-    # DB2 SL -------------------------------------------------------------------
 
-    values <- reactiveValues()
-    values$df <- company_df
-    observeEvent(input$add_btn, {
-      newLine <- isolate(c(input$employee_name, input$employee_position, input$employee_skills))
-      isolate(values$df <- rbind(values$df, newLine))
-    })
-    output$table <- DT::renderDataTable(values$df)
-    selected_employee <- reactive({
-      values$df[input$table_rows_selected, ]
-    })
-
-    output$sectorplot <- renderWordcloud2({
-      if (input$company_size != "All"){
-        chosen_sector_skills <- sector_df[sector_df$Sector==input$company_sector &
-                                            sector_df$Size==input$company_size, "All_skills"]
-      } else{
-        chosen_sector_skills <- sector_df[sector_df$Sector==input$company_sector, "All_skills"]
-
-      }
-       # First: tokenize the data
-      text_tokens <- scan(text = chosen_sector_skills,
-                          what = "character",
-                          quote = "",
-                          sep = ",")
-
-      # Second: make frequency tables
-      freq_text <- table(text_tokens)%>%
-        sort(decreasing = T) %>%
-        as.data.frame()
-
-      # Third: make wordcloud
-      wordcloud2a(freq_text,
-                 color = "random-light", size=0.3)
-    })
-
-    output$teamSkills <- renderWordcloud2({
-      if (nrow(selected_employee())==0){
-        v <- values$df
-      } else {
-        v <- selected_employee()
-      }
-      text_tokens <- scan(text = v[["skills"]],
-                          what = "character",
-                          quote = "",
-                          sep = ",")
-
-      freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
-
-      wordcloud2a(freq_text, size=0.4)
-    })
-
-    output$training_effect <- renderValueBox({
-      if (nrow(selected_employee())==0){
-        v <- values$df
-      }
-      else{
-        v <- selected_employee()
-      }
-      total_n = nrow(v)
-      text_tokens <- scan(text = v[["skills"]],
-                          what = "character",
-                          quote = "",
-                          sep = ",")
-      freq_text <- table(text_tokens) %>% as.data.frame()
-      skilled_n = freq_text[str_trim(freq_text$text_tokens)==input$training,"Freq"]
-      valueBox(skilled_n, paste(" out of ",total_n, " of your team already have this skill"))
-    })
-
-    # Below are python codes----------------------------
-output$team_gap <- renderPlot({
-  if (nrow(selected_employee())==1){
-    job <- findSimilarJobTitle(selected_employee()$position)
-    # if (job==""){job<-input$job}
-    getNTopSkillsFromJob(df, job, input$skills)
-    data <-read.csv('result.csv',encoding="ISO-8859-1")
-
-    # Render a bar plot that shows top skills for a given job title
-
-    ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
-      theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
-
-  } else{
-    if (nrow(selected_employee())==0){
-      v <- values$df
-    }
-    else{
-      v <- selected_employee()
-    }
-    text_tokens <- getTeamSkillGap(df, v, input$skills)
-    freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
-
-    # Render a bar plot
-    ggplot(freq_text, aes(text_tokens, Freq))+
-      geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
-      theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
-  }
-  })
-
-    # DB1 SL --------------------------------------------------------------------
+    # SL ---------------------------------------------------------------------
+    
     findJob <- reactive({findSimilarJobTitle(input$current_job)})
 
+    
+    #4
     output$predicted_job <- renderText({
       predict_res(input$current_skills)
     })
 
+    #6
+    output$table <- DT::renderDataTable({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      newLine <- c("You", job, input$current_skills)
+      if(input$company=="Software Giant"){
+        company_df<-rbind(company_df, newLine)
+      }else{
+        company_df2<-rbind(company_df2, newLine)
+      }
+    })
 
+    #2
     output$skill_gap <- renderText({
       job <- findJob()
       if (job==""){job<-input$job}
       findSkillGap(df, job, input$current_skills, input$skills)
     })
+    #3
     output$value <- renderValueBox({
       job <- findJob()
       if (job==""){job<-input$job}
@@ -852,24 +816,21 @@ output$team_gap <- renderPlot({
     })
 
     # Render a bar plot that shows top skills for a given job title
-
+    #1
     output$skillPlot <- renderPlot({
       job <- findJob()
       if (job==""){job<-input$job}
       getNTopSkillsFromJob(df, job, input$skills)
       data <-read.csv('result.csv',encoding="ISO-8859-1")
 
-      ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+      ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_col(fill = "indianred2")+labs(x = "", title = paste("Top skills for", job))+theme_bw()+
         theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
 
-      # barplot(height=data$frequency, names=data$skills,
-      #         main=paste("Top skills for", job),col=rgb(1, 0.8, 0.8, 0.8),
-      #         ylab="Frequency in Percent")
 
     })
 
     # Render a bar plot that shows learning time for the person
-
+    #5
     output$skillTime <- renderPlot({
       job <- findJob()
       if (job==""){job<-input$job}
@@ -883,6 +844,151 @@ output$team_gap <- renderPlot({
 
     })
 
+    
+    get_company <- reactive({
+      job <- findJob()
+      if (job==""){job<-input$job}
+      newLine <- c("You", job, input$current_skills)
+      if(input$company=="Software Giant"){
+        company<-rbind(company_df, newLine)
+      }else{
+        company<-rbind(company_df2, newLine)
+      }
+    })
+    
+    selected_employee <- reactive({
+      get_company()[input$table_rows_selected, ]
+    })
+    
+    #7
+    output$teamSkills <- renderWordcloud2({
+      if (nrow(selected_employee())==0){
+        v <- get_company()
+      } else {
+        v <- selected_employee()
+      }
+      text_tokens <- scan(text = v[["skills"]],
+                          what = "character",
+                          quote = "",
+                          sep = ",")
+      
+      freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
+      
+      wordcloud2a(freq_text, size=0.4)
+    })
+    
+    #8
+    output$team_gap <- renderPlot({
+      if (nrow(selected_employee())==1){
+        job <- findSimilarJobTitle(selected_employee()$position)
+        if (job==""){job<-input$job}
+        getNTopSkillsFromJob(df, job, input$skills)
+        data <-read.csv('result.csv',encoding="ISO-8859-1")
+        
+        # Render a bar plot that shows top skills for a given job title
+        
+        ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+          theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
+        
+      } else{
+        if (nrow(selected_employee())==0){
+          v <- get_company()
+        }
+        else{
+          v <- selected_employee()
+        }
+        text_tokens <- getTeamSkillGap(df, v, input$skills)
+        freq_text <- table(text_tokens)%>% sort(decreasing = T) %>% as.data.frame()
+        
+        # Render a bar plot
+        ggplot(freq_text, aes(text_tokens, Freq))+
+          geom_col(fill="#69b3a2")+theme_bw()+labs(title = "Team Skill Gaps")+
+          theme(axis.title.x=element_blank(),axis.title.y=element_blank(),axis.text.x = element_text(size = 15,angle = 45, vjust = 1, hjust=1))
+      }
+    })
+    
+    
+    
+    
+    #9
+    output$sectorplot <- renderWordcloud2({
+      if (input$company=="Software Giant"){
+        chosen_sector_skills <- sector_df[sector_df$Sector=="Information Technology" &
+                                            sector_df$Size=="Small", "All_skills"]
+      } else{
+        chosen_sector_skills <- sector_df[sector_df$Sector=="Information Technology" &
+                                            sector_df$Size=="Small", "All_skills"]
+        
+      }
+      # First: tokenize the data
+      text_tokens <- scan(text = chosen_sector_skills,
+                          what = "character",
+                          quote = "",
+                          sep = ",")
+      
+      # Second: make frequency tables
+      freq_text <- table(text_tokens)%>%
+        sort(decreasing = T) %>%
+        as.data.frame()
+      
+      # Third: make wordcloud
+      wordcloud2a(freq_text,
+                  color = "random-light", size=0.3)
+    })
+    
+    #10
+    
+    output$training_effect <- renderValueBox({
+      if (nrow(selected_employee())==0){
+        v <- get_company()
+      }
+      else{
+        v <- selected_employee()
+      }
+      total_n = nrow(v)
+      text_tokens <- scan(text = v[["skills"]],
+                          what = "character",
+                          quote = "",
+                          sep = ",")
+      freq_text <- table(text_tokens) %>% as.data.frame()
+      skilled_n = freq_text[str_trim(freq_text$text_tokens)==input$training,"Freq"]
+      valueBox(skilled_n)
+    })
+    
+    
+    # SL third page----------------------------------------------------------------------------
+    values <- reactiveValues()
+    values$df <- df_empty
+    observeEvent(input$add_btn, {
+      newLine <- isolate(c(input$employee_name, input$employee_position, input$employee_skills))
+      isolate(values$df <- rbind(values$df, newLine))
+    })
+    
+    output$customize_table <- DT::renderDataTable(values$df)
+    
+    output$sectorplot2 <- renderWordcloud2({
+      if (input$company_size != "All"){
+        chosen_sector_skills <- sector_df[sector_df$Sector==input$company_sector &
+                                            sector_df$Size==input$company_size, "All_skills"]
+      } else{
+        chosen_sector_skills <- sector_df[sector_df$Sector==input$company_sector, "All_skills"]
+        
+      }
+      text_tokens <- scan(text = chosen_sector_skills,
+                          what = "character",
+                          quote = "",
+                          sep = ",")
+      freq_text <- table(text_tokens)%>%
+        sort(decreasing = T) %>%
+        as.data.frame()
+      wordcloud2a(freq_text,
+                  color = "random-light", size=0.3)
+    })
+    
+
+    
+    
+    
 }
 
 # Run the application ---------------------------------------
