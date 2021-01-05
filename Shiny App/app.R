@@ -291,7 +291,20 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           
                           
+                 ,
+                 fluidRow(
+                   column(3),
+                   column(6,
+                          tags$div(align = "center", 
+                                   tags$a("RESULTS", 
+                                          onclick="fakeClick('results')", 
+                                          class="btn btn-primary btn-lg")
+                          )
+                   ),
+                   column(3)
                  ),
+                 fluidRow(style = "height:25px;"
+                 )),
                  
                  #----------------------------------
                  
@@ -399,7 +412,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:300px;"),
+                              style = "height:100px;"),
                             fluidRow(
                               column(3),
                               column(6,
@@ -418,7 +431,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:300px;"),
+                              style = "height:100px;"),
                             fluidRow(
                               column(3),
                               column(6,
@@ -591,13 +604,15 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               ),
                               column(3)
                             ),
+                            fluidRow(style = "height:300px;"
+                            ),
                             #11
                             fluidRow(
                               column(3),
                               column(6,
                                      shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
-                                     shiny::HTML("<h5>  &nbsp; Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sectors\" tab! </h5>
-                                     <h5></h5>
+                                     shiny::HTML("<h5>  &nbsp; Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sectors\" tab! Or perhaps you will prefer to change your inputs in the \"INPUT\" tab! </h5>
+                                     <h5> </h5>
                                                  <h5>  &nbsp; This is just the demo of what the app can do. In the future we would like to implement more features, like an analysis of what social media thinks of your skills/position and relay more interative information between team members easing the information transer between your team members! ")
                               ),
                               column(3)
@@ -605,7 +620,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             
                             fluidRow(
                               
-                              style = "height:300px;"),
+                              style = "height:25px;"),
                             
                             # PAGE BREAK
                             tags$hr(),
@@ -646,7 +661,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                                             h5("About the Data")
                                                        )
                                              ),
-                                             tags$p(h6(" We have obtained the data used in this program by web scraping job seeking websites (such as Glassdoor, and Dice), online course websites (such as Edx), and others to help us model industry sectors and define the skills (like a dataset from Linkedin, found on Kaggle). We used python to scrape the data with selenium, and R to clean the data for use.  As for the template for the app, we developed it in Rstudio using Shiny, and have largely relied on the same template as the one used for career-pathfinder, which can be accessed at https://shiny.rstudio.com/gallery/career-pathfinder.html ")),
+                                             tags$p(h6(" We have obtained the data used in this program by web scraping job seeking websites (such as Glassdoor, and Dice), online course websites (such as Edx), and others to help us model industry sectors and define the skills (like a dataset from Linkedin, found on Kaggle). We used python to scrape the data with selenium, and R to clean the data for use.  As for the template for the app, we developed it in Rstudio using Shiny, and have largely relied on the same template as the one used for career-pathfinder, which can be accessed at the Shiny gallery ")),
                                              
                                          )
                                      ) # Closes div panel
@@ -732,9 +747,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             fluidRow(style = "height:150px;")
                    )  # Closes About tab
                    
+                
 )
-
-
 
 
 
@@ -743,14 +757,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 # Define server logic ------------------------------------------------------------
 server <- function(input, output) {
     # Virtualenv settings --------------------------------------------------------
-  virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
-  python_path = Sys.getenv('PYTHON_PATH')
-
-  # # Create virtual env and install dependencies
-  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  reticulate::use_virtualenv(virtualenv_dir, required = T)
-  reticulate::source_python('slide.py')
+  # virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
+  # python_path = Sys.getenv('PYTHON_PATH')
+  # 
+  # # # Create virtual env and install dependencies
+  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  # reticulate::use_virtualenv(virtualenv_dir, required = T)
+  # reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",
