@@ -302,12 +302,23 @@ dev.off()
 ```
 
 
+----
+
+### 5. Downloading the google forms and transforming it into a useful Dataframe
+
+----
 
 
 
 
 
+```{r}
+# 
+# DF <- read.csv(unz("TechSkillytics.csv.zip", "TechSkillytics.csv"))
+# 
+# DF <- data.frame(Name = DF$What.is.your.name., Skills = )
 
+```
 
 
 
