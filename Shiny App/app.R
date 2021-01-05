@@ -1,6 +1,5 @@
 
 
-
 library(shiny)
 library(wordcloud2)
 library(dplyr)  
@@ -19,9 +18,10 @@ PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn==0.22.2.post1', 'category
 df<-read.csv('test.csv',encoding="ISO-8859-1")
 sector_df <- read.csv('Sector_skills.csv')
 
-company_df2 = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
+company_df2 = read.csv("HelloNow.csv")
+company_df3 = read.csv("Equilibrium.csv")
 # Predefined dataset for Software Giant
-company_df = read.csv("company2.csv")
+company_df = read.csv("Software_Giant.csv")
 # company_df3 = 
 
 # Trying something out -----------------------------
@@ -57,60 +57,7 @@ body <- mainPanel(
 )
 # body <- dashboardBody(
 #   
-#   tabItems(
-    # tabItem(
-    #   tabName = "db1",
-    #   fluidRow(
-    #     box(
-    #       title = "Individual Skill Analysis",
-    #       solidHeader = T,
-    #       width = 3, 
-    #       collapsible = T,
-    #       collapsed = F,
-    #       textInput("current_job","Enter your current job title"),
-    #       selectInput("job",label = "Or choose a Job Title",
-    #                   choices = c("software engineer",
-    #                               "project manager","database administrator",
-    #                               "big data engineer", "data analyst",
-    #                               "business intelligence analyst","java developer",
-    #                               "information security analyst","security architect","network engineer",
-    #                               "IT support","application developer","information systems coordinater",
-    #                               "database administrator","web developer","cloud engineer","DevOps engineer",
-    #                               "UX designer", "quality assurance engineer","hardware engineer"),
-    #                   selected = "software engineer"),
-    #       
-    #       textInput("current_skills","Enter your current skills (separated by comma)"),
-    #       sliderInput("skills","Number of skills:",min = 1,max = 30,value = 10)
-    #     ),
-    #     
-    #     
-    #     box(
-    #       title = "Job Position Information",
-    #       br(),
-    #       solidHeader = T,
-    #       collapsible = T,
-    #       width = 4,
-    #       collapsed = F,
-    #       #plotOutput("skillPlot")
-    #       ),
-    #     
-    #     box(
-    #       solidHeader = T,
-    #       collapsible = T,
-    #       collapsed = F,
-    #       width = 5,
-    #       title = "Skill Gap Analysis",
-    #       h5(strong("Learning Time")),
-    #       # plotOutput("skillTime")
-    #     ),
-    #     fluidRow(        
-    #       # infoBoxOutput("predicted_job"),
-    #       # infoBoxOutput("skill_gap"),
-    #       # valueBoxOutput("value")
-    #     ),
-    #   )
-    # )
-    # ,
+#  
 #     tabItem(
 #       tabName = "db2",
 #       fluidRow(
@@ -335,7 +282,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    <h5>  Now you can check our analysis by clicking on the RESULTS tab.</h5>")
                             ),
                             column(3)
-                          )
+                          ),
+                          
+                          fluidRow(
+                            
+                            style = "height:200px;")
+                          
+                          
+                          
                           
                  ),
                  
@@ -633,7 +587,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                               column(3),
                               column(6,
                                      textInput("training","Enter the skill"),
-                                     textOutput("training_effect")
+                                     valueBoxOutput("training_effect")
                               ),
                               column(3)
                             ),
@@ -793,8 +747,8 @@ server <- function(input, output) {
   python_path = Sys.getenv('PYTHON_PATH')
 
   # # Create virtual env and install dependencies
-  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
   reticulate::use_virtualenv(virtualenv_dir, required = T)
   reticulate::source_python('slide.py')
 
@@ -846,7 +800,6 @@ server <- function(input, output) {
     # SL ---------------------------------------------------------------------
     
     # findJob <- reactive({findSimilarJobTitle(input$current_job)})
-
     
     #4
     output$predicted_job <- renderText({
@@ -916,9 +869,9 @@ server <- function(input, output) {
       newLine <- c(name, job, input$current_skills)
       if(input$company=="Software Giant"){
         company<-rbind(company_df, newLine)
-      }else{
-        company<-rbind(company_df2, newLine)
-      }
+      }else if(input$company=="Equilibrium"){
+        company<-rbind(company_df3, newLine)
+      }else{company<-rbind(company_df2, newLine)}
     })
     
     selected_employee <- reactive({
@@ -1003,7 +956,7 @@ server <- function(input, output) {
     
     #10
     
-    output$training_effect <- renderText({
+    output$training_effect <- renderValueBox({
       if (nrow(selected_employee())==0){
         v <- get_company()
       }
@@ -1017,7 +970,7 @@ server <- function(input, output) {
                           sep = ",")
       freq_text <- table(text_tokens) %>% as.data.frame()
       skilled_n = freq_text[str_trim(freq_text$text_tokens)==input$training,"Freq"]
-      paste(skilled_n, "out of",total_n, "Team members")
+      valueBox(skilled_n, paste("out of",total_n, "Team members"))
     })
     
     
