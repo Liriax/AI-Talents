@@ -19,7 +19,6 @@ PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn==0.22.2.post1', 'category
 df<-read.csv('test.csv',encoding="ISO-8859-1")
 sector_df <- read.csv('Sector_skills.csv')
 
-df_empty = data.frame(employee=c("You"),position=c("java"),skills=c("python"))
 company_df2 = data.frame(employee=c("Alice", "Bob", "Tim"), position=c("data analyst", "software engineer", "project manager"), skills=c("sql,r","java,c,javascript", "agile,linux,sap"))
 # Predefined dataset for Software Giant
 company_df = read.csv("company2.csv")
@@ -221,12 +220,21 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           fluidRow(
                             
-                            style = "height:20px;"),
+                            style = "height:100px;"),
                          
+                          fluidRow(
+                            column(3),
+                            column(6,
+                                   shiny::HTML("<h5> Enter your name: </h5>"),
+                                   br(),
+                                   textInput("name","")
+                            ),
+                            column(3)
+                          ),
                           
                           fluidRow(
                             
-                            style = "height:20px;"),
+                            style = "height:100px;"),
                           
                           fluidRow(
                             column(3),
@@ -240,6 +248,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   br(),
                                    selectInput("job",label="",
                                                choices = c("software engineer",
                                                            "project manager","database administrator",
@@ -255,7 +264,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           fluidRow(
                             
-                            style = "height:20px;"),
+                            style = "height:100px;"),
                           
                           
                           fluidRow(
@@ -268,10 +277,12 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3)
                           ),
                           
+                
                           
                           fluidRow(
                             column(3),
                             column(6,
+                                   br(),
                                    textInput("current_skills","Prioritize skills which you believe sets you aside!"),
                                    
                             )
@@ -279,7 +290,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           fluidRow(
                             
-                            style = "height:20px;"),
+                            style = "height:100px;"),
                           
                           fluidRow(
                             column(3),
@@ -291,7 +302,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           fluidRow(
                             
-                            style = "height:20px;"),
+                            style = "height:100px;"),
                           
                           fluidRow(
                             column(3),
@@ -313,7 +324,9 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    
                             )
                           ),
-                          
+                          fluidRow(
+                            
+                            style = "height:100px;"),
                           
                           fluidRow(
                             column(3),
@@ -775,15 +788,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 # Define server logic ------------------------------------------------------------
 server <- function(input, output) {
     # Virtualenv settings --------------------------------------------------------
-  # virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
-  # python_path = Sys.getenv('PYTHON_PATH')
-  # 
-  # 
+  virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
+  python_path = Sys.getenv('PYTHON_PATH')
+
   # # Create virtual env and install dependencies
-  # # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  # # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  # reticulate::use_virtualenv(virtualenv_dir, required = T)
-  # reticulate::source_python('slide.py')
+  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  reticulate::use_virtualenv(virtualenv_dir, required = T)
+  reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",
@@ -844,8 +856,8 @@ server <- function(input, output) {
     output$table <- DT::renderDataTable({
       # job <- findJob()
       job<-input$job
-      
-      newLine <- c("You", job, input$current_skills)
+      name <-input$name
+      newLine <- c(name, job, input$current_skills)
       if(input$company=="Software Giant"){
         company_df<-rbind(company_df, newLine)
       }else{
@@ -899,7 +911,8 @@ server <- function(input, output) {
     get_company <- reactive({
       # job <- findJob()
       job<-input$job
-      newLine <- c("You", job, input$current_skills)
+      name<-input$name
+      newLine <- c(name, job, input$current_skills)
       if(input$company=="Software Giant"){
         company<-rbind(company_df, newLine)
       }else{
@@ -1009,7 +1022,7 @@ server <- function(input, output) {
     
     # SL third page----------------------------------------------------------------------------
     values <- reactiveValues()
-    values$df <- df_empty
+    # values$df <- df_empty
     observeEvent(input$add_btn, {
       newLine <- isolate(c(input$employee_name, input$employee_position, input$employee_skills))
       isolate(values$df <- rbind(values$df, newLine))

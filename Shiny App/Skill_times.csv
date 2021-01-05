@@ -1,1191 +1,472 @@
 "Skill","Skill_time"
-"java",33.7272727272727
-"javascript",67.8
-"it",NA
-"security",38.7884615384615
-"linux",35.96875
-"python",51.1515151515151
-"management",37.25
-"development",35.7890625
-"software",40.9328358208955
-"oracle",20
-"c#",NA
-"systems",52.2263157894737
-"html",59.6666666666667
-"agile",17.0833333333333
-"windows",41
-".net",24.5
-"database",29
-"css",58
-"unix",12
-"architecture",25.5
-"network",33.695652173913
-"aws",12.75
-"web",43.6710526315789
-"analysis",35.8092783505155
-"mysql",35
-"cisco",NA
-"j2ee",NA
-"c\+\+",NA
-"api",20.5
-"system",40.2738095238095
-"xml",NA
-"qa",20
-"jquery",28
-"cissp",NA
-"sql server",NA
-"cloud",39.1578947368421
-"asp.net",NA
-"application",47.4305555555556
-"hardware",36
-"ip",15
-"project management",33.0869565217391
-"perl",NA
-"hadoop",90
-"wan",76
-"sdlc",NA
-"pl",NA
-"tcp",NA
-"excel",30.6785714285714
-"lan",76
-"c",40.7407407407407
-"html5",26.5
-"etl",NA
-"engineering",48.0416666666667
-"devops",16.3333333333333
-"git",10
-"soap",NA
-"http",69.5
-"php",NA
-"architect",NA
-"ux",70.75
-"angularjs",NA
-"test",30.1428571428571
-"vpn",76
-"mvc",NA
-"jenkins",25
-"web services",NA
-"rest",23.0714285714286
-"ajax",NA
-"business intelligence",28.25
-"scrum",11.4285714285714
-"azure",NA
-"nosql",28
-"scripts",19.1875
-"engineers",45.7692307692308
-"ccna",NA
-"hibernate",NA
-"software development",26.0769230769231
-"data warehouse",NA
-"risk management",20
-"applications",54.25
-"quality",32.6833333333333
-"help desk",NA
-"apache",90
-"dba",NA
-"firewall",NA
-"angular",178.5
-"big data",42.3181818181818
-"ruby",NA
-"spark",56
-"ccnp",NA
-"json",28
-"automation",24
-"vmware",NA
-"data analysis",26.32
-"bash",NA
-"project",37.4347826086956
-"asp",NA
-"access",49.5576923076923
-"css3",6
-"powerpoint",21
-"ui",91
-"active directory",NA
-"erp",NA
-"amazon web services",NA
-"communication",31.4390243902439
-"customer service",18
-"ssis",NA
-"computer",48.5461538461538
-"switches",55.75
-"networks",33.2058823529412
-"wireless",10
-"pmp",13.2142857142857
-"infrastructure",30.1666666666667
-"desktop",48
-"ssrs",NA
-"routers",NA
-"release",30
-"puppet",NA
-"scala",NA
-"business requirements",49
-"performance",36.8
-"automated",100
-"sas",NA
-"jira",NA
-"mongodb",28
-"sap",NA
-"protocols",24.1666666666667
-"informatica",33
-"jsp",NA
-"sales",46.8333333333333
-"bootstrap",29.6666666666667
-"tableau",NA
-"adobe",36.8333333333333
-"analytical",41.5357142857143
-"dns",NA
-"computer science",42.4074074074074
-"lifecycle",17.5
-"microsoft sql server",NA
-"node.js",28
-"chef",32
-"android",54.5
-"db2",NA
-"selenium",NA
-"microservices",12
-"technical support",NA
-"design",46.1324786324786
-"iso",NA
-"pc",NA
-"firewalls",NA
-"hive",NA
-"ios",72
-"soa",NA
-"algorithms",57.5540540540541
-"crm",24
-"information security",33.75
-"leadership",29.1486486486486
-"technician",NA
-"automotive",90.5
-"documentation",14.6666666666667
-"iis",NA
-"react",19.25
-"cyber security",NA
-"implementation",38.1136363636364
-"kafka",NA
-"t",26.7051282051282
-"jdbc",NA
-"video",37.7727272727273
-"core java",NA
-"data architecture",NA
-"integration",34.125
-"oop",42.5
-"restful",28
-"wcf",NA
-"angular js",NA
-"ansible",NA
-"testing",33.175
-"configuration",21
-"exchange",33.5909090909091
-"metrics",34.6
-"postgresql",NA
-"ms office",28
-"powershell",NA
-"foundation",38.1290322580645
-"disaster recovery",NA
-"network security",76
-"change management",21
-"cassandra",NA
-"compliance",59.875
-"quality assurance",27.8333333333333
-"supervision",31.5
-"voip",NA
-"ccie",NA
-"continuous integration",NA
-"desktop support",NA
-"saas",40.5
-"data management",108
-"kubernetes",15
-"ibm",32.7727272727273
-"maven",NA
-"outlook",30
-"analytics",49.65625
-"bi",43.75
-"healthcare",33.0294117647059
-"research",38.3711340206186
-"configuration management",NA
-"embedded",50.6
-"middleware",NA
-"ssl",NA
-"teradata",NA
-"tomcat",NA
-"ci",25
-"r",35.9310344827586
-"support",37.1166666666667
-"telecom",NA
-"data",42.3032258064516
-"junit",28
-"cio",NA
-"user interface",27
-"bgp",NA
-"e",36.6976744186046
-"microsoft windows azure",NA
-"siem",NA
-"tfs",NA
-"genetic",47.5714285714286
-"manager",25.2647058823529
-"uml",15.5
-"interface",41.25
-"programming",44.3486842105263
-"sharepoint",NA
-"shell",NA
-"struts",NA
-"ips",NA
-"rdbms",35
-"visual studio",NA
-"websphere",NA
-"developer",31.3125
-"stored procedures",NA
-"vb.net",NA
-"mobile",40.5909090909091
-"business objects",13.5
-"citrix",NA
-"data science",44.4054054054054
-"microsoft excel",32.5
-"ospf",NA
-"photoshop",45
-"web applications",17
-"basic",42.4891304347826
-"encryption",13.5
-"ethernet",76
-"multi",44.8
-"telecommunications",16.5
-"web development",56.5
-"commerce",26
-"ecommerce",63
-"react.js",28
-"solaris",NA
-"ids",NA
-"ruby on rails",NA
-"microsoft office",32
-"virtualization",29
-"web api",NA
-"can",35.9625
-"cism",NA
-"github",30
-"hbase",NA
-"jboss",14
-"matlab",75.2
-"svn",NA
-"cms",NA
-"migration",35.2857142857143
-"ood",NA
-"splunk",NA
-"supply chain",44.9375
-"tdd",NA
-"protocol",18.75
-"salesforce",NA
-"windows 7",NA
-"cd",25
-"micro",32.7272727272727
-"nodejs",NA
-"vb",NA
-"apache spark",90
-"best practices",30.9642857142857
-"data migration",NA
-"dhcp",NA
-"peoplesoft",NA
-"storage",53.5
-"embedded software",NA
-"engineer",44.9444444444444
-"it security",NA
-"jms",NA
-"microsoft",30.2692307692308
-"node",26
-"specification",28.5
-"ssas",NA
-"wpf",NA
-"aerospace",37.5
-"angular.js",NA
-"asp.net mvc",NA
-"database design",36
-"emr",NA
-"gis",NA
-"ms project",NA
-"validation",20.9166666666667
-"data analytics",63.9166666666667
-"finance",35.3333333333333
-"mcse",NA
-"mdm",NA
-"networking",39
-"business analysis",NA
-"defense systems",NA
-"eigrp",NA
-"f5",NA
-"itil",NA
-"palo alto",NA
-"visual basic",NA
-"application development",6
-"application support",NA
-"entity framework",NA
-"libraries",39.0384615384615
-"redis",NA
-"degree",63.4666666666667
-"materials",45.14
-"spring mvc",NA
-"audit",52
-"consult",90
-"cryptography",54.125
-"microsoft project",NA
-"microsoft windows",NA
-"mpls",NA
-"olap",18
-"pig",NA
-"spring boot",NA
-"algorithm",50.1818181818182
-"artificial intelligence",46.875
-"backup",NA
-"com",46.0909090909091
-"confluence",112
-"content management",NA
-"database administration",NA
-"ejb",NA
-"full time",130
-"information technology",40.6
-"microsoft ssis",NA
-"pci",NA
-"project manager",31.4166666666667
-"weblogic",NA
-"V349",34.405641025641
-"analyst",41.3
-"budget",23.4
-"cisa",NA
-"cognos",NA
-"gui",36
-"library",17.4
-"policies",41.7972972972973
-"rf",NA
-"security clearance",NA
-"ups",21.5
-"version control",10
-"webservices",NA
-"crystal reports",NA
-"health care",31.6538461538462
-"helpdesk",NA
-"software deployment",NA
-"software engineer",NA
-"waterfall",NA
-"xslt",NA
-"apis",47.5
-"data integration",12
-"epic",NA
-"firmware",NA
-"framework",38.9459459459459
-"oltp",NA
-"postgres",NA
-"recruiter",NA
-"restful web services",NA
-"statistics",54.7352941176471
-"upgrades",NA
-"case",36.0977011494253
-"cobol",NA
-"data visualization",23.0625
-"full stack",6
-"incident management",NA
-"iterative",23.3
-"laptop",33
-"linq",NA
-"microsoft ssrs",NA
-"s3",52
-"servicenow",NA
-"design patterns",54
-"ebs",12
-"functional",35.5625
-"ide",35
-"jsf",NA
-"lead",34.2307692307692
-"open source",41.4117647058824
-"openstack",NA
-"operations",43.3888888888889
-"system administration",18
-"ux design",21
-"wsdl",NA
-"apache hadoop",NA
-"attention to detail",NA
-"cloud security",10.5
-"consulting",26.6666666666667
-"data structures",46
-"ec2",12
-"elasticsearch",NA
-"financial services",41.5
-"installation",NA
-"mapreduce",71.25
-"object oriented design",54
-"servlets",NA
-"sketch",13.5
-"sql queries",12
-"sybase",NA
-"test cases",NA
-"backbone",NA
-"consultant",23.5
-"eclipse",28
-"gcp",NA
-"html 5",NA
-"information systems",NA
-"java script",NA
-"ms sql",NA
-"nexus",30
-"physics",78.3958333333333
-"production",44.2096774193548
-"production support",NA
-"reactjs",NA
-"rest api",NA
-"san",34.5
-"server",36.875
-"solr",NA
-"test automation",NA
-"uat",NA
-"v",40
-"vba",NA
-"3d",36.2142857142857
-"backend",10.5
-"business process",NA
-"data architect",NA
-"data governance",NA
-"embedded systems",60.8
-"fda",28
-"it project management",NA
-"network management",NA
-"operating systems",53
-"paas",40.5
-"pm",18.25
-"power bi",43.75
-"risk",46.1710526315789
-"sass",NA
-"smtp",NA
-"source code",35
-"sox",NA
-"spring",53.4285714285714
-"technical",35.3928571428571
-"terraform",NA
-"user experience",29.6666666666667
-"web design",44
-"b2b",NA
-"ceh",NA
-"data centers",NA
-"director",32.1
-"edi",NA
-"environmental",45.1666666666667
-"hipaa",NA
-"lambda",NA
-"microsoft word",NA
-"network engineer",NA
-"pmo",21
-"rhel",NA
-"typescript",NA
-"iaas",40.5
-"identity management",NA
-"insurance",46.5
-"rabbitmq",NA
-"recovery",28.2
-"soc",NA
-"spring framework",NA
-"switch",95
-"visio",NA
-"cybersecurity",21
-"go",35.1212121212121
-"incident response",NA
-"oracle ebs",NA
-"pki",NA
-"redshift",NA
-"stp",NA
-"windows server",NA
-"a",NA
-"administration",25.25
-"audio",35.3333333333333
-"axure",NA
-"bamboo",NA
-"deployment",25.9166666666667
-"distributed systems",NA
-"front",24.8333333333333
-"golang",NA
-"gps",15
-"iam",NA
-"jpa",NA
-"less",48.7333333333333
-"mac",54
-"mq",NA
-"net",24.5
-"network design",NA
-"obiee",NA
-"plsql",NA
-"risk assessment",42
-"scm",NA
-"simulation",70.375
-"subversion",NA
-"talend",NA
-"transact",NA
-"vbscript",NA
-"vulnerability",29.3333333333333
-"windows powershell",NA
-"aix",NA
-"amazon redshift",NA
-"anti",22.5
-"bigdata",NA
-"bitbucket",NA
-"civil",36.75
-"collaboration",45.5263157894737
-"dashboard",27.5
-"dod",NA
-"drupal",NA
-"end",36.4915966386555
-"erwin",NA
-"giac",NA
-"information assurance",NA
-"jee",NA
-"laboratory",44.25
-"microstrategy",NA
-"ms sql server",NA
-"office 365",17.5
-"oracle dba",NA
-"product development",18
-"restful api",NA
-"retail",19
-"rtos",NA
-"sccm",NA
-"sso",NA
-"storm",12.5
-"test plans",NA
-"troubleshoot",NA
-"vulnerability management",NA
-"workflow",18.5
-"2012",29
-"alm",NA
-"apache kafka",NA
-"brocade",NA
-"c#.net",NA
-"centos",NA
-"cisco routers",NA
-"code review",NA
-"contract w2",NA
-"customer support",NA
-"django",NA
-"dlp",NA
-"etc.",39.6944444444444
-"financial",41.49
-"it management",NA
-"mobile development",NA
-"mvvm",NA
-"os",29.8387096774194
-"process improvement",50
-"qos",NA
-"sip",18
-"testng",NA
-"3",53.25
-"ad",18
-"cross",29.8055555555556
-"data security",12
-"dom",28
-"education",37.6101694915254
-"fpga",NA
-"hdfs",NA
-"jd edwards",NA
-"mechanical",87.5
-"microsoft windows server",NA
-"object",55.1470588235294
-"objective",48.8181818181818
-"oracle pl",NA
-"red hat",16
-"red hat linux",NA
-"scientific",36.8382352941176
-"snowflake",NA
-"to",NA
-"toad",NA
-".net core",NA
-"ado.net",NA
-"asa",NA
-"client",43.75
-"continuous delivery",NA
-"email",16.5
-"google cloud",NA
-"groovy",NA
-"hp",NA
-"hudson",NA
-"intrusion detection",NA
-"isp",NA
-"ldap",NA
-"microsoft ssas",NA
-"mssql",NA
-"optimization",112.8125
-"payroll",NA
-"rails",NA
-"rds",NA
-"redhat",NA
-"saml",NA
-"scripting",76
-"software design",44
-"sqoop",NA
-"virus",30
-"xsl",NA
-"ar",29.4642857142857
-"build",42.8055555555556
-"checkpoint",NA
-"data modeling",NA
-"data structure",45
-"datastage",NA
-"dynamodb",NA
-"enterprise",34.0454545454545
-"governance",35.4
-"gradle",NA
-"hr",20
-"hub",18.5
-"jasmine",NA
-"kanban",15.5
-"knockout",NA
-"lamp",NA
-"microsoft power bi",NA
-"microsoft visual studio",NA
-"opengl",54
-"printers",76
-"program management",15
-"programmer",26.4
-"rac",NA
-"rational",100.166666666667
-"relational database",20.2
-"rest apis",NA
-"sans",71.5
-"sap basis",NA
-"security operations",NA
-"self motivated",NA
-"snmp",NA
-"swift",72
-"system integration",NA
-"troubleshooting",NA
-"tsql",NA
-"vlan",NA
-"vm",NA
-"voice",24.35
-"z",NA
-".net framework",NA
-"apache tomcat",NA
-"authentication",30
-"backup administration",NA
-"browsers",29
-"cad",33
-"creativity",35
-"etc",39.6944444444444
-"graphics",84
-"jcl",NA
-"mcp",NA
-"mentorship",NA
-"meta",18.6666666666667
-"microsoft sharepoint",NA
-"mobile applications",18
-"nagios",NA
-"on",NA
-"oracle database",NA
-"pcb",NA
-"pmi",21.7307692307692
-"qlikview",NA
-"real",38.2704081632653
-"recruitment",NA
-"reporting",63.75
-"script",NA
-"sdn",NA
-"solid",41.08
-"stack",28.3333333333333
-"strategy",25.7173913043478
-"ubuntu",90
-"wireframes",NA
-"802.11",NA
-"ada",NA
-"amazon",54.75
-"amazon ec2",12
-"amazon s3",12
-"apache hive",NA
-"cisco certifications",NA
-"data collection",42.5
-"data quality",72
-"digital",34.172131147541
-"linux administration",NA
-"linux kernel",NA
-"network administration",NA
-"network protocols",NA
-"nlp",NA
-"os x",NA
-"owasp",NA
-"project coordination",NA
-"relational databases",16.5
-"replication",30
-"restful apis",28
-"routing",NA
-"security architecture",NA
-"shell script",NA
-"soapui",NA
-"sun",18
-"systems analysis",35
-"tibco",NA
-"visualization",35.7058823529412
-"wordpress",6
-"amazon rds",NA
-"ap",51.0416666666667
-"application servers",NA
-"ba",NA
-"bi tools",NA
-"bluetooth",NA
-"business",35.8175675675676
-"dot net",NA
-"emc",NA
-"full",61.9375
-"high availability",NA
-"https",57.7333333333333
-"interfaces",40.0714285714286
-"invision",NA
-"ipv6",NA
-"it operations",NA
-"it service management",NA
-"it support",NA
-"java development",NA
-"jax",14
-"maintenance",95
-"micro services",NA
-"mongo db",NA
-"ms",28
-"nessus",NA
-"netsuite",NA
-"noc",NA
-"organizational",38.975
-"pbx",NA
-"program manager",15
-"qtp",NA
-"reports",49.8571428571429
-"security analysis",NA
-"shell scripting",NA
-"solarwinds",NA
-"statistical analysis",12
-"switching",35
-"system architecture",12
-"system security",NA
-"systems administration",NA
-"systems design",15
-"transformation",29.25
-"ui design",NA
-"unisys",NA
-"word",18.2857142857143
-"xamarin",NA
-"11g",NA
-"7",35.375
-"access management",12
-"act",44.9
-"adobe creative suite",NA
-"as",NA
-"authorization",NA
-"bachelors degree",NA
-"biology",33.4565217391304
-"business partnership",NA
-"cics",NA
-"clarity",19.5
-"clojure",NA
-"continuous improvement",21
-"cots",NA
-"data flow",15
-"data qa",NA
-"develop",40.9504504504505
-"distribution",59.1875
-"elastic search",NA
-"embedded linux",NA
-"fisma",NA
-"flume",NA
-"hands",44.4196428571429
-"iot",22.5714285714286
-"ipsec",NA
-"js",16
-"load balancers",NA
-"mainframe",NA
-"microcontrollers",112
-"microsoft access",32
-"microsoft azure",NA
-"microsoft certified professional",NA
-"mobile devices",31.3333333333333
-"modeling",61.16
-"npm",NA
-"objective c",NA
-"orm",NA
-"pharma",NA
-"procedures",27.8571428571429
-"pyspark",NA
-"qt",NA
-"restful services",NA
-"rspec",NA
-"scheduling",14
-"security\+",NA
-"software developer",28
-"springboot",NA
-"sqa",NA
-"sql dba",NA
-"system requirements",NA
-"vertica",NA
-"web developer",31.6666666666667
-"web server",28
-"web service",NA
-"xhtml",NA
-"10",28.9333333333333
-"2",35.1101694915254
-"a\+",NA
-"agile development",26.3333333333333
-"alcatel",NA
-"amqp",NA
-"application security",NA
-"arista",NA
-"arm",56.5833333333333
-"atm",28
-"backbone.js",NA
-"bmc",NA
-"business analyst",NA
-"cicd",NA
-"claims",46
-"clearcase",NA
-"cloud architecture",9
-"csm",10
-"cucm",NA
-"data validation",NA
-"databricks",NA
-"dell",NA
-"device drivers",NA
-"dhtml",NA
-"dreamweaver",NA
-"esri",NA
-"exadata",NA
-"fix",NA
-"flash",30
-"fortinet",NA
-"front end",26.8
-"gap analysis",NA
-"government",34.0972222222222
-"guidewire",NA
-"heroku",90
-"ieee",NA
-"innovation",32.6060606060606
-"internet",31.1222222222222
-"inventory",64.5
-"it infrastructure",NA
-"knowledge management",NA
-"malware",8.25
-"manual",24
-"map reduce",NA
-"microsoft exchange",NA
-"microsoft visio",NA
-"most",NA
-"netapp",NA
-"next",51.9848484848485
-"ooad",NA
-"oracle 12c",NA
-"peripherals",42
-"product management",18.5
-"redux",NA
-"reliable",22.4
-"requirements",48.3125
-"routing protocols",NA
-"s",32.8997641509434
-"salesforce.com",NA
-"secret clearance",NA
-"sei",13.5
-"servers",47.6
-"service desk",NA
-"servlet",NA
-"sitecore",NA
-"sql database",NA
-"supply chain management",70
-"tad pgs",NA
-"team leadership",10
-"telephony",NA
-"test plan",NA
-"test scripts",NA
-"threat analysis",NA
-"tivoli",NA
-"triggers",NA
-"ts",NA
-"unity",26
-"vdi",NA
-"vendor management",NA
-"via",44.4666666666667
-"visual design",NA
-"vpc",12
-"web application",NA
-"web forms",NA
-"webapi",NA
-"wifi",43.1666666666667
-"wireshark",NA
-"xsd",NA
-"8",55.8529411764706
-"adf",NA
-"aml",NA
-"and",NA
-"antivirus",NA
-"apex",NA
-"assembly",32.5
-"broadband",NA
-"bw",NA
-"cis",NA
-"csp",NA
-"data lake",NA
-"data processing",NA
-"data storage",160
-"databases",26.6666666666667
-"dev ops",NA
-"enterprise architecture",NA
-"enterprise software",NA
-"focus",38.1688311688312
-"functional requirements",NA
-"gcih",NA
-"gulp",NA
-"hl7",NA
-"ims",NA
-"install",26.5
-"ise",NA
-"malware analysis",NA
-"mariadb",35
-"mathematics",37.5
-"medical devices",28
-"microsoft powerpoint",21
-"mongo",NA
-"monitoring",34.95
-"ms excel",NA
-"network operations",NA
-"nortel",NA
-"o365",NA
-"openshift",NA
-"oracle sql",NA
-"oscilloscope",NA
-"product design",16.6666666666667
-"root cause analysis",28
-"rsa",NA
-"scalability",46.8
-"sci",35
-"server administration",NA
-"software architecture",NA
-"sonet",NA
-"spss",NA
-"surveillance",67.8333333333333
-"technology",39.2394366197183
-"tls",NA
-"tx",NA
-"vhdl",NA
-"vuejs",NA
-"wireless communication",NA
-"workday",NA
-"1",34.5169491525424
-"2016",28.8571428571429
-"4",36.78125
-"5",27.4666666666667
-"ai",43.1666666666667
-"android development",NA
-"ansi",NA
-"aruba",NA
-"bom",25
-"bpm",NA
-"business administration",NA
-"business software",NA
-"circuit",31
-"cloudformation",NA
-"cmmi",NA
-"cobit",NA
-"coldfusion",NA
-"datawarehouse",NA
-"es6",NA
-"evaluation",53.0909090909091
-"fixed income",NA
-"forensics",144
-"forth",26
-"gl",NA
-"google analytics",NA
-"graphics design",NA
-"hcm",NA
-"human resources",NA
-"impact",38.1428571428571
-"isdn",NA
-"laravel",NA
-"linux admin",NA
-"logistics",25.4
-"medical",45.6851851851852
-"medical device",NA
-"metadata",NA
-"microsoft sql",NA
-"microsoft windows 7",NA
-"ml",NA
-"nginx",NA
-"nice",NA
-"nist 800",NA
-"oozie",NA
-"oracle db",NA
-"oracle rac",NA
-"order management",NA
-"plc",NA
-"plm",NA
-"pos",NA
-"powerbi",NA
-"presentations",24.125
-"privacy",43.9
-"procurement",31.5
-"regression",63.9375
-"responsive design",28
-"roadmaps",10
-"security architect",NA
-"siebel",NA
-"six sigma",25.6666666666667
-"solutions",39.8979591836735
-"spanish",18.9166666666667
-"sqs",NA
-"team foundation server",NA
-"teamcity",NA
-"tech support",NA
-"threat",28.3333333333333
-"ui development",NA
-"user interface design",27
-"visual basic .net",NA
-"vue",NA
-"vue.js",NA
-"vulnerability assessment",NA
-"wireframe",NA
-"53",NA
-"adaptability",10
-"alteryx",NA
-"animation",81
-"appium",NA
-"asset management",30.5
-"business operations",68.8333333333333
-"capital market",NA
-"cloudwatch",12
-"configure",21
-"data integrity",NA
-"data manipulation",35
-"data marts",NA
-"data mining",81
-"delivery",16.2916666666667
-"elt",NA
-"forms",30.6521739130435
-"frameworks",32.9722222222222
-"front end development",6
-"golden gate",NA
-"graphic design",10
-"gsec",NA
-"hedge fund",NA
-"ibm db2",NA
-"information architecture",NA
-"interaction design",21
-"lawson",NA
-"line interface",38.5
-"lotus",NA
-"machine learning",45.2142857142857
-"managed services",NA
-"microsoft iis",NA
-"microsoft outlook",NA
-"microsoft technologies",NA
-"omnigraffle",NA
-"payments",21
-"pci dss",NA
-"quality control",15
-"rmf",NA
-"robotics",87.3333333333333
-"security management",76
-"service orientation",NA
-"software engineering",32
-"sys admin",NA
-"tools",40.75
-"uft",NA
-"verilog",NA
-"vlans",NA
-"vms",9
-"windows os",NA
-"wms",NA
-"xaml",NA
-"agile management",NA
-"articulate",18.4166666666667
-"bigquery",NA
-"circuit design",NA
-"customer engagement",20
-"dbms",NA
-"ddl",NA
-"debug",72
-"design documentation",NA
-"detail",48.0833333333333
-"do",NA
-"economics",42.8225806451613
-"flask",NA
-"game",46.1818181818182
-"gpo",NA
-"i2c",NA
-"ibm websphere",NA
-"ics",NA
-"ipad",NA
-"kpi",NA
-"lucent",NA
-"management information systems",NA
-"microsoft tfs",NA
-"nt",NA
-"okta",NA
-"onshore",NA
-"project delivery",10
-"proxy",NA
-"query optimization",NA
-"react native",NA
-"sap hana",NA
-"satellite",24
-"server hardware",NA
-"software configuration",NA
-"software installation",NA
-"stig",NA
-"synthesis",12
-"time management",NA
-"usability",10
-"user experience design",27
-"vpns",NA
-"web application development",NA
-"web security",NA
-"wireless network",NA
-"18c",NA
-"accessibility",108
 "accounting",27
 "acquisition",65.8333333333333
+"act",44.9
+"active directory",NA
+"administration",25.25
+"adobe",36.8333333333333
 "adobe photoshop",45
-"aem",NA
+"agile development",26.3333333333333
+"ai",43.1666666666667
+"ajax",NA
+"amazon ec2",12
+"amazon s3",12
+"amazon web services",NA
 "analog",54
-"applications support",NA
-"asic",NA
-"based",40.9147286821705
-"business acumen",NA
-"capacity management",NA
+"analytics",49.65625
+"android",54.5
+"angular",178.5
+"angular js",NA
+"angularjs",NA
+"animation",81
+"ansible",NA
+"anti",22.5
+"ap",51.0416666666667
+"apache",90
+"apache spark",90
+"api",20.5
+"apis",47.5
+"application development",6
+"ar",29.4642857142857
+"architecture",25.5
+"arm",56.5833333333333
+"articulate",18.4166666666667
+"artificial intelligence",46.875
+"asp",NA
+"asp.net",NA
+"assembly",32.5
+"asset management",30.5
+"atm",28
+"audio",35.3333333333333
+"audit",52
+"authentication",30
+"automated",100
+"automation",24
+"automotive",90.5
+"aws",12.75
+"azure",NA
+"bash",NA
+"best practices",30.9642857142857
+"bgp",NA
+"bi",43.75
+"big data",42.3181818181818
+"biology",33.4565217391304
+"bom",25
+"bootstrap",29.6666666666667
+"browsers",29
+"budget",23.4
+"business intelligence",28.25
+"business objects",13.5
+"business operations",68.8333333333333
+"business requirements",49
+"c",40.7407407407407
+"c plus plus",NA
+"c#",NA
+"cad",33
+"cassandra",NA
+"ccie",NA
+"ccna",NA
+"ccnp",NA
+"cd",25
 "cgi",108
-"change request management",NA
-"cloud database migration",NA
-"comm",NA
-"dao",NA
-"database security",NA
+"change management",21
+"ci",25
+"circuit",31
+"cism",NA
+"citrix",NA
+"claims",46
+"clarity",19.5
+"cloud architecture",9
+"cloud security",10.5
+"cloudwatch",12
+"collaboration",45.5263157894737
+"computer science",42.4074074074074
+"configuration management",NA
+"configure",21
+"confluence",112
+"consulting",26.6666666666667
+"continuous improvement",21
+"continuous integration",NA
+"core java",NA
+"creativity",35
+"crm",24
+"cross",29.8055555555556
+"cryptography",54.125
+"csm",10
+"css",58
+"css3",6
+"customer engagement",20
+"customer service",18
+"cyber security",NA
+"cybersecurity",21
+"dashboard",27.5
+"data analysis",26.32
+"data architecture",NA
+"data collection",42.5
+"data flow",15
+"data integration",12
+"data management",108
+"data manipulation",35
+"data mining",81
+"data quality",72
+"data science",44.4054054054054
+"data security",12
+"data storage",160
+"data structure",45
+"data structures",46
+"data visualization",23.0625
+"data warehouse",NA
+"database",29
+"database design",36
+"databases",26.6666666666667
+"db2",NA
+"debug",72
 "decision support",70
-"ehr",NA
-"embedded c",NA
-"energy",63.1756756756757
-"fast ethernet",NA
-"fortify",NA
+"delivery",16.2916666666667
+"deployment",25.9166666666667
+"design",46.1324786324786
+"design patterns",54
+"desktop support",NA
+"detail",48.0833333333333
+"devops",16.3333333333333
+"disaster recovery",NA
+"distribution",59.1875
+"dns",NA
+"documentation",14.6666666666667
+"dom",28
+"ebs",12
+"ec2",12
+"eclipse",28
+"ecommerce",63
+"economics",42.8225806451613
+"embedded",50.6
+"embedded systems",60.8
+"encryption",13.5
+"end",36.4915966386555
+"engineering",48.0416666666667
+"erp",NA
+"etl",NA
+"evaluation",53.0909090909091
+"excel",30.6785714285714
+"exchange",33.5909090909091
+"fda",28
+"finance",35.3333333333333
+"financial services",41.5
+"firewalls",NA
+"flash",30
+"focus",38.1688311688312
+"forensics",144
+"forms",30.6521739130435
+"forth",26
+"framework",38.9459459459459
+"front end development",6
 "game development",21
-"geographic information system",NA
-"geospatial analysis",NA
-"high",34.4732142857143
+"genetic",47.5714285714286
+"git",10
+"github",30
+"governance",35.4
+"gps",15
+"graphic design",10
+"graphics",84
+"gui",36
+"hadoop",90
+"hardware",36
+"hbase",NA
+"health care",31.6538461538462
+"healthcare",33.0294117647059
+"heroku",90
+"hibernate",NA
 "higher education",32.5
-"houston",NA
+"hive",NA
+"hr",20
+"html",59.6666666666667
+"html5",26.5
+"http",69.5
+"hub",18.5
+"iaas",40.5
+"ibm",32.7727272727273
+"ide",35
+"ids",NA
+"iis",NA
+"information security",33.75
+"information technology",40.6
+"insurance",46.5
+"integration",34.125
+"interaction design",21
+"interface",41.25
+"interfaces",40.0714285714286
+"internet",31.1222222222222
+"inventory",64.5
+"ios",72
+"iot",22.5714285714286
+"ip",15
+"iso",NA
 "isso",35
-"ivr",NA
-"j2ee web services",NA
-"kronos",NA
-"mcafee",NA
-"openview",NA
-"oracle 11g",NA
-"organized",26
-"pharmaceutics",NA
+"iterative",23.3
+"j2ee",NA
+"java",33.7272727272727
+"javascript",67.8
+"jax",14
+"jboss",14
+"jdbc",NA
+"jenkins",25
+"jira",NA
+"jquery",28
+"js",16
+"json",28
+"junit",28
+"kafka",NA
+"kanban",15.5
+"kubernetes",15
+"lan",76
+"leadership",29.1486486486486
+"libraries",39.0384615384615
+"line interface",38.5
+"linux",35.96875
+"logistics",25.4
+"machine learning",45.2142857142857
+"maintenance",95
+"malware",8.25
+"management",37.25
+"manual",24
+"mapreduce",71.25
+"mariadb",35
+"materials",45.14
+"mathematics",37.5
+"matlab",75.2
+"maven",NA
+"mechanical",87.5
+"medical",45.6851851851852
+"medical devices",28
+"meta",18.6666666666667
+"metrics",34.6
+"microcontrollers",112
+"microservices",12
+"microsoft access",32
+"microsoft excel",32.5
+"microsoft office",32
+"microsoft powerpoint",21
+"microsoft sql server",NA
+"microsoft windows azure",NA
+"migration",35.2857142857143
+"mobile ",40.5909090909091
+"mobile devices",31.3333333333333
+"modeling",61.16
+"mongodb",28
+"monitoring",34.95
+"mvc",NA
+"mysql",35
+"net",24.5
+"network",33.695652173913
+"network security",76
+"networks",33.2058823529412
+"next",51.9848484848485
+"nexus",30
+"node",26
+"node.js",28
+"nodejs",NA
+"nosql",28
+"object",55.1470588235294
+"object oriented design",54
+"olap",18
+"oop",42.5
+"open source",41.4117647058824
+"opengl",54
+"operating systems",53
+"operations",43.3888888888889
+"optimization",112.8125
+"oracle",20
+"organizational",38.975
+"os",29.8387096774194
+"ospf",NA
+"outlook",30
+"paas",40.5
+"payments",21
+"performance",36.8
+"peripherals",42
+"perl",NA
+"photoshop",45
+"php",NA
+"physics",78.3958333333333
+"pl",NA
+"pm",18.25
+"pmi",21.7307692307692
+"pmo",21
+"pmp",13.2142857142857
+"policies",41.7972972972973
+"postgresql",NA
+"power bi",43.75
+"powerpoint",21
+"powershell",NA
 "presentation",23.4375
-"react javascript",NA
-"remote access",NA
+"process improvement",50
+"procurement",31.5
+"product design",16.6666666666667
+"product development",18
+"product management",18.5
+"production",44.2096774193548
+"program management",15
+"program manager",15
+"programming",44.3486842105263
+"project",37.4347826086956
+"project delivery",10
+"project management",33.0869565217391
+"project manager",31.4166666666667
+"protocol",18.75
+"protocols",24.1666666666667
+"puppet",NA
+"python",51.1515151515151
+"qa",20
+"quality",32.6833333333333
+"quality assurance",27.8333333333333
+"quality control",15
+"r",35.9310344827586
+"rational",100.166666666667
+"rdbms",35
+"react",19.25
+"react.js",28
+"recovery",28.2
+"red hat",16
+"regression",63.9375
+"relational database",20.2
+"relational databases",16.5
+"release",30
 "repair",30.375
-"report",26.53125
-"revision control",NA
+"replication",30
+"reporting",63.75
+"requirements",48.3125
+"responsive design",28
+"rest",23.0714285714286
+"restful",28
+"restful apis",28
+"retail",19
+"risk assessment",42
+"risk management",20
+"roadmaps",10
+"robotics",87.3333333333333
 "root",29.6
-"rtl",NA
-"senior management",NA
+"root cause analysis",28
+"ruby",NA
+"ruby on rails",NA
+"s3",52
+"saas",40.5
+"sales",46.8333333333333
+"salesforce",NA
+"san",34.5
+"sans",71.5
+"sap",NA
+"sas",NA
+"satellite",24
+"scala",NA
+"scalability",46.8
+"scheduling",14
+"sci",35
+"scripting",76
+"scrum",11.4285714285714
+"security",38.7884615384615
+"security management",76
+"sei",13.5
+"selenium",NA
+"server",36.875
+"servers",47.6
+"sharepoint",NA
+"shell",NA
+"siem",NA
+"simulation",70.375
+"sip",18
+"six sigma",25.6666666666667
+"sketch",13.5
+"soa",NA
+"soap",NA
 "social media",26.4583333333333
-"sql azure",NA
-"tenable",NA
-"test methods",NA
-"test strategy",NA
+"software design",44
+"software development",26.0769230769231
+"software engineering",32
+"solaris",NA
+"solid",41.08
+"solutions",39.8979591836735
+"source code",35
+"spark",56
+"specification",28.5
+"splunk",NA
+"spring",53.4285714285714
+"sql ",36.125
+"sql queries",12
+"ssis",NA
+"ssl",NA
+"ssrs",NA
+"stack",28.3333333333333
+"statistics",54.7352941176471
+"storage",53.5
+"stored procedures",NA
+"storm",12.5
+"strategy",25.7173913043478
+"sun",18
+"supervision",31.5
+"supply chain management",70
+"support",37.1166666666667
+"surveillance",67.8333333333333
+"svn",NA
+"swift",72
+"switch",95
+"switches",55.75
+"switching",35
+"synthesis",12
+" administration",25.25
+" architecture",25.5
+"systems",52.2263157894737
+"systems analysis",35
+"systems design",15
+"tableau",NA
+"tcp",NA
+"tdd",NA
+"team leadership",10
+"technical",35.3928571428571
+"technical support",NA
+"technology",39.2394366197183
+"telecommunications",16.5
+"teradata",NA
+"tfs",NA
+"tomcat",NA
 "training",35.0454545454545
-"uart",NA
-"wlan",NA
+"transformation",29.25
+"ubuntu",90
+"ui",91
+"uml",15.5
+"unity",26
+"unix",12
+"ups",21.5
+"usability",10
+"user experience",29.6666666666667
+"user experience design",27
+"user interface",27
+"user interface design",27
+"ux",70.75
+"ux design",21
+"V349",NA
+"validation",20.9166666666667
+"vb.net",NA
+"version control",10
+"via",44.4666666666667
+"video",37.7727272727273
+"visual studio",NA
+"visualization",35.7058823529412
+"vms",9
+"vmware",NA
+"voip",NA
+"vpc",12
+"vpn",76
+"wan",76
+"wcf",NA
+"web api",NA
+"web ",43.6710526315789
+"web design",44
+"web development",56.5
+"web server",28
+"wifi",43.1666666666667
+"windows",41
+"wireless",10
+"word",18.2857142857143
+"wordpress",6
+"workflow",18.5
+"xml",NA
