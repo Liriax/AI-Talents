@@ -801,6 +801,18 @@ server <- function(input, output) {
     
     # findJob <- reactive({findSimilarJobTitle(input$current_job)})
     
+    get_company <- reactive({
+      # job <- findJob()
+      job<-input$job
+      name<-input$name
+      newLine <- c(name, job, input$current_skills)
+      if(input$company=="Software Giant"){
+        company<-rbind(company_df, newLine)
+      }else if(input$company=="Equilibrium"){
+        company<-rbind(company_df3, newLine)
+      }else{company<-rbind(company_df2, newLine)}
+    })
+  
     #4
     output$predicted_job <- renderText({
       predict_res(input$current_skills)
@@ -812,11 +824,7 @@ server <- function(input, output) {
       job<-input$job
       name <-input$name
       newLine <- c(name, job, input$current_skills)
-      if(input$company=="Software Giant"){
-        company_df<-rbind(company_df, newLine)
-      }else{
-        company_df2<-rbind(company_df2, newLine)
-      }
+      get_company()
     })
 
     #2
@@ -862,17 +870,7 @@ server <- function(input, output) {
     })
 
     
-    get_company <- reactive({
-      # job <- findJob()
-      job<-input$job
-      name<-input$name
-      newLine <- c(name, job, input$current_skills)
-      if(input$company=="Software Giant"){
-        company<-rbind(company_df, newLine)
-      }else if(input$company=="Equilibrium"){
-        company<-rbind(company_df3, newLine)
-      }else{company<-rbind(company_df2, newLine)}
-    })
+    
     
     selected_employee <- reactive({
       get_company()[input$table_rows_selected, ]
@@ -905,7 +903,7 @@ server <- function(input, output) {
         
         # Render a bar plot that shows top skills for a given job title
         
-        ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(title = paste("Top skills for", job))+theme_bw()+
+        ggplot(data, aes(x=reorder(skills, -frequency), y=frequency))+geom_bar(stat="identity", fill = "indianred2")+labs(x = "",title = paste("Top skills for", job))+theme_bw()+
           theme(axis.text.x = element_text(size = 15, angle = 45, vjust = 1, hjust=1))
         
       } else{
