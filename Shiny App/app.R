@@ -153,6 +153,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                 
                  #-----------------------------------
                  tabPanel("INPUT", value = "input",
+                          
+                          
                           fluidRow(
                             column(3),
                             column(6,
@@ -172,6 +174,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
                                    shiny::HTML("<h5> Enter your name: </h5>"),
                                    br(),
                                    textInput("name","")
@@ -195,6 +198,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
+                                   
                                    br(),
                                    selectInput("job",label="",
                                                choices = c("software engineer",
@@ -219,7 +224,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(6,
                                    shiny::HTML("<h5> 	&nbsp; Now,</h5>
                                    <h5>   we need you to tell us what skills you possess, and believe are the most essential for the role you play in your team.</h5>
-                                               <h5>Please write them in the line below, sepparating each skill with a comma ( , )</h5>")
+                                               <h5>Please write them in the line below, sepparating each skill with a comma ( , )</h5>"),
+                                   h6("You can select multiple members to form a smaller team or select a single row to see the top skills for that person's position.")
                             ),
                             column(3)
                           ),
@@ -229,6 +235,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
+                                   
                                    br(),
                                    textInput("current_skills","Prioritize skills which you believe sets you aside!"),
                                    
@@ -242,6 +250,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
+                                   
                                    sliderInput("skills","Number of skills to be displayed in the results",min = 1,max = 30,value = 10)
                                    
                             )
@@ -262,6 +272,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
+                                   
                                    selectInput("company",label="",
                                                choices = c("Software Giant", "HelloNow", "Equilibrium" ),
                                                selected = "Software Giant"),
@@ -279,7 +291,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<h5> Thank you for sending us your skills!</h5>
-                                   <h5>  Now you can check our analysis by clicking on the RESULTS tab.</h5>")
+                                   <h5>  Now you can check our analysis by clicking on the RESULTS button</h5>")
                             ),
                             column(3)
                           ),
@@ -310,19 +322,29 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                  
                    tabPanel("RESULTS", value = "results",
                             
+                            
+                            
                             shinyjs::useShinyjs(),
                             
-                            tags$head(tags$script(HTML('
+                            tags$script(" $(document).ready(function () {
+                             $('#inTabset a[data-toggle=\"tab\"]').bind('click', function (e) {
+                                   $(document).load().scrollTop(0);
+                                   });
+                    
+                                   });"),
+                            
+                            tags$head(tags$script(HTML("
                                                        var fakeClick = function(tabName) {
-                                                       var dropdownList = document.getElementsByTagName("a");
+                                                       var dropdownList = document.getElementsByTagName('a');
                                                        for (var i = 0; i < dropdownList.length; i++) {
                                                        var link = dropdownList[i];
-                                                       if(link.getAttribute("data-value") == tabName) {
+                                                       if(link.getAttribute('data-value') == tabName) {
                                                        link.click();
+                                                       $('html, body').animate({ scrollTop: 0 }, 'fast');
                                                        };
                                                        }
-                                                       };
-                                                       '))),
+                                                       };"
+                                                       ))),
                             fluidRow(
                               HTML("
                                      
@@ -599,6 +621,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             fluidRow(
                               column(3),
                               column(6,
+                                     align = "center",
+                                     br(),
                                      textInput("training","Enter the skill"),
                                      valueBoxOutput("training_effect")
                               ),
@@ -757,14 +781,14 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
 # Define server logic ------------------------------------------------------------
 server <- function(input, output) {
     # Virtualenv settings --------------------------------------------------------
-  # virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
-  # python_path = Sys.getenv('PYTHON_PATH')
+  virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
+  python_path = Sys.getenv('PYTHON_PATH')
   # 
   # # # Create virtual env and install dependencies
   # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
   # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
-  # reticulate::use_virtualenv(virtualenv_dir, required = T)
-  # reticulate::source_python('slide.py')
+  reticulate::use_virtualenv(virtualenv_dir, required = T)
+  reticulate::source_python('slide.py')
 
     # (Ignore) wordcloud2a --------------------
   wordcloud2a <- function (data, size = 1, minSize = 0, gridSize = 0, fontFamily = "Segoe UI",

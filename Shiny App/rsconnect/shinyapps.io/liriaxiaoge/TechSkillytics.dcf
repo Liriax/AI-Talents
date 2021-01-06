@@ -5,9 +5,9 @@ account: liriaxiaoge
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3432642
-bundleId: 4061606
+bundleId: 4061788
 url: https://liriaxiaoge.shinyapps.io/TechSkillytics/
-when: 1609874493.60238
+when: 1609877497.81026
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: app_dashboard.R|environment.R|model.py|__pycache__/model.cpython-36.pyc|__pycache__/model.cpython-37.pyc|__pycache__/model.cpython-38.pyc|__pycache__/preprocessing.cpython-36.pyc

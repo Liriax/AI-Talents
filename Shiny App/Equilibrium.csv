@@ -1,6 +1,6 @@
-"employee","skills","position"
-"Adam Smith","r, sql, management, excel,tableau, economics, statistics","project manager"
-"David Ricardo","r, sql, management, excel,tableau, statistics","business intelligence analyst"
-"John Maynard","r, excel, economics, modeling, statistics, hadoop, machine learning","quality assurance engineer"
-"Friedrich H.","r, python, sql, management, excel, statistics, analytics","data analyst"
-"Modigliani Miller","r, python, sql, management, excel,  financial services, finance, statistics, analytics","data analyst"
+employee,position,skills
+Adam Smith,project manager,"r, sql, management, excel,tableau, economics, statistics"
+David Ricardo,business intelligence analyst,"r, sql, management, excel,tableau, statistics"
+John Maynard,quality assurance engineer,"r, excel, economics, modeling, statistics, hadoop, machine learning"
+Friedrich H.,data analyst,"r, python, sql, management, excel, statistics, analytics"
+Modigliani Miller,data analyst,"r, python, sql, management, excel,  financial services, finance, statistics, analytics"
