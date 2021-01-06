@@ -12,6 +12,8 @@ library(shinyjs)
 library(DT)
 library(visNetwork)
 library(rintrojs)
+library(stringr) 
+
 
 
 PYTHON_DEPENDENCIES = c('pandas','numpy','scikit-learn==0.22.2.post1', 'category_encoders','joblib')
@@ -159,7 +161,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    shiny::HTML("<br><br><center> <h1>Hello!</h1> </center><br>"),
                                    shiny::HTML("<h5>	&nbsp; Your company has hired TechQuartier's new service, TechSkillytics.</h5> 
                                                <h5> Each member of your (fictional) team has received the questionnaire below via email, and your teammates have already responded and sent it to TechQuartier.</h5>
-                                               <h5> 	&nbsp; Once the entire team finishes the questionnaire and send it to TechQuartier, you will receive an email with a link to the TechSkillytics app.</h5>
+                                               <h5> 	&nbsp; Once the entire team finishes the questionnaire and sends it to TechQuartier, you will receive an email with a link to the TechSkillytics app.</h5>
                                                <h5>  Since you're the last one left, your results will be available as soon as you are complete! </h5>")
                             ),
                             column(3)
@@ -222,7 +224,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(6,
                                    shiny::HTML("<h5> 	&nbsp; Now,</h5>
                                    <h5>   we need you to tell us what skills you possess, and believe are the most essential for the role you play in your team.</h5>
-                                               <h5>Please write them in the line below, sepparating each skill with a comma ( , )</h5>"),
+                                               <h5>Please write them in the line below, separating each skill with a comma ( , )</h5>"),
                             ),
                             column(3)
                           ),
@@ -235,7 +237,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    align = "center",
                                    
                                    br(),
-                                   textInput("current_skills","Prioritize skills which you believe sets you aside!"),
+                                   textInput("current_skills","Prioritize skills which you believe set you aside!"),
                                    
                             )
                           ),
@@ -393,7 +395,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<h5> These are the frequency of the skills we found being demanded for your position on the job market: </h5>")
-                            )
+                            ),
+                            column(3)
                           ),
                           #1
                           fluidRow(
@@ -415,7 +418,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<h5> This means that you may want to work on the following skills:  </h5>")
-                            )
+                            ),
+                            column(3)
                           ),
                           #2
                           fluidRow(
@@ -456,7 +460,9 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<h5> According to our calculations, your skillset would be perfect for this position:  </h5>")
-                            )
+                            ),
+                            column(3)
+                            
                           ),
                           #4
                           fluidRow(
@@ -480,7 +486,8 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<h5> This is the amount of hours you would need to invest in order to train the skills you are lacking:  </h5>")
-                            )
+                            ),
+                            column(3)
                           ),
                           #5
                           fluidRow(
@@ -500,7 +507,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             column(3),
                             column(6,
                                    shiny::HTML("<br><br><center> <h1> Now,  </h1> </center><br>"),
-                                   shiny::HTML("<h5> &nbsp;  let's see the skills your team members told us they already have. According to our survey, these are the skills that your team posseses:  </h5>"),
+                                   shiny::HTML("<h5> &nbsp; let's look at the skills your team members have told us they already have. According to our survey, these are the skills that your team posseses:  </h5>"),
                                    h6("You can select multiple members to form a smaller team or select a single row to see the top skills for that person's position.")
                                    
                             ),
@@ -515,11 +522,12 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
+                                   align = "center",
                                    DT::dataTableOutput("table")
                             ),
                             column(3)
                           ),
-                          
+                        
                           fluidRow(
                             
                             style = "height:300px;"),
@@ -527,19 +535,19 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           fluidRow(
                             column(3),
                             column(6,
-                                   shiny::HTML("<h5> And this is how the skill pool of your team looks like:  </h5>")
+                                   shiny::HTML("<h5> And this is what the skill pool of your team looks like:  </h5>")
                             ),
                             column(3)
                           ),
                           
                           #7
                           fluidRow(
-                            column(3),
-                            column(6,
+                            column(12,
+                                   align = "center",
                                    wordcloud2Output("teamSkills")
-                            ),
-                            column(3)
-                            ),
+                            )
+                          ),
+                          
                           
                           fluidRow(
                             
@@ -560,11 +568,13 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                             style = "height:50px;"),
                           
                           fluidRow(
-                            column(3),
-                            column(6,
-                                   plotOutput("team_gap")),
-                            column(3)
-                          ),
+                            column(12,
+                                   align = "center",
+                                   plotOutput("team_gap")
+                                  )
+                            
+                            ),
+                          
                           
                           fluidRow(
                             
@@ -587,10 +597,12 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                           
                           #9
                           fluidRow(
-                            column(3),
-                            column(6,
+                            column(12,
+                                   align = "center",
                                    wordcloud2Output("sectorplot"))
                           ),
+                            
+                        
                           
                           fluidRow(
                             
@@ -634,7 +646,7 @@ ui <- navbarPage(title = img(src="TechHippo.png", height = "40px"), id = "navBar
                                    shiny::HTML("<br><br><center> <h1> Thank you for using TechSkillytics!  </h1> </center><br>"),
                                    shiny::HTML("<h5>  &nbsp; Now that you've seen what is expected in your field, you can also use our dashboard to explore what other areas are looking for in the market. Just click the \"Other sectors\" tab! Or perhaps you will prefer to change your inputs in the \"INPUT\" tab! </h5>
                                      <h5> </h5>
-                                                 <h5>  &nbsp; This is just the demo of what the app can do. In the future we would like to implement more features, like an analysis of what social media thinks of your skills/position and relay more interative information between team members easing the information transer between your team members! ")
+                                                 <h5>  &nbsp; This is just the demo of what the app can do. In the future we would like to implement more features, like an analysis of what social media thinks of your skills/position and relay more interative information between team members easing the information transfer between your team members! ")
                             ),
                             column(3)
                           ),
@@ -783,8 +795,8 @@ server <- function(input, output) {
   python_path = Sys.getenv('PYTHON_PATH')
   
   # # Create virtual env and install dependencies
-  reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
-  reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
+  # reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
+  # reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES)
   reticulate::use_virtualenv(virtualenv_dir, required = T)
   reticulate::source_python('slide.py')
   
@@ -873,7 +885,7 @@ server <- function(input, output) {
   
   #4
   output$predicted_job <- renderText({
-    predict_res(input$current_skills)
+    str_to_title(predict_res(input$current_skills))
   })
   
   #6
