@@ -80,7 +80,7 @@ def getNTopSkillsFromJob(df, job, n):
     freq.append(perc)
     i+=1
   df = pd.DataFrame(list(zip(skills, freq)), columns = ['skills','frequency'])
-  df.to_csv("result.csv", encoding = "ISO-8859-1")
+  # df.to_csv("result.csv", encoding = "ISO-8859-1")
 
   return df
 
@@ -153,6 +153,3 @@ def getTeamSkillGap(df, team, n):
     gap = tup[0]
     team_skill_gap = team_skill_gap + gap
   return team_skill_gap
-
-
-
